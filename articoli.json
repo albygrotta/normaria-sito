@@ -1,0 +1,19 @@
+{
+  "_come_si_usa": "Elenco degli articoli del sito. Per pubblicarne uno: (1) scrivi il testo in articoli/testi/<slug>.md, (2) aggiungi qui un blocco con gli stessi dati, (3) rilancia _tools/genera_articoli.py. Campi: slug (il nome del file, senza spazi né accenti), titolo, occhiello (il filone: 'Concorsi in corso' oppure 'Il diritto spiegato'), sommario (due righe: è anche il testo che Google mostra sotto il titolo), data e aggiornato in formato AAAA-MM-GG, manuali (gli id presi da catalogo.json, per i rimandi in fondo), fonti.",
+  "articoli": [
+    {
+      "slug": "concorso-coesione-2026-882-posti",
+      "titolo": "Concorso Coesione 2026, 882 posti al Sud: chi può partecipare e com'è fatta la prova",
+      "occhiello": "Concorsi in corso",
+      "sommario": "Domande entro il 23 settembre, una sola prova scritta da 40 quesiti in 60 minuti e una soglia al 70%. Tutti i numeri del bando, e cosa significano davvero per chi si prepara.",
+      "data": "2026-09-03",
+      "aggiornato": "2026-09-03",
+      "manuali": ["amministrativo", "unione-europea"],
+      "fonti": [
+        {"testo": "Concorso RIPAM Coesione 2026: bando per 882 Specialisti tecnici — LeggiOggi", "url": "https://www.leggioggi.it/concorso-ripam-coesione-2026/"},
+        {"testo": "Concorso RIPAM Coesione Sud 2026: bando, requisiti, domanda — Ticonsiglio", "url": "https://www.ticonsiglio.com/concorso-ripam-coesione-sud-2026-specialisti-tecnici-bando/"},
+        {"testo": "Portale inPA — presentazione delle domande", "url": "https://www.inpa.gov.it/"}
+      ]
+    }
+  ]
+}

@@ -282,3 +282,88 @@ section { padding: 64px 0; }
 }
 
 :focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+
+/* =========================================================
+   Sezione articoli
+   ========================================================= */
+
+/* hero più corto, senza la scheda a fianco */
+.hero-stretto { padding: 64px 0 8px; }
+.hero-stretto .wrap { display: block; }
+.hero-stretto h1 { font-size: clamp(32px, 4.6vw, 48px); max-width: 16ch; }
+.hero-stretto .lead { max-width: 54ch; }
+
+/* indice: un elenco editoriale, non una griglia di riquadri */
+.posts { max-width: 800px; }
+.post { padding: 32px 0; border-top: 1px solid var(--line); }
+.post:first-child { border-top: none; padding-top: 8px; }
+.post h2 { font-size: clamp(24px, 3vw, 32px); margin: 6px 0 10px; max-width: 24ch; }
+.post h2 a { color: var(--navy); }
+.post h2 a:hover { color: var(--red); text-decoration: none; }
+.post p { font-family: "IBM Plex Sans", sans-serif; font-size: 16px; color: var(--grey); max-width: 60ch; }
+.post .post-piu { margin: 14px 0 0; }
+.post .post-piu a {
+  font-family: "IBM Plex Mono", monospace; font-size: 12px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+}
+
+/* pagina dell'articolo */
+.articolo .briciole {
+  font-family: "IBM Plex Mono", monospace; font-size: 11px;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--grey);
+  margin-bottom: 18px;
+}
+.articolo h1 { max-width: 20ch; }
+.articolo .sommario {
+  font-size: 20px; line-height: 1.55; color: var(--grey);
+  padding-bottom: 28px; margin-bottom: 32px; border-bottom: 1px solid var(--line);
+}
+.articolo h2 { font-size: 27px; }
+.articolo h3 { font-size: 20px; }
+.articolo p, .articolo li { font-size: 18.5px; line-height: 1.68; }
+.articolo hr { border: none; border-top: 1px solid var(--line); margin: 40px 0; }
+
+/* la nota a margine: una riga rossa e basta */
+.articolo .nota {
+  border-left: 3px solid var(--red); padding: 2px 0 2px 18px;
+  margin: 32px 0; color: var(--grey); font-size: 17px;
+}
+
+/* rimandi ai manuali, in fondo all'articolo */
+.rimandi {
+  margin-top: 56px; padding: 32px 30px;
+  background: var(--navy); color: rgba(245,240,230,0.82);
+  border-top: 4px solid var(--red); border-radius: 3px;
+}
+.rimandi h2 { color: var(--cream); font-size: 22px; margin: 0 0 8px; }
+.rimandi > p {
+  font-family: "IBM Plex Sans", sans-serif; font-size: 15px;
+  color: rgba(245,240,230,0.66); margin-bottom: 22px;
+}
+.rimandi ul { list-style: none; margin: 0; padding: 0; }
+.rimandi li { padding: 16px 0; border-top: 1px solid var(--line-light); }
+.rimandi li a {
+  display: block; font-family: "Spectral", serif; font-weight: 600;
+  font-size: 19px; color: var(--cream); margin-bottom: 4px;
+}
+.rimandi li a:hover { color: #E0A39E; text-decoration: none; }
+.rimandi li span {
+  display: block; font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14.5px; line-height: 1.5; color: rgba(245,240,230,0.62);
+}
+.rimandi .rimandi-piu { margin: 22px 0 0; font-size: 14px; }
+.rimandi .rimandi-piu a { color: #E0A39E; }
+
+/* fonti */
+.fonti { margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--line); }
+.fonti h2 {
+  font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--grey); margin: 0 0 12px;
+}
+.fonti ul { padding-left: 20px; }
+.fonti li { font-family: "IBM Plex Sans", sans-serif; font-size: 14px; margin-bottom: 6px; }
+
+@media (max-width: 640px) {
+  .rimandi { padding: 26px 22px; }
+  .articolo p, .articolo li { font-size: 17.5px; }
+}
