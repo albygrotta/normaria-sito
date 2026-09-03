@@ -44,14 +44,23 @@ def scheda(m):
     misura = (f'<span class="norme mono">{html.escape(testo_misura)}</span>'
               if testo_misura else "")
 
+    copertina = ""
+    if m.get("copertina"):
+        copertina = (f'            <a class="book-cover" href="{m["link"]}" target="_blank" rel="noopener"\n'
+                     f'               aria-label="Copertina di {titolo}">\n'
+                     f'              <img src="{html.escape(m["copertina"], quote=True)}" alt="Copertina di {titolo}" loading="lazy">\n'
+                     f'            </a>\n')
+
     return f"""          <article class="book">
-            {etichetta}
-            <p class="collana">{materia}</p>
-            <h3>{titolo}</h3>
-            <p>{descrizione}</p>
-            <div class="book-foot">
-              {misura}
-              {bottone}
+{copertina}            <div class="book-body">
+              {etichetta}
+              <p class="collana">{materia}</p>
+              <h3>{titolo}</h3>
+              <p>{descrizione}</p>
+              <div class="book-foot">
+                {misura}
+                {bottone}
+              </div>
             </div>
           </article>"""
 
@@ -87,6 +96,7 @@ def dati_per_google(manuali):
             "genre": "Preparazione ai concorsi pubblici",
             "publisher": {"@type": "Organization", "name": "Normaria Edizioni"},
             "description": m["descrizione"],
+            **({"image": SITO + "/" + m["copertina"]} if m.get("copertina") else {}),
         }
         if m.get("stato", "disponibile") != "in-arrivo":
             libro["url"] = m["link"]
