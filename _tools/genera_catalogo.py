@@ -29,29 +29,49 @@ def scheda(m):
     titolo = html.escape(m["titolo"])
     materia = html.escape(m["materia"])
     descrizione = html.escape(m["descrizione"])
-    norme = m.get("norme")
 
     if disponibile:
         etichetta = '<span class="tag tag-available">Disponibile</span>'
         link = html.escape(m["link"], quote=True)
         bottone = (f'<a href="{link}" class="btn btn-ghost" '
                    f'target="_blank" rel="noopener">Acquista su Amazon</a>')
-        misura = f'<span class="norme mono">{norme} norme</span>' if norme else ""
+        testo_misura = m.get("misura", "").strip()
     else:
         etichetta = '<span class="tag tag-soon">In arrivo</span>'
         bottone = '<a href="#estratto" class="btn btn-ghost">Avvisami all\'uscita</a>'
-        misura = '<span class="norme mono">In lavorazione</span>'
+        testo_misura = "In lavorazione"
 
-    return f"""        <article class="book">
-          {etichetta}
-          <p class="collana">{materia}</p>
-          <h3>{titolo}</h3>
-          <p>{descrizione}</p>
-          <div class="book-foot">
-            {misura}
-            {bottone}
-          </div>
-        </article>"""
+    misura = (f'<span class="norme mono">{html.escape(testo_misura)}</span>'
+              if testo_misura else "")
+
+    return f"""          <article class="book">
+            {etichetta}
+            <p class="collana">{materia}</p>
+            <h3>{titolo}</h3>
+            <p>{descrizione}</p>
+            <div class="book-foot">
+              {misura}
+              {bottone}
+            </div>
+          </article>"""
+
+
+def sezione(s):
+    """Titolo di sezione + griglia delle sue schede."""
+    schede = "\n\n".join(scheda(m) for m in s["manuali"])
+    sommario = (f'\n          <p>{html.escape(s["sommario"])}</p>'
+                if s.get("sommario") else "")
+    return f"""        <div class="catalog-group">
+          <h3 class="group-title">{html.escape(s["nome"])}</h3>{sommario}
+        </div>
+        <div class="catalog">
+{schede}
+        </div>"""
+
+
+def tutti(sezioni):
+    """Tutti i manuali di tutte le sezioni, in ordine di pagina."""
+    return [m for s in sezioni for m in s["manuali"]]
 
 
 def dati_per_google(manuali):
@@ -64,6 +84,7 @@ def dati_per_google(manuali):
             "bookFormat": "https://schema.org/Paperback",
             "inLanguage": "it",
             "about": m["materia"],
+            "genre": "Preparazione ai concorsi pubblici",
             "publisher": {"@type": "Organization", "name": "Normaria Edizioni"},
             "description": m["descrizione"],
         }
@@ -91,13 +112,13 @@ def sostituisci(testo, nome, contenuto):
 
 
 def main():
-    manuali = json.loads(DATI.read_text(encoding="utf-8"))["manuali"]
+    sezioni = json.loads(DATI.read_text(encoding="utf-8"))["sezioni"]
     pagina = PAGINA.read_text(encoding="utf-8")
     pagina = sostituisci(pagina, "CATALOGO",
-                         "\n\n".join(scheda(m) for m in manuali))
-    pagina = sostituisci(pagina, "SCHEMA", dati_per_google(manuali))
+                         "\n\n".join(sezione(s) for s in sezioni))
+    pagina = sostituisci(pagina, "SCHEMA", dati_per_google(tutti(sezioni)))
     PAGINA.write_text(pagina, encoding="utf-8")
-    print(f"Fatto: {len(manuali)} manuali scritti in index.html")
+    print(f"Fatto: {len(tutti(sezioni))} manuali in {len(sezioni)} sezioni")
 
 
 if __name__ == "__main__":
