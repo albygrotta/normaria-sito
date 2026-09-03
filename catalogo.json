@@ -1,0 +1,37 @@
+{
+  "_come_si_usa": "Questo è l'elenco dei manuali. Per aggiungerne uno basta copiare un blocco qui sotto e cambiare i valori. Campi: titolo, materia, norme (numero di articoli), link (pagina Amazon), stato ('disponibile' oppure 'in-arrivo'), descrizione (2 righe).",
+  "manuali": [
+    {
+      "titolo": "Manuale Normativo di Diritto Amministrativo",
+      "materia": "Diritto amministrativo",
+      "norme": 320,
+      "link": "https://amzn.eu/d/0hxWQOar",
+      "stato": "disponibile",
+      "descrizione": "Il cuore di quasi ogni concorso pubblico: procedimento, provvedimento, accesso agli atti e giustizia amministrativa, in 320 schede tutte della stessa forma."
+    },
+    {
+      "titolo": "Manuale Normativo di Diritto Penale",
+      "materia": "Diritto penale",
+      "norme": 231,
+      "link": "https://amzn.eu/d/032haHUc",
+      "stato": "disponibile",
+      "descrizione": "Reato, pena, cause di giustificazione e delitti contro la pubblica amministrazione: 231 articoli del codice penale ridotti a scheda, con i rimandi che li tengono insieme."
+    },
+    {
+      "titolo": "Manuale Normativo di Diritto del Lavoro",
+      "materia": "Diritto del lavoro",
+      "norme": 200,
+      "link": "https://amzn.eu/d/0hiJAzJZ",
+      "stato": "disponibile",
+      "descrizione": "Contratto, licenziamento, tutele e pubblico impiego: 200 articoli con il testo vigente, la ratio in due righe e i termini che servono all'esame."
+    },
+    {
+      "titolo": "Manuale Normativo di Diritto Tributario",
+      "materia": "Diritto tributario",
+      "norme": 246,
+      "link": "https://amzn.eu/d/04CzKvdf",
+      "stato": "disponibile",
+      "descrizione": "Dall'imposta sul reddito al processo tributario: 246 articoli ridotti a schede, per arrivare alla prova sapendo esattamente cosa dice ciascuno."
+    }
+  ]
+}

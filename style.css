@@ -172,7 +172,8 @@ section { padding: 64px 0; }
 .step p { font-size: 15px; font-family: "IBM Plex Sans", sans-serif; color: rgba(245,240,230,0.74); }
 
 /* catalogo */
-.catalog { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+/* il catalogo si adatta da solo al numero di titoli */
+.catalog { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 28px; }
 .book {
   background: #fff; border: 1px solid var(--line); border-radius: 4px;
   padding: 28px 26px; display: flex; flex-direction: column;
@@ -191,8 +192,13 @@ section { padding: 64px 0; }
   letter-spacing: 0.1em; color: var(--grey); text-transform: uppercase; margin-bottom: 12px;
 }
 .book p { font-size: 15px; color: var(--grey); font-family: "IBM Plex Sans", sans-serif; }
-.book .book-foot { margin-top: auto; padding-top: 18px; display: flex; align-items: center; justify-content: space-between; }
-.book .price { font-family: "IBM Plex Mono", monospace; font-size: 15px; color: var(--navy); }
+.book .book-foot { margin-top: auto; padding-top: 18px; display: flex; align-items: center;
+                   justify-content: space-between; gap: 14px; flex-wrap: wrap; }
+/* al posto del prezzo mostriamo quante norme contiene il manuale */
+.book .norme {
+  font-family: "IBM Plex Mono", monospace; font-size: 11.5px;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--grey);
+}
 
 /* newsletter */
 .signup { display: flex; gap: 12px; flex-wrap: wrap; max-width: 480px; }

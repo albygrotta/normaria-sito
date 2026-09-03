@@ -17,6 +17,88 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Dati strutturati del catalogo: generati da _tools/genera_catalogo.py -->
+  <!-- SCHEMA:INIZIO -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Catalogo Normaria Edizioni",
+  "url": "https://normaria.net/#catalogo",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Book",
+        "name": "Manuale Normativo di Diritto Amministrativo",
+        "bookFormat": "https://schema.org/Paperback",
+        "inLanguage": "it",
+        "about": "Diritto amministrativo",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Normaria Edizioni"
+        },
+        "description": "Il cuore di quasi ogni concorso pubblico: procedimento, provvedimento, accesso agli atti e giustizia amministrativa, in 320 schede tutte della stessa forma.",
+        "url": "https://amzn.eu/d/0hxWQOar"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Book",
+        "name": "Manuale Normativo di Diritto Penale",
+        "bookFormat": "https://schema.org/Paperback",
+        "inLanguage": "it",
+        "about": "Diritto penale",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Normaria Edizioni"
+        },
+        "description": "Reato, pena, cause di giustificazione e delitti contro la pubblica amministrazione: 231 articoli del codice penale ridotti a scheda, con i rimandi che li tengono insieme.",
+        "url": "https://amzn.eu/d/032haHUc"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Book",
+        "name": "Manuale Normativo di Diritto del Lavoro",
+        "bookFormat": "https://schema.org/Paperback",
+        "inLanguage": "it",
+        "about": "Diritto del lavoro",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Normaria Edizioni"
+        },
+        "description": "Contratto, licenziamento, tutele e pubblico impiego: 200 articoli con il testo vigente, la ratio in due righe e i termini che servono all'esame.",
+        "url": "https://amzn.eu/d/0hiJAzJZ"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Book",
+        "name": "Manuale Normativo di Diritto Tributario",
+        "bookFormat": "https://schema.org/Paperback",
+        "inLanguage": "it",
+        "about": "Diritto tributario",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Normaria Edizioni"
+        },
+        "description": "Dall'imposta sul reddito al processo tributario: 246 articoli ridotti a schede, per arrivare alla prova sapendo esattamente cosa dice ciascuno.",
+        "url": "https://amzn.eu/d/04CzKvdf"
+      }
+    }
+  ]
+}
+  </script>
+<!-- SCHEMA:FINE -->
 </head>
 <body>
 
@@ -116,41 +198,54 @@
       </div>
       <div class="catalog">
 
-        <!-- COMPILA: aggiungi/modifica i titoli qui. -->
+        <!-- Le schede qui sotto sono generate da catalogo.json.
+             Non modificarle a mano: si aggiorna catalogo.json e si
+             rilancia _tools/genera_catalogo.py -->
+        <!-- CATALOGO:INIZIO -->
         <article class="book">
           <span class="tag tag-available">Disponibile</span>
           <p class="collana">Diritto amministrativo</p>
-          <h3>I 320 articoli fondamentali di diritto amministrativo</h3>
-          <p>Per i concorsi pubblici. Il testo di riferimento della collana, articolo per articolo.</p>
+          <h3>Manuale Normativo di Diritto Amministrativo</h3>
+          <p>Il cuore di quasi ogni concorso pubblico: procedimento, provvedimento, accesso agli atti e giustizia amministrativa, in 320 schede tutte della stessa forma.</p>
           <div class="book-foot">
-            <!-- COMPILA il prezzo -->
-            <span class="price">€ 00,00</span>
-            <!-- COMPILA il link Amazon reale -->
-            <a href="#AMAZON-LINK-DA-INSERIRE" class="btn btn-ghost">Acquista su Amazon</a>
+            <span class="norme mono">320 norme</span>
+            <a href="https://amzn.eu/d/0hxWQOar" class="btn btn-ghost" target="_blank" rel="noopener">Acquista su Amazon</a>
           </div>
         </article>
 
         <article class="book">
           <span class="tag tag-available">Disponibile</span>
-          <p class="collana">Concorsi · Camere di commercio</p>
-          <h3>Camera di Commercio di Roma 2026</h3>
-          <p>Manuale dedicato alla prova, con le materie del bando organizzate in schede.</p>
+          <p class="collana">Diritto penale</p>
+          <h3>Manuale Normativo di Diritto Penale</h3>
+          <p>Reato, pena, cause di giustificazione e delitti contro la pubblica amministrazione: 231 articoli del codice penale ridotti a scheda, con i rimandi che li tengono insieme.</p>
           <div class="book-foot">
-            <span class="price">€ 00,00</span>
-            <a href="#AMAZON-LINK-DA-INSERIRE" class="btn btn-ghost">Acquista su Amazon</a>
+            <span class="norme mono">231 norme</span>
+            <a href="https://amzn.eu/d/032haHUc" class="btn btn-ghost" target="_blank" rel="noopener">Acquista su Amazon</a>
           </div>
         </article>
 
         <article class="book">
-          <span class="tag tag-soon">In arrivo</span>
-          <p class="collana">Concorsi UE · EPSO</p>
-          <h3>EPSO AD5 — EU Knowledge</h3>
-          <p>Manuale in italiano per il concorso EPSO AD5 2026–2027. In lavorazione.</p>
+          <span class="tag tag-available">Disponibile</span>
+          <p class="collana">Diritto del lavoro</p>
+          <h3>Manuale Normativo di Diritto del Lavoro</h3>
+          <p>Contratto, licenziamento, tutele e pubblico impiego: 200 articoli con il testo vigente, la ratio in due righe e i termini che servono all&#x27;esame.</p>
           <div class="book-foot">
-            <span class="price mono">Presto</span>
-            <a href="#estratto" class="btn btn-ghost">Avvisami all'uscita</a>
+            <span class="norme mono">200 norme</span>
+            <a href="https://amzn.eu/d/0hiJAzJZ" class="btn btn-ghost" target="_blank" rel="noopener">Acquista su Amazon</a>
           </div>
         </article>
+
+        <article class="book">
+          <span class="tag tag-available">Disponibile</span>
+          <p class="collana">Diritto tributario</p>
+          <h3>Manuale Normativo di Diritto Tributario</h3>
+          <p>Dall&#x27;imposta sul reddito al processo tributario: 246 articoli ridotti a schede, per arrivare alla prova sapendo esattamente cosa dice ciascuno.</p>
+          <div class="book-foot">
+            <span class="norme mono">246 norme</span>
+            <a href="https://amzn.eu/d/04CzKvdf" class="btn btn-ghost" target="_blank" rel="noopener">Acquista su Amazon</a>
+          </div>
+        </article>
+<!-- CATALOGO:FINE -->
 
       </div>
     </div>
