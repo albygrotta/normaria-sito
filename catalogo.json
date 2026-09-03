@@ -1,5 +1,5 @@
 {
-  "_come_si_usa": "Elenco dei manuali del sito. Per aggiungerne uno, copia un blocco dentro la sezione giusta e cambia i valori. Campi: titolo, materia, misura (la cifra mostrata sotto la scheda, es. '320 norme'; lasciala vuota se non c'è), link (pagina Amazon), stato ('disponibile' oppure 'in-arrivo'), descrizione (2 righe). Il campo 'id' serve agli articoli per collegarsi alla scheda giusta: non cambiarlo una volta assegnato.",
+  "_come_si_usa": "Elenco dei manuali del sito. Per aggiungerne uno, copia un blocco dentro la sezione giusta e cambia i valori. Campi: id (nome breve, serve ai link dagli articoli e al nome del file di copertina: non cambiarlo una volta assegnato), titolo, materia (la riga piccola sopra il titolo), misura (la cifra mostrata sotto la scheda, es. '320 norme'; lasciala vuota se non c'è), copertina (il file dentro la cartella img/, es. 'img/penale.jpg'), link (pagina Amazon), stato ('disponibile' oppure 'in-arrivo'), descrizione (2 righe).",
   "sezioni": [
     {
       "nome": "Manuali normativi per materia",
@@ -12,7 +12,8 @@
           "misura": "320 norme",
           "link": "https://www.amazon.it/dp/B0H7NZXCMD",
           "stato": "disponibile",
-          "descrizione": "Il cuore di quasi ogni concorso pubblico: procedimento, provvedimento, accesso agli atti e giustizia amministrativa, in 320 schede tutte della stessa forma."
+          "descrizione": "Il cuore di quasi ogni concorso pubblico: procedimento, provvedimento, accesso agli atti e giustizia amministrativa, in 320 schede tutte della stessa forma.",
+          "copertina": "img/amministrativo.jpg"
         },
         {
           "id": "penale",
@@ -21,7 +22,8 @@
           "misura": "231 norme",
           "link": "https://www.amazon.it/dp/B0H7TF8SNB",
           "stato": "disponibile",
-          "descrizione": "Reato, pena, cause di giustificazione e delitti contro la pubblica amministrazione: 231 articoli del codice penale ridotti a scheda, con i rimandi che li tengono insieme."
+          "descrizione": "Reato, pena, cause di giustificazione e delitti contro la pubblica amministrazione: 231 articoli del codice penale ridotti a scheda, con i rimandi che li tengono insieme.",
+          "copertina": "img/penale.jpg"
         },
         {
           "id": "lavoro",
@@ -30,7 +32,8 @@
           "misura": "200 norme",
           "link": "https://www.amazon.it/dp/B0H7WQ4GR6",
           "stato": "disponibile",
-          "descrizione": "Contratto, licenziamento, tutele e pubblico impiego: 200 articoli con il testo vigente, la ratio in due righe e i termini che servono all'esame."
+          "descrizione": "Contratto, licenziamento, tutele e pubblico impiego: 200 articoli con il testo vigente, la ratio in due righe e i termini che servono all'esame.",
+          "copertina": "img/lavoro.jpg"
         },
         {
           "id": "tributario",
@@ -39,7 +42,8 @@
           "misura": "246 norme",
           "link": "https://www.amazon.it/dp/B0H8BJ8NWN",
           "stato": "disponibile",
-          "descrizione": "Dall'imposta sul reddito al processo tributario: 246 articoli ridotti a schede, per arrivare alla prova sapendo esattamente cosa dice ciascuno."
+          "descrizione": "Dall'imposta sul reddito al processo tributario: 246 articoli ridotti a schede, per arrivare alla prova sapendo esattamente cosa dice ciascuno.",
+          "copertina": "img/tributario.jpg"
         },
         {
           "id": "unione-europea",
@@ -48,16 +52,18 @@
           "misura": "200 norme",
           "link": "https://www.amazon.it/dp/B0H7RV7J4D",
           "stato": "disponibile",
-          "descrizione": "Trattati, atti, libertà fondamentali e rapporti fra norma europea e norma interna: 200 schede su una materia che ormai compare in quasi ogni bando."
+          "descrizione": "Trattati, atti, libertà fondamentali e rapporti fra norma europea e norma interna: 200 schede su una materia che ormai compare in quasi ogni bando.",
+          "copertina": "img/unione-europea.jpg"
         },
         {
           "id": "previdenza",
           "titolo": "Diritto della Previdenza e Legislazione Sociale",
-          "materia": "Le norme fondamentali",
-          "misura": "",
+          "materia": "Le 150 norme fondamentali",
+          "misura": "150 norme",
           "link": "https://www.amazon.it/dp/B0H87RKXLM",
           "stato": "disponibile",
-          "descrizione": "Contributi, prestazioni, vigilanza: la materia su cui i manuali generalisti dedicano meno pagine, con soglie, requisiti e percentuali sempre nello stesso posto."
+          "descrizione": "Contributi, prestazioni, vigilanza: la materia su cui i manuali generalisti dedicano meno pagine, con soglie, requisiti e percentuali sempre nello stesso posto.",
+          "copertina": "img/previdenza.jpg"
         }
       ]
     },
@@ -72,7 +78,8 @@
           "misura": "",
           "link": "https://www.amazon.it/dp/B0HC55MFPG",
           "stato": "disponibile",
-          "descrizione": "Per la prova scritta delle 1.695 assunzioni: tutte le materie del bando organizzate con il metodo a schede, senza pagine di riempimento."
+          "descrizione": "Per la prova scritta delle 1.695 assunzioni: tutte le materie del bando organizzate con il metodo a schede, senza pagine di riempimento.",
+          "copertina": "img/inps-1695.jpg"
         },
         {
           "id": "inps-499",
@@ -81,7 +88,8 @@
           "misura": "267 schede",
           "link": "https://www.amazon.it/dp/B0HGGGHZT5",
           "stato": "disponibile",
-          "descrizione": "Le 16 materie della prova in 267 schede, con prontuario operativo, testi normativi integrali e tre simulazioni complete."
+          "descrizione": "Le 16 materie della prova in 267 schede, con prontuario operativo, testi normativi integrali e tre simulazioni complete.",
+          "copertina": "img/inps-499.jpg"
         },
         {
           "id": "senato",
@@ -90,7 +98,8 @@
           "misura": "480 quesiti",
           "link": "https://www.amazon.it/dp/B0HF4VW53N",
           "stato": "disponibile",
-          "descrizione": "La preliminare è aperta ai laureati di qualsiasi disciplina: 480 quesiti commentati uno per uno e quattro simulazioni d'esame."
+          "descrizione": "La preliminare è aperta ai laureati di qualsiasi disciplina: 480 quesiti commentati uno per uno e quattro simulazioni d'esame.",
+          "copertina": "img/senato.jpg"
         },
         {
           "id": "vigili-del-fuoco",
@@ -99,7 +108,8 @@
           "misura": "",
           "link": "https://www.amazon.it/dp/B0HCWF31FT",
           "stato": "disponibile",
-          "descrizione": "La teoria spiegata da zero per chi parte senza basi giuridiche, le trappole ricorrenti dei quiz e la preparazione alle prove motorie."
+          "descrizione": "La teoria spiegata da zero per chi parte senza basi giuridiche, le trappole ricorrenti dei quiz e la preparazione alle prove motorie.",
+          "copertina": "img/vigili-del-fuoco.jpg"
         },
         {
           "id": "camera-commercio-roma",
@@ -108,7 +118,8 @@
           "misura": "",
           "link": "https://www.amazon.it/dp/B0H8KCPCPQ",
           "stato": "disponibile",
-          "descrizione": "Le materie del bando raccolte e ordinate in schede, per prepararsi su quello che serve invece di disperdersi su un manuale generalista."
+          "descrizione": "Le materie del bando raccolte e ordinate in schede, per prepararsi su quello che serve invece di disperdersi su un manuale generalista.",
+          "copertina": "img/camera-commercio-roma.jpg"
         }
       ]
     },
@@ -123,7 +134,8 @@
           "misura": "1.000 quesiti",
           "link": "https://www.amazon.it/dp/B0HHFW2FFW",
           "stato": "disponibile",
-          "descrizione": "Mille quesiti nel formato esatto della prova, con la risposta spiegata passo per passo, e dodici simulazioni cronometrate da 50 minuti."
+          "descrizione": "Mille quesiti nel formato esatto della prova, con la risposta spiegata passo per passo, e dodici simulazioni cronometrate da 50 minuti.",
+          "copertina": "img/semestre-filtro-fisica.jpg"
         }
       ]
     }

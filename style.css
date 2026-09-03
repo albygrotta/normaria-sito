@@ -177,9 +177,10 @@ section { padding: 64px 0; }
 .catalog-sections > .catalog + .catalog-group { margin-top: 56px; }
 
 /* intestazione di una sezione del catalogo */
-.catalog-group { border-top: 1px solid var(--line); padding-top: 18px; margin-bottom: 24px; }
+.catalog-group { border-top: 2px solid var(--navy); padding-top: 20px; margin-bottom: 26px; }
 .catalog-group .group-title {
-  font-family: "Spectral", serif; font-size: 22px; font-weight: 700; margin: 0 0 4px;
+  font-family: "Spectral", serif; font-size: 28px; font-weight: 700;
+  letter-spacing: -0.01em; margin: 0 0 6px;
 }
 .catalog-group p {
   font-family: "IBM Plex Sans", sans-serif; font-size: 14.5px;
@@ -187,8 +188,23 @@ section { padding: 64px 0; }
 }
 .book {
   background: #fff; border: 1px solid var(--line); border-radius: 4px;
-  padding: 28px 26px; display: flex; flex-direction: column;
+  display: flex; flex-direction: column; overflow: hidden;
 }
+
+/* la copertina: l'oggetto che stai comprando, in evidenza */
+.book-cover {
+  display: flex; align-items: center; justify-content: center;
+  height: 360px; padding: 26px 0;
+  background: var(--navy); border-bottom: 1px solid var(--line);
+}
+.book-cover img {
+  max-height: 100%; max-width: 82%; width: auto; display: block;
+  box-shadow: 0 0 0 1px rgba(245, 240, 230, 0.34);
+  transition: box-shadow .15s, transform .15s;
+}
+.book-cover:hover img { box-shadow: 0 0 0 2px var(--red); transform: translateY(-3px); }
+.book-body { padding: 24px 26px 26px; display: flex; flex-direction: column; flex: 1; }
+
 .book .tag {
   align-self: flex-start;
   font-family: "IBM Plex Mono", monospace; font-size: 10px;
