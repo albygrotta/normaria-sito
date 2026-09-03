@@ -1,37 +1,119 @@
 {
-  "_come_si_usa": "Questo è l'elenco dei manuali. Per aggiungerne uno basta copiare un blocco qui sotto e cambiare i valori. Campi: titolo, materia, norme (numero di articoli), link (pagina Amazon), stato ('disponibile' oppure 'in-arrivo'), descrizione (2 righe).",
-  "manuali": [
+  "_come_si_usa": "Elenco dei manuali del sito. Per aggiungerne uno, copia un blocco dentro la sezione giusta e cambia i valori. Campi: titolo, materia, misura (la cifra mostrata sotto la scheda, es. '320 norme'; lasciala vuota se non c'è), link (pagina Amazon), stato ('disponibile' oppure 'in-arrivo'), descrizione (2 righe).",
+  "sezioni": [
     {
-      "titolo": "Manuale Normativo di Diritto Amministrativo",
-      "materia": "Diritto amministrativo",
-      "norme": 320,
-      "link": "https://amzn.eu/d/0hxWQOar",
-      "stato": "disponibile",
-      "descrizione": "Il cuore di quasi ogni concorso pubblico: procedimento, provvedimento, accesso agli atti e giustizia amministrativa, in 320 schede tutte della stessa forma."
+      "nome": "Manuali normativi per materia",
+      "sommario": "La collana. Ogni articolo ridotto alla stessa scheda a quattro blocchi.",
+      "manuali": [
+        {
+          "titolo": "Diritto Amministrativo",
+          "materia": "Le 320 norme fondamentali",
+          "misura": "320 norme",
+          "link": "https://www.amazon.it/dp/B0H7NZXCMD",
+          "stato": "disponibile",
+          "descrizione": "Il cuore di quasi ogni concorso pubblico: procedimento, provvedimento, accesso agli atti e giustizia amministrativa, in 320 schede tutte della stessa forma."
+        },
+        {
+          "titolo": "Diritto Penale",
+          "materia": "Le 231 norme fondamentali",
+          "misura": "231 norme",
+          "link": "https://www.amazon.it/dp/B0H7TF8SNB",
+          "stato": "disponibile",
+          "descrizione": "Reato, pena, cause di giustificazione e delitti contro la pubblica amministrazione: 231 articoli del codice penale ridotti a scheda, con i rimandi che li tengono insieme."
+        },
+        {
+          "titolo": "Diritto del Lavoro",
+          "materia": "Le 200 norme fondamentali",
+          "misura": "200 norme",
+          "link": "https://www.amazon.it/dp/B0H7WQ4GR6",
+          "stato": "disponibile",
+          "descrizione": "Contratto, licenziamento, tutele e pubblico impiego: 200 articoli con il testo vigente, la ratio in due righe e i termini che servono all'esame."
+        },
+        {
+          "titolo": "Diritto Tributario",
+          "materia": "Le 246 norme fondamentali",
+          "misura": "246 norme",
+          "link": "https://www.amazon.it/dp/B0H8BJ8NWN",
+          "stato": "disponibile",
+          "descrizione": "Dall'imposta sul reddito al processo tributario: 246 articoli ridotti a schede, per arrivare alla prova sapendo esattamente cosa dice ciascuno."
+        },
+        {
+          "titolo": "Diritto dell'Unione Europea",
+          "materia": "Le 200 norme fondamentali",
+          "misura": "200 norme",
+          "link": "https://www.amazon.it/dp/B0H7RV7J4D",
+          "stato": "disponibile",
+          "descrizione": "Trattati, atti, libertà fondamentali e rapporti fra norma europea e norma interna: 200 schede su una materia che ormai compare in quasi ogni bando."
+        },
+        {
+          "titolo": "Diritto della Previdenza e Legislazione Sociale",
+          "materia": "Le norme fondamentali",
+          "misura": "",
+          "link": "https://www.amazon.it/dp/B0H87RKXLM",
+          "stato": "disponibile",
+          "descrizione": "Contributi, prestazioni, vigilanza: la materia su cui i manuali generalisti dedicano meno pagine, con soglie, requisiti e percentuali sempre nello stesso posto."
+        }
+      ]
     },
     {
-      "titolo": "Manuale Normativo di Diritto Penale",
-      "materia": "Diritto penale",
-      "norme": 231,
-      "link": "https://amzn.eu/d/032haHUc",
-      "stato": "disponibile",
-      "descrizione": "Reato, pena, cause di giustificazione e delitti contro la pubblica amministrazione: 231 articoli del codice penale ridotti a scheda, con i rimandi che li tengono insieme."
+      "nome": "Manuali per concorso",
+      "sommario": "Un bando alla volta: le materie richieste, nella forma in cui vengono chieste.",
+      "manuali": [
+        {
+          "titolo": "Concorso INPS 2026 — 1.695 Funzionari PECS",
+          "materia": "Manuale normativo",
+          "misura": "",
+          "link": "https://www.amazon.it/dp/B0HC55MFPG",
+          "stato": "disponibile",
+          "descrizione": "Per la prova scritta delle 1.695 assunzioni: tutte le materie del bando organizzate con il metodo a schede, senza pagine di riempimento."
+        },
+        {
+          "titolo": "Concorso INPS — 499 Assistenti Informatici",
+          "materia": "Prova scritta unica",
+          "misura": "267 schede",
+          "link": "https://www.amazon.it/dp/B0HGGGHZT5",
+          "stato": "disponibile",
+          "descrizione": "Le 16 materie della prova in 267 schede, con prontuario operativo, testi normativi integrali e tre simulazioni complete."
+        },
+        {
+          "titolo": "Concorso Senato 2026 — 30 Segretari parlamentari",
+          "materia": "Prova preliminare",
+          "misura": "480 quesiti",
+          "link": "https://www.amazon.it/dp/B0HF4VW53N",
+          "stato": "disponibile",
+          "descrizione": "La preliminare è aperta ai laureati di qualsiasi disciplina: 480 quesiti commentati uno per uno e quattro simulazioni d'esame."
+        },
+        {
+          "titolo": "Concorso Vigili del Fuoco 2026 — 400 posti",
+          "materia": "Prova preselettiva",
+          "misura": "",
+          "link": "https://www.amazon.it/dp/B0HCWF31FT",
+          "stato": "disponibile",
+          "descrizione": "La teoria spiegata da zero per chi parte senza basi giuridiche, le trappole ricorrenti dei quiz e la preparazione alle prove motorie."
+        },
+        {
+          "titolo": "Concorso Camera di Commercio di Roma 2026 — 12 Funzionari",
+          "materia": "Funzionari amministrativi",
+          "misura": "",
+          "link": "https://www.amazon.it/dp/B0H8KCPCPQ",
+          "stato": "disponibile",
+          "descrizione": "Le materie del bando raccolte e ordinate in schede, per prepararsi su quello che serve invece di disperdersi su un manuale generalista."
+        }
+      ]
     },
     {
-      "titolo": "Manuale Normativo di Diritto del Lavoro",
-      "materia": "Diritto del lavoro",
-      "norme": 200,
-      "link": "https://amzn.eu/d/0hiJAzJZ",
-      "stato": "disponibile",
-      "descrizione": "Contratto, licenziamento, tutele e pubblico impiego: 200 articoli con il testo vigente, la ratio in due righe e i termini che servono all'esame."
-    },
-    {
-      "titolo": "Manuale Normativo di Diritto Tributario",
-      "materia": "Diritto tributario",
-      "norme": 246,
-      "link": "https://amzn.eu/d/04CzKvdf",
-      "stato": "disponibile",
-      "descrizione": "Dall'imposta sul reddito al processo tributario: 246 articoli ridotti a schede, per arrivare alla prova sapendo esattamente cosa dice ciascuno."
+      "nome": "Test di ammissione",
+      "sommario": "Stesso metodo, applicato alle prove d'ingresso all'università.",
+      "manuali": [
+        {
+          "titolo": "Fisica per il Semestre Filtro 2026/2027",
+          "materia": "Eserciziario",
+          "misura": "1.000 quesiti",
+          "link": "https://www.amazon.it/dp/B0HHFW2FFW",
+          "stato": "disponibile",
+          "descrizione": "Mille quesiti nel formato esatto della prova, con la risposta spiegata passo per passo, e dodici simulazioni cronometrate da 50 minuti."
+        }
+      ]
     }
   ]
 }
