@@ -154,7 +154,8 @@
       <h2>Vuoi vedere com'è fatta una scheda?</h2>
       <p>Quindici pagine dal Manuale Normativo di Diritto Amministrativo: come si legge
          una scheda, l'indice completo e le prime venti norme. Te le mandiamo per email.</p>
-      <form class="signup" id="modulo-articolo" method="POST" action="https://7afa150f.sibforms.com/serve/MUIFAHGS7Q22mxHcMhBnefBc_lxVtG-KWymnZ3qHRgGFSqrb_IDItqDXUhF3xop4CYa9eYUxTJO0u9YIu_xRLFPcaR2IDti2WsVdOMSOlKAlT50J0PnkDCa3I6eEmhJfBuyVt1vUTr_Mc-qdHqGu-cgLGZsaVdPWHoujCMlyOINI-LgEJcu0CdoF5Vr4_cUEdpmVC323v6HRfTfTdw">
+      <form class="signup" id="modulo-articolo" method="POST" action="https://7afa150f.sibforms.com/serve/MUIFAHGS7Q22mxHcMhBnefBc_lxVtG-KWymnZ3qHRgGFSqrb_IDItqDXUhF3xop4CYa9eYUxTJO0u9YIu_xRLFPcaR2IDti2WsVdOMSOlKAlT50J0PnkDCa3I6eEmhJfBuyVt1vUTr_Mc-qdHqGu-cgLGZsaVdPWHoujCMlyOINI-LgEJcu0CdoF5Vr4_cUEdpmVC323v6HRfTfTdw"
+            target="brevo-modulo-articolo" accept-charset="utf-8">
         <div class="signup-riga">
           <input type="email" name="EMAIL" required autocomplete="email"
                  placeholder="La tua email" aria-label="Il tuo indirizzo email">
@@ -173,6 +174,7 @@
         </label>
         <p class="esito" role="status" hidden></p>
       </form>
+      <iframe name="brevo-modulo-articolo" class="trappola" title="invio del modulo" aria-hidden="true"></iframe>
     </aside>
   </main>
 
@@ -228,28 +230,25 @@
     })();
   </script>
   <script>
-    // manda il modulo senza far uscire il visitatore dal sito
+    // l'invio finisce nel riquadro nascosto: mostriamo qui il messaggio
     document.querySelectorAll('form.signup').forEach(function (f) {
-      f.addEventListener('submit', function (e) {
-        e.preventDefault();
-        var esito = f.querySelector('.esito');
-        var bottone = f.querySelector('button[type=submit]');
-        bottone.disabled = true;
-        fetch(f.action, { method: 'POST', mode: 'no-cors', body: new FormData(f) })
-          .then(function () {
-            f.querySelector('.signup-riga').hidden = true;
-            f.querySelector('.consenso').hidden = true;
-            esito.className = 'esito riuscito';
-            esito.textContent = 'Fatto. Ti abbiamo mandato una email con il link per scaricare l’estratto: controlla la posta, e anche la cartella spam se non la vedi.';
-            esito.hidden = false;
-          })
-          .catch(function () {
-            bottone.disabled = false;
-            esito.className = 'esito fallito';
-            esito.textContent = 'Non siamo riusciti a registrare l’iscrizione. Controlla la connessione e riprova.';
-            esito.hidden = false;
-          });
+      var inviato = false;
+      var telaio = document.getElementsByName(f.target)[0];
+      f.addEventListener('submit', function () {
+        inviato = true;
+        f.querySelector('button[type=submit]').disabled = true;
       });
+      if (telaio) {
+        telaio.addEventListener('load', function () {
+          if (!inviato) return;
+          var esito = f.querySelector('.esito');
+          f.querySelector('.signup-riga').hidden = true;
+          f.querySelector('.consenso').hidden = true;
+          esito.className = 'esito riuscito';
+          esito.textContent = 'Fatto. Ti abbiamo mandato una email con il link per scaricare l’estratto: controlla la posta, e anche la cartella spam se non la vedi.';
+          esito.hidden = false;
+        });
+      }
     });
   </script>
 </body>
