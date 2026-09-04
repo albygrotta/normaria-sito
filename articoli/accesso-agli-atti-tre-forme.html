@@ -118,6 +118,32 @@
       </ul>
       <p class="rimandi-piu"><a href="../index.html#catalogo">Vedi tutto il catalogo</a></p>
     </aside>
+
+    <aside class="invito">
+      <p class="eyebrow">Estratto gratuito</p>
+      <h2>Vuoi vedere com'è fatta una scheda?</h2>
+      <p>Quindici pagine dal Manuale Normativo di Diritto Amministrativo: come si legge
+         una scheda, l'indice completo e le prime venti norme. Te le mandiamo per email.</p>
+      <form class="signup" id="modulo-articolo" method="POST" action="https://7afa150f.sibforms.com/serve/MUIFAHGS7Q22mxHcMhBnefBc_lxVtG-KWymnZ3qHRgGFSqrb_IDItqDXUhF3xop4CYa9eYUxTJO0u9YIu_xRLFPcaR2IDti2WsVdOMSOlKAlT50J0PnkDCa3I6eEmhJfBuyVt1vUTr_Mc-qdHqGu-cgLGZsaVdPWHoujCMlyOINI-LgEJcu0CdoF5Vr4_cUEdpmVC323v6HRfTfTdw">
+        <div class="signup-riga">
+          <input type="email" name="EMAIL" required autocomplete="email"
+                 placeholder="La tua email" aria-label="Il tuo indirizzo email">
+          <button type="submit" class="btn btn-light">Ricevi l'estratto</button>
+        </div>
+        <!-- campo trappola per i robot: resta vuoto -->
+        <input type="text" name="email_address_check" value="" tabindex="-1"
+               autocomplete="off" aria-hidden="true" class="trappola">
+        <input type="hidden" name="locale" value="it">
+        <input type="hidden" name="html_type" value="simple">
+        <label class="consenso">
+          <input type="checkbox" required name="consenso">
+          <span>Acconsento a ricevere l'estratto e a essere informato sui nuovi manuali.
+          Ho letto l'<a href="../privacy.html">informativa sulla privacy</a> e so che
+          posso disiscrivermi in qualsiasi momento.</span>
+        </label>
+        <p class="esito" role="status" hidden></p>
+      </form>
+    </aside>
   </main>
 
   <footer class="site-footer">
@@ -170,6 +196,31 @@
           b.setAttribute('aria-expanded', 'false'); }
       });
     })();
+  </script>
+  <script>
+    // manda il modulo senza far uscire il visitatore dal sito
+    document.querySelectorAll('form.signup').forEach(function (f) {
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var esito = f.querySelector('.esito');
+        var bottone = f.querySelector('button[type=submit]');
+        bottone.disabled = true;
+        fetch(f.action, { method: 'POST', mode: 'no-cors', body: new FormData(f) })
+          .then(function () {
+            f.querySelector('.signup-riga').hidden = true;
+            f.querySelector('.consenso').hidden = true;
+            esito.className = 'esito riuscito';
+            esito.textContent = 'Fatto. Ti abbiamo mandato una email con il link per scaricare l’estratto: controlla la posta, e anche la cartella spam se non la vedi.';
+            esito.hidden = false;
+          })
+          .catch(function () {
+            bottone.disabled = false;
+            esito.className = 'esito fallito';
+            esito.textContent = 'Non siamo riusciti a registrare l’iscrizione. Controlla la connessione e riprova.';
+            esito.hidden = false;
+          });
+      });
+    });
   </script>
 </body>
 </html>
