@@ -40,19 +40,22 @@
 </head>
 <body>
 
+  <a class="salta" href="#contenuto">Vai al contenuto</a>
   <header class="site-header">
     <div class="wrap">
       <a href="../index.html" class="brand">Normaria<small>Edizioni</small></a>
-      <nav class="nav">
-        <a href="../index.html#metodo">Il metodo</a>
-        <a href="../index.html#catalogo">Catalogo</a>
-        <a href="../articoli.html">Articoli</a>
-        <a href="../index.html#estratto">Estratto gratuito</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu"
+              aria-label="Apri il menu"><span></span><span></span><span></span></button>
+      <nav class="nav" id="menu">
+          <a href="../metodo.html">Il metodo</a>
+          <a href="../index.html#catalogo">Catalogo</a>
+          <a href="../articoli.html" class="attiva">Articoli</a>
+          <a href="../index.html#estratto">Estratto gratuito</a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap doc articolo">
+  <main class="wrap doc articolo" id="contenuto">
     <p class="briciole"><a href="../articoli.html">Articoli</a> · Concorsi in corso</p>
     <h1>Concorso Coesione 2026, 882 posti al Sud: chi può partecipare e com&#x27;è fatta la prova</h1>
     <p class="updated">3 settembre 2026 · 6 minuti di lettura</p>
@@ -157,7 +160,7 @@
         <div>
           <h4>Naviga</h4>
           <ul>
-            <li><a href="../index.html#metodo">Il metodo</a></li>
+            <li><a href="../metodo.html">Il metodo</a></li>
             <li><a href="../index.html#catalogo">Catalogo</a></li>
             <li><a href="../articoli.html">Articoli</a></li>
             <li><a href="../index.html#estratto">Estratto gratuito</a></li>
@@ -180,5 +183,23 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // apre e chiude il menu sul telefono
+    (function () {
+      var b = document.querySelector('.nav-toggle');
+      var m = document.getElementById('menu');
+      if (!b || !m) return;
+      b.addEventListener('click', function () {
+        var aperto = m.classList.toggle('aperto');
+        b.setAttribute('aria-expanded', aperto);
+        b.setAttribute('aria-label', aperto ? 'Chiudi il menu' : 'Apri il menu');
+      });
+      m.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') { m.classList.remove('aperto');
+          b.setAttribute('aria-expanded', 'false'); }
+      });
+    })();
+  </script>
 </body>
 </html>
