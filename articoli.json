@@ -8,11 +8,48 @@
       "sommario": "Domande entro il 23 settembre, una sola prova scritta da 40 quesiti in 60 minuti e una soglia al 70%. Tutti i numeri del bando, e cosa significano davvero per chi si prepara.",
       "data": "2026-09-03",
       "aggiornato": "2026-09-03",
-      "manuali": ["amministrativo", "unione-europea"],
+      "manuali": [
+        "amministrativo",
+        "unione-europea"
+      ],
       "fonti": [
-        {"testo": "Concorso RIPAM Coesione 2026: bando per 882 Specialisti tecnici — LeggiOggi", "url": "https://www.leggioggi.it/concorso-ripam-coesione-2026/"},
-        {"testo": "Concorso RIPAM Coesione Sud 2026: bando, requisiti, domanda — Ticonsiglio", "url": "https://www.ticonsiglio.com/concorso-ripam-coesione-sud-2026-specialisti-tecnici-bando/"},
-        {"testo": "Portale inPA — presentazione delle domande", "url": "https://www.inpa.gov.it/"}
+        {
+          "testo": "Concorso RIPAM Coesione 2026: bando per 882 Specialisti tecnici — LeggiOggi",
+          "url": "https://www.leggioggi.it/concorso-ripam-coesione-2026/"
+        },
+        {
+          "testo": "Concorso RIPAM Coesione Sud 2026: bando, requisiti, domanda — Ticonsiglio",
+          "url": "https://www.ticonsiglio.com/concorso-ripam-coesione-sud-2026-specialisti-tecnici-bando/"
+        },
+        {
+          "testo": "Portale inPA — presentazione delle domande",
+          "url": "https://www.inpa.gov.it/"
+        }
+      ]
+    },
+    {
+      "slug": "accesso-agli-atti-tre-forme",
+      "titolo": "Accesso agli atti: le tre forme, e come non confonderle all'esame",
+      "occhiello": "Il diritto spiegato",
+      "sommario": "Accesso documentale, civico semplice e civico generalizzato: tre porte diverse, due leggi diverse, uno degli errori più frequenti nei quesiti. Con la tabella di confronto e le tre trappole ricorrenti.",
+      "data": "2026-09-04",
+      "aggiornato": "2026-09-04",
+      "manuali": [
+        "amministrativo"
+      ],
+      "fonti": [
+        {
+          "testo": "Legge 7 agosto 1990, n. 241 — Normattiva",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-08-07;241"
+        },
+        {
+          "testo": "D.lgs. 14 marzo 2013, n. 33 — Normattiva",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2013-03-14;33"
+        },
+        {
+          "testo": "Differenze fra accesso civico semplice, generalizzato e documentale — Università di Palermo",
+          "url": "https://www.unipa.it/Differenze-fra-accesso-civico-semplice-accesso-civico-generalizzato-FOIA-e-accesso-documentale/"
+        }
       ]
     }
   ]

@@ -27,6 +27,12 @@
   "blogPost": [
     {
       "@type": "BlogPosting",
+      "headline": "Accesso agli atti: le tre forme, e come non confonderle all'esame",
+      "datePublished": "2026-09-04",
+      "url": "https://normaria.net/articoli/accesso-agli-atti-tre-forme.html"
+    },
+    {
+      "@type": "BlogPosting",
       "headline": "Concorso Coesione 2026, 882 posti al Sud: chi può partecipare e com'è fatta la prova",
       "datePublished": "2026-09-03",
       "url": "https://normaria.net/articoli/concorso-coesione-2026-882-posti.html"
@@ -37,18 +43,22 @@
 </head>
 <body>
 
+  <a class="salta" href="#contenuto">Vai al contenuto</a>
   <header class="site-header">
     <div class="wrap">
       <a href="index.html" class="brand">Normaria<small>Edizioni</small></a>
-      <nav class="nav">
-        <a href="index.html#metodo">Il metodo</a>
-        <a href="index.html#catalogo">Catalogo</a>
-        <a href="articoli.html">Articoli</a>
-        <a href="index.html#estratto">Estratto gratuito</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu"
+              aria-label="Apri il menu"><span></span><span></span><span></span></button>
+      <nav class="nav" id="menu">
+          <a href="metodo.html">Il metodo</a>
+          <a href="index.html#catalogo">Catalogo</a>
+          <a href="articoli.html" class="attiva">Articoli</a>
+          <a href="index.html#estratto">Estratto gratuito</a>
       </nav>
     </div>
   </header>
 
+  <main id="contenuto">
   <section class="hero hero-stretto">
     <div class="wrap">
       <div>
@@ -63,6 +73,13 @@
     <div class="wrap">
       <div class="posts">
         <article class="post">
+          <p class="collana">Il diritto spiegato · 4 settembre 2026</p>
+          <h2><a href="articoli/accesso-agli-atti-tre-forme.html">Accesso agli atti: le tre forme, e come non confonderle all&#x27;esame</a></h2>
+          <p>Accesso documentale, civico semplice e civico generalizzato: tre porte diverse, due leggi diverse, uno degli errori più frequenti nei quesiti. Con la tabella di confronto e le tre trappole ricorrenti.</p>
+          <p class="post-piu"><a href="articoli/accesso-agli-atti-tre-forme.html">Leggi l'articolo</a></p>
+        </article>
+
+        <article class="post">
           <p class="collana">Concorsi in corso · 3 settembre 2026</p>
           <h2><a href="articoli/concorso-coesione-2026-882-posti.html">Concorso Coesione 2026, 882 posti al Sud: chi può partecipare e com&#x27;è fatta la prova</a></h2>
           <p>Domande entro il 23 settembre, una sola prova scritta da 40 quesiti in 60 minuti e una soglia al 70%. Tutti i numeri del bando, e cosa significano davvero per chi si prepara.</p>
@@ -71,6 +88,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <footer class="site-footer">
     <div class="wrap">
@@ -82,7 +100,7 @@
         <div>
           <h4>Naviga</h4>
           <ul>
-            <li><a href="index.html#metodo">Il metodo</a></li>
+            <li><a href="metodo.html">Il metodo</a></li>
             <li><a href="index.html#catalogo">Catalogo</a></li>
             <li><a href="articoli.html">Articoli</a></li>
             <li><a href="index.html#estratto">Estratto gratuito</a></li>
@@ -105,5 +123,23 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // apre e chiude il menu sul telefono
+    (function () {
+      var b = document.querySelector('.nav-toggle');
+      var m = document.getElementById('menu');
+      if (!b || !m) return;
+      b.addEventListener('click', function () {
+        var aperto = m.classList.toggle('aperto');
+        b.setAttribute('aria-expanded', aperto);
+        b.setAttribute('aria-label', aperto ? 'Chiudi il menu' : 'Apri il menu');
+      });
+      m.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') { m.classList.remove('aperto');
+          b.setAttribute('aria-expanded', 'false'); }
+      });
+    })();
+  </script>
 </body>
 </html>

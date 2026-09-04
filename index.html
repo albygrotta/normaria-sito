@@ -263,19 +263,25 @@
 <body>
 
   <!-- ===================== HEADER ===================== -->
+  <!-- HEADER:INIZIO -->
+  <a class="salta" href="#contenuto">Vai al contenuto</a>
   <header class="site-header">
     <div class="wrap">
       <a href="index.html" class="brand">Normaria<small>Edizioni</small></a>
-      <nav class="nav">
-        <a href="#metodo">Il metodo</a>
-        <a href="#catalogo">Catalogo</a>
-        <a href="articoli.html">Articoli</a>
-        <a href="#estratto">Estratto gratuito</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu"
+              aria-label="Apri il menu"><span></span><span></span><span></span></button>
+      <nav class="nav" id="menu">
+          <a href="metodo.html">Il metodo</a>
+          <a href="index.html#catalogo">Catalogo</a>
+          <a href="articoli.html">Articoli</a>
+          <a href="index.html#estratto">Estratto gratuito</a>
       </nav>
     </div>
   </header>
+<!-- HEADER:FINE -->
 
   <!-- ===================== HERO ===================== -->
+  <main id="contenuto">
   <section class="hero">
     <div class="wrap">
       <div>
@@ -284,7 +290,13 @@
         <p class="lead">Manuali di studio per i concorsi pubblici italiani, costruiti articolo per articolo. Non un testo da leggere: uno schema da fissare.</p>
         <div class="cta-row">
           <a href="#catalogo" class="btn btn-primary">Vedi il catalogo</a>
-          <a href="#estratto" class="btn btn-ghost">Scarica un estratto</a>
+          <a href="metodo.html" class="btn btn-ghost">Come funziona il metodo</a>
+        </div>
+
+        <div class="cifre">
+          <div><p class="n">12</p><p class="e">manuali<br>in catalogo</p></div>
+          <div><p class="n">1.347</p><p class="e">norme ridotte a scheda<br>nella collana per materia</p></div>
+          <div><p class="n">4</p><p class="e">blocchi, sempre gli stessi,<br>su ogni norma</p></div>
         </div>
       </div>
 
@@ -346,6 +358,7 @@
           <p>Le parole che il commissario vuole sentire, isolate e pronte per il ripasso rapido.</p>
         </div>
       </div>
+      <p class="piu-oltre"><a href="metodo.html">Il metodo spiegato per esteso, con un esempio svolto</a></p>
     </div>
   </section>
 
@@ -613,6 +626,9 @@
   </section>
 
   <!-- ===================== FOOTER ===================== -->
+  </main>
+
+  <!-- FOOTER:INIZIO -->
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-grid">
@@ -623,10 +639,10 @@
         <div>
           <h4>Naviga</h4>
           <ul>
-            <li><a href="#metodo">Il metodo</a></li>
-            <li><a href="#catalogo">Catalogo</a></li>
+            <li><a href="metodo.html">Il metodo</a></li>
+            <li><a href="index.html#catalogo">Catalogo</a></li>
             <li><a href="articoli.html">Articoli</a></li>
-            <li><a href="#estratto">Estratto gratuito</a></li>
+            <li><a href="index.html#estratto">Estratto gratuito</a></li>
           </ul>
         </div>
         <div>
@@ -634,26 +650,36 @@
           <ul>
             <li><a href="privacy.html">Privacy policy</a></li>
             <li><a href="cookie.html">Cookie policy</a></li>
-            <!-- COMPILA: link reale alla pagina autore Amazon -->
-            <li><a href="#AMAZON-AUTORE-DA-INSERIRE">Pagina autore Amazon</a></li>
           </ul>
         </div>
       </div>
-
-      <!-- COMPILA i campi contrassegnati. La P.IVA sul sito è obbligatoria in Italia. -->
       <div class="legal">
         Normaria Edizioni · <span class="todo">[Ragione sociale / Titolare da inserire]</span> ·
         P. IVA <span class="todo">[da inserire]</span> ·
         Sede: <span class="todo">Grottaferrata (RM) — indirizzo da inserire</span><br>
         Contatti: <span class="todo">[email da inserire]</span> ·
-        © <span id="year">2026</span> Normaria Edizioni. Tutti i diritti riservati.
+        © 2026 Normaria Edizioni. Tutti i diritti riservati.
       </div>
     </div>
   </footer>
 
   <script>
-    // Aggiorna l'anno automaticamente
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // apre e chiude il menu sul telefono
+    (function () {
+      var b = document.querySelector('.nav-toggle');
+      var m = document.getElementById('menu');
+      if (!b || !m) return;
+      b.addEventListener('click', function () {
+        var aperto = m.classList.toggle('aperto');
+        b.setAttribute('aria-expanded', aperto);
+        b.setAttribute('aria-label', aperto ? 'Chiudi il menu' : 'Apri il menu');
+      });
+      m.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') { m.classList.remove('aperto');
+          b.setAttribute('aria-expanded', 'false'); }
+      });
+    })();
   </script>
+<!-- FOOTER:FINE -->
 </body>
 </html>

@@ -92,7 +92,23 @@ a:hover { text-decoration: underline; }
   padding-bottom: 4px; border-bottom: 2px solid transparent;
 }
 .nav a:hover { border-bottom-color: var(--red); text-decoration: none; }
-.nav-toggle { display: none; }
+.nav a.attiva { border-bottom-color: var(--red); color: var(--red); }
+
+/* il pulsante del menu, visibile solo sul telefono */
+.nav-toggle {
+  display: none; width: 42px; height: 38px; padding: 9px 8px;
+  background: none; border: 1px solid var(--line); border-radius: 2px; cursor: pointer;
+  flex-direction: column; justify-content: space-between;
+}
+.nav-toggle span { display: block; height: 2px; background: var(--navy); border-radius: 1px; }
+
+/* salta al contenuto: si vede solo con la tastiera */
+.salta {
+  position: absolute; left: -9999px; top: 8px; z-index: 60;
+  background: var(--navy); color: var(--cream); padding: 10px 16px; border-radius: 2px;
+  font-family: "IBM Plex Sans", sans-serif; font-size: 14px;
+}
+.salta:focus { left: 16px; text-decoration: none; }
 
 /* =========================================================
    Buttons
@@ -121,6 +137,28 @@ a:hover { text-decoration: underline; }
 .hero .lead { font-size: 20px; color: var(--grey); max-width: 32ch; }
 .hero .cta-row { margin-top: 28px; display: flex; gap: 14px; flex-wrap: wrap; }
 
+/* i tre numeri sotto l'apertura: dicono la misura della cosa */
+.cifre { display: flex; gap: 40px; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+.cifre div { min-width: 0; }
+.cifre .n {
+  font-family: "IBM Plex Mono", monospace; font-size: 26px; font-weight: 500;
+  color: var(--navy); line-height: 1; margin-bottom: 7px;
+}
+.cifre .e {
+  font-family: "IBM Plex Sans", sans-serif; font-size: 12.5px; line-height: 1.35;
+  letter-spacing: 0.04em; color: var(--grey); margin: 0;
+}
+@media (max-width: 520px) { .cifre { gap: 26px; } .cifre .n { font-size: 22px; } }
+
+/* richiamo in fondo a una sezione */
+.piu-oltre { margin-top: 34px; }
+.piu-oltre a {
+  font-family: "IBM Plex Mono", monospace; font-size: 12px;
+  letter-spacing: 0.14em; text-transform: uppercase; color: #C98A85;
+  border-bottom: 1px solid rgba(201,138,133,.45); padding-bottom: 3px;
+}
+.piu-oltre a:hover { color: var(--cream); border-bottom-color: var(--cream); text-decoration: none; }
+
 /* la scheda a quattro blocchi */
 .scheda {
   background: var(--navy); color: var(--cream);
@@ -148,6 +186,24 @@ a:hover { text-decoration: underline; }
   font-family: "IBM Plex Sans", sans-serif; font-size: 13.5px; line-height: 1.5;
   color: rgba(245,240,230,0.86);
 }
+
+/* la scheda a quattro blocchi, versione larga dentro il testo */
+.scheda-larga { max-width: 760px; margin: 32px 0 36px; }
+.scheda-larga .scheda-block .b-body { font-size: 14.5px; }
+
+/* pagina di testo un po' più larga (il metodo) */
+.doc-wide { padding: 8px 0 72px; }
+.doc-wide .wrap { max-width: 820px; }
+.doc-wide h2 { font-size: 28px; margin-top: 46px; }
+.doc-wide h3 { font-size: 20px; margin-top: 32px; }
+.doc-wide p, .doc-wide li { font-size: 18.5px; line-height: 1.68; }
+.doc-wide ul, .doc-wide ol { padding-left: 22px; }
+.doc-wide li { margin-bottom: 12px; }
+.doc-wide .nota {
+  border-left: 3px solid var(--red); padding: 2px 0 2px 18px;
+  margin: 28px 0; color: var(--grey);
+}
+.doc-wide .rimandi { margin-top: 56px; }
 
 /* =========================================================
    Sezioni generiche
@@ -289,7 +345,23 @@ section { padding: 64px 0; }
   .steps { grid-template-columns: 1fr 1fr; gap: 24px; }
   .catalog { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-  .nav { display: none; }
+
+  .nav-toggle { display: flex; }
+  .nav {
+    display: none; position: absolute; left: 0; right: 0; top: 68px;
+    background: var(--cream); border-bottom: 1px solid var(--line);
+    padding: 8px 24px 18px; font-size: 17px;
+  }
+  .nav.aperto { display: block; }
+  .nav a {
+    display: block; margin: 0; padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .nav a:last-child { border-bottom: none; }
+  .nav a.attiva { color: var(--red); }
+  .site-header .wrap { position: relative; }
+  .scheda-grid { grid-template-columns: 1fr; }
+  .scheda-block:nth-child(even) { border-left: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -305,6 +377,7 @@ section { padding: 64px 0; }
 
 /* hero più corto, senza la scheda a fianco */
 .hero-stretto { padding: 64px 0 8px; }
+.hero-doc .wrap { max-width: 820px; }
 .hero-stretto .wrap { display: block; }
 .hero-stretto h1 { font-size: clamp(32px, 4.6vw, 48px); max-width: 16ch; }
 .hero-stretto .lead { max-width: 54ch; }
@@ -383,3 +456,18 @@ section { padding: 64px 0; }
   .rimandi { padding: 26px 22px; }
   .articolo p, .articolo li { font-size: 17.5px; }
 }
+
+/* tabelle dentro gli articoli */
+.tabella-scorre { overflow-x: auto; margin: 30px 0; }
+.articolo table { border-collapse: collapse; width: 100%; min-width: 560px; background: #fff; }
+.articolo th, .articolo td {
+  border: 1px solid var(--line); padding: 12px 14px; text-align: left; vertical-align: top;
+  font-family: "IBM Plex Sans", sans-serif; font-size: 15px; line-height: 1.5;
+}
+.articolo th {
+  background: var(--navy); color: var(--cream); font-weight: 600;
+  font-family: "IBM Plex Mono", monospace; font-size: 11.5px;
+  letter-spacing: 0.12em; text-transform: uppercase;
+}
+.articolo tbody tr:nth-child(even) td { background: rgba(17,29,48,0.025); }
+.articolo td:first-child { font-weight: 600; color: var(--navy); }
