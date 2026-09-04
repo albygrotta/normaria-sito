@@ -493,7 +493,7 @@ section { padding: 64px 0; }
   color: var(--cream); font-family: "IBM Plex Sans", sans-serif; font-size: 15px;
 }
 .signup input[type=email]::placeholder { color: rgba(245,240,230,0.5); }
-.signup .trappola { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.trappola { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; border: 0; }
 .consenso { display: flex; gap: 10px; align-items: flex-start; margin-top: 18px; }
 .consenso input { margin-top: 3px; accent-color: var(--red); flex: none; }
 .consenso span {
