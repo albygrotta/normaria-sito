@@ -55,9 +55,9 @@
 
     <h2>4. Come conserviamo i dati e a chi li comunichiamo</h2>
     <p>La tua email è gestita tramite
-      <span class="todo">[nome del servizio email usato, es. Brevo / MailerLite]</span>,
-      che agisce come responsabile del trattamento. Il sito è ospitato su
-      <span class="todo">[GitHub Pages / Cloudflare Pages]</span>.
+      <strong>Brevo</strong> (Sendinblue SAS, 106 boulevard Haussmann, 75008 Parigi, Francia),
+      che agisce come responsabile del trattamento e conserva i dati su server nell'Unione Europea.
+      Il sito è ospitato su <strong>GitHub Pages</strong> (GitHub Inc.).
       Non vendiamo né cediamo i tuoi dati a terzi per finalità di marketing.</p>
 
     <h2>5. Per quanto tempo conserviamo i dati</h2>
@@ -123,6 +123,31 @@
           b.setAttribute('aria-expanded', 'false'); }
       });
     })();
+  </script>
+  <script>
+    // manda il modulo senza far uscire il visitatore dal sito
+    document.querySelectorAll('form.signup').forEach(function (f) {
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var esito = f.querySelector('.esito');
+        var bottone = f.querySelector('button[type=submit]');
+        bottone.disabled = true;
+        fetch(f.action, { method: 'POST', mode: 'no-cors', body: new FormData(f) })
+          .then(function () {
+            f.querySelector('.signup-riga').hidden = true;
+            f.querySelector('.consenso').hidden = true;
+            esito.className = 'esito riuscito';
+            esito.textContent = 'Fatto. Ti abbiamo mandato una email con il link per scaricare l’estratto: controlla la posta, e anche la cartella spam se non la vedi.';
+            esito.hidden = false;
+          })
+          .catch(function () {
+            bottone.disabled = false;
+            esito.className = 'esito fallito';
+            esito.textContent = 'Non siamo riusciti a registrare l’iscrizione. Controlla la connessione e riprova.';
+            esito.hidden = false;
+          });
+      });
+    });
   </script>
 <!-- FOOTER:FINE -->
 </body>

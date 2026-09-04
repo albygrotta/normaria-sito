@@ -114,7 +114,7 @@ a:hover { text-decoration: underline; }
    Buttons
    ========================================================= */
 .btn {
-  display: inline-block;
+  display: inline-block; background: transparent;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 15px; font-weight: 600; letter-spacing: 0.01em;
   padding: 13px 26px; border-radius: 2px;
@@ -125,7 +125,7 @@ a:hover { text-decoration: underline; }
 .btn-primary:hover { background: #86231e; text-decoration: none; }
 .btn-ghost { background: transparent; color: var(--red); }
 .btn-ghost:hover { background: var(--red); color: var(--cream); text-decoration: none; }
-.btn-light { border-color: var(--cream); color: var(--cream); }
+.btn-light { background: transparent; border-color: var(--cream); color: var(--cream); }
 .btn-light:hover { background: var(--cream); color: var(--navy); text-decoration: none; }
 
 /* =========================================================
@@ -471,3 +471,54 @@ section { padding: 64px 0; }
 }
 .articolo tbody tr:nth-child(even) td { background: rgba(17,29,48,0.025); }
 .articolo td:first-child { font-weight: 600; color: var(--navy); }
+
+/* modulo di iscrizione */
+.estratto-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px; align-items: start; }
+.estratto-grid h2 { font-size: clamp(26px, 3.2vw, 34px); max-width: 18ch; }
+.estratto-grid > div > p { color: rgba(245,240,230,0.74); font-size: 17px; max-width: 46ch; }
+.dentro { list-style: none; padding: 0; margin: 22px 0; }
+.dentro li {
+  font-family: "IBM Plex Sans", sans-serif; font-size: 15.5px; line-height: 1.5;
+  color: rgba(245,240,230,0.82); padding: 11px 0 11px 20px;
+  border-top: 1px solid var(--line-light); position: relative;
+}
+.dentro li::before { content: ""; position: absolute; left: 0; top: 19px; width: 9px; height: 1px; background: var(--red); }
+.dentro-nota { font-family: "IBM Plex Sans", sans-serif; font-size: 13.5px; color: rgba(245,240,230,0.55) !important; }
+
+.signup { display: block; max-width: 460px; }
+.signup-riga { display: flex; gap: 12px; flex-wrap: wrap; }
+.signup input[type=email] {
+  flex: 1 1 240px; padding: 13px 16px; border-radius: 2px;
+  border: 1.5px solid var(--line-light); background: rgba(245,240,230,0.06);
+  color: var(--cream); font-family: "IBM Plex Sans", sans-serif; font-size: 15px;
+}
+.signup input[type=email]::placeholder { color: rgba(245,240,230,0.5); }
+.signup .trappola { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.consenso { display: flex; gap: 10px; align-items: flex-start; margin-top: 18px; }
+.consenso input { margin-top: 3px; accent-color: var(--red); flex: none; }
+.consenso span {
+  font-family: "IBM Plex Sans", sans-serif; font-size: 12.5px; line-height: 1.5;
+  color: rgba(245,240,230,0.62);
+}
+.consenso a { color: #C98A85; }
+.esito {
+  font-family: "IBM Plex Sans", sans-serif; font-size: 15px; line-height: 1.55;
+  margin: 4px 0 0; padding: 14px 16px; border-left: 3px solid var(--red);
+  background: rgba(245,240,230,0.06);
+}
+.esito.riuscito { color: var(--cream); }
+.esito.fallito { color: #E0A39E; }
+
+/* lo stesso invito, in fondo agli articoli */
+.invito {
+  margin-top: 40px; padding: 32px 30px; border-radius: 3px;
+  background: var(--navy); border-top: 4px solid var(--red);
+}
+.invito .eyebrow { color: #C98A85; }
+.invito h2 { color: var(--cream); font-size: 24px; margin: 0 0 10px; }
+.invito > p {
+  font-family: "IBM Plex Sans", sans-serif; font-size: 15.5px;
+  color: rgba(245,240,230,0.7); margin-bottom: 22px; max-width: 54ch;
+}
+
+@media (max-width: 860px) { .estratto-grid { grid-template-columns: 1fr; gap: 34px; } }
