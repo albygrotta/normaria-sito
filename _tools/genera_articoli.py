@@ -128,6 +128,18 @@ def rimandi(a, per_id):
     </aside>"""
 
 
+def invito():
+    """L'invito a ricevere l'estratto, in fondo a ogni articolo."""
+    return f"""
+    <aside class="invito">
+      <p class="eyebrow">Estratto gratuito</p>
+      <h2>Vuoi vedere com'è fatta una scheda?</h2>
+      <p>Quindici pagine dal Manuale Normativo di Diritto Amministrativo: come si legge
+         una scheda, l'indice completo e le prime venti norme. Te le mandiamo per email.</p>
+{comune.modulo(su="../", id_form="modulo-articolo")}
+    </aside>"""
+
+
 def dati_articolo(a, descrizione):
     blocco = {
         "@context": "https://schema.org",
@@ -170,6 +182,7 @@ def pagina_articolo(a, per_id):
 {corpo(testo)}
 {fonti}
 {rimandi(a, per_id)}
+{invito()}
   </main>"""
 
     return comune.pagina(

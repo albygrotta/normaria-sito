@@ -150,6 +150,8 @@ def main():
         t = f.read_text(encoding="utf-8")
         t = comune.sostituisci(t, "HEADER", comune.testa(attiva))
         t = comune.sostituisci(t, "FOOTER", comune.piede())
+        if "<!-- MODULO:INIZIO -->" in t:
+            t = comune.sostituisci(t, "MODULO", comune.modulo())
         f.write_text(t, encoding="utf-8")
 
     print(f"Fatto: metodo.html + intestazione e piede in {len(PAGINE)} pagine")

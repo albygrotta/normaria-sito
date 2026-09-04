@@ -36,6 +36,63 @@ def menu(attiva, su=""):
     return "\n".join(voci)
 
 
+# indirizzo del modulo Brevo (lista "Estratto gratuito")
+MODULO = ("https://7afa150f.sibforms.com/serve/MUIFAHGS7Q22mxHcMhBnefBc_lxVtG-KWymnZ3qHRgGF"
+          "Sqrb_IDItqDXUhF3xop4CYa9eYUxTJO0u9YIu_xRLFPcaR2IDti2WsVdOMSOlKAlT50J0PnkDCa3I6eEmhJ"
+          "fBuyVt1vUTr_Mc-qdHqGu-cgLGZsaVdPWHoujCMlyOINI-LgEJcu0CdoF5Vr4_cUEdpmVC323v6HRfTfTdw")
+
+
+def modulo(su="", id_form="modulo-estratto"):
+    """Il modulo di iscrizione. Manda l'email a Brevo, che risponde con l'estratto."""
+    return f"""      <form class="signup" id="{id_form}" method="POST" action="{MODULO}">
+        <div class="signup-riga">
+          <input type="email" name="EMAIL" required autocomplete="email"
+                 placeholder="La tua email" aria-label="Il tuo indirizzo email">
+          <button type="submit" class="btn btn-light">Ricevi l'estratto</button>
+        </div>
+        <!-- campo trappola per i robot: resta vuoto -->
+        <input type="text" name="email_address_check" value="" tabindex="-1"
+               autocomplete="off" aria-hidden="true" class="trappola">
+        <input type="hidden" name="locale" value="it">
+        <input type="hidden" name="html_type" value="simple">
+        <label class="consenso">
+          <input type="checkbox" required name="consenso">
+          <span>Acconsento a ricevere l'estratto e a essere informato sui nuovi manuali.
+          Ho letto l'<a href="{su}privacy.html">informativa sulla privacy</a> e so che
+          posso disiscrivermi in qualsiasi momento.</span>
+        </label>
+        <p class="esito" role="status" hidden></p>
+      </form>"""
+
+
+SCRIPT_MODULO = """
+  <script>
+    // manda il modulo senza far uscire il visitatore dal sito
+    document.querySelectorAll('form.signup').forEach(function (f) {
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var esito = f.querySelector('.esito');
+        var bottone = f.querySelector('button[type=submit]');
+        bottone.disabled = true;
+        fetch(f.action, { method: 'POST', mode: 'no-cors', body: new FormData(f) })
+          .then(function () {
+            f.querySelector('.signup-riga').hidden = true;
+            f.querySelector('.consenso').hidden = true;
+            esito.className = 'esito riuscito';
+            esito.textContent = 'Fatto. Ti abbiamo mandato una email con il link per scaricare l\u2019estratto: controlla la posta, e anche la cartella spam se non la vedi.';
+            esito.hidden = false;
+          })
+          .catch(function () {
+            bottone.disabled = false;
+            esito.className = 'esito fallito';
+            esito.textContent = 'Non siamo riusciti a registrare l\u2019iscrizione. Controlla la connessione e riprova.';
+            esito.hidden = false;
+          });
+      });
+    });
+  </script>"""
+
+
 def testa(attiva, su=""):
     """Intestazione + menu. `su` è '../' per le pagine dentro una cartella."""
     return f"""  <a class="salta" href="#contenuto">Vai al contenuto</a>
@@ -102,7 +159,7 @@ def piede(su=""):
           b.setAttribute('aria-expanded', 'false'); }}
       }});
     }})();
-  </script>"""
+  </script>""" + SCRIPT_MODULO
 
 
 def pagina(titolo, descrizione, canonico, attiva, corpo, su="", extra="", tipo="website"):
