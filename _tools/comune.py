@@ -43,8 +43,13 @@ MODULO = ("https://7afa150f.sibforms.com/serve/MUIFAHGS7Q22mxHcMhBnefBc_lxVtG-KW
 
 
 def modulo(su="", id_form="modulo-estratto"):
-    """Il modulo di iscrizione. Manda l'email a Brevo, che risponde con l'estratto."""
-    return f"""      <form class="signup" id="{id_form}" method="POST" action="{MODULO}">
+    """Il modulo di iscrizione.
+
+    L'invio va a Brevo dentro un riquadro nascosto (l'iframe qui sotto), così
+    il visitatore resta sul sito: è il modo che Brevo accetta davvero.
+    """
+    return f"""      <form class="signup" id="{id_form}" method="POST" action="{MODULO}"
+            target="brevo-{id_form}" accept-charset="utf-8">
         <div class="signup-riga">
           <input type="email" name="EMAIL" required autocomplete="email"
                  placeholder="La tua email" aria-label="Il tuo indirizzo email">
@@ -62,33 +67,31 @@ def modulo(su="", id_form="modulo-estratto"):
           posso disiscrivermi in qualsiasi momento.</span>
         </label>
         <p class="esito" role="status" hidden></p>
-      </form>"""
+      </form>
+      <iframe name="brevo-{id_form}" class="trappola" title="invio del modulo" aria-hidden="true"></iframe>"""
 
 
 SCRIPT_MODULO = """
   <script>
-    // manda il modulo senza far uscire il visitatore dal sito
+    // l'invio finisce nel riquadro nascosto: mostriamo qui il messaggio
     document.querySelectorAll('form.signup').forEach(function (f) {
-      f.addEventListener('submit', function (e) {
-        e.preventDefault();
-        var esito = f.querySelector('.esito');
-        var bottone = f.querySelector('button[type=submit]');
-        bottone.disabled = true;
-        fetch(f.action, { method: 'POST', mode: 'no-cors', body: new FormData(f) })
-          .then(function () {
-            f.querySelector('.signup-riga').hidden = true;
-            f.querySelector('.consenso').hidden = true;
-            esito.className = 'esito riuscito';
-            esito.textContent = 'Fatto. Ti abbiamo mandato una email con il link per scaricare l\u2019estratto: controlla la posta, e anche la cartella spam se non la vedi.';
-            esito.hidden = false;
-          })
-          .catch(function () {
-            bottone.disabled = false;
-            esito.className = 'esito fallito';
-            esito.textContent = 'Non siamo riusciti a registrare l\u2019iscrizione. Controlla la connessione e riprova.';
-            esito.hidden = false;
-          });
+      var inviato = false;
+      var telaio = document.getElementsByName(f.target)[0];
+      f.addEventListener('submit', function () {
+        inviato = true;
+        f.querySelector('button[type=submit]').disabled = true;
       });
+      if (telaio) {
+        telaio.addEventListener('load', function () {
+          if (!inviato) return;
+          var esito = f.querySelector('.esito');
+          f.querySelector('.signup-riga').hidden = true;
+          f.querySelector('.consenso').hidden = true;
+          esito.className = 'esito riuscito';
+          esito.textContent = 'Fatto. Ti abbiamo mandato una email con il link per scaricare l\u2019estratto: controlla la posta, e anche la cartella spam se non la vedi.';
+          esito.hidden = false;
+        });
+      }
     });
   </script>"""
 
