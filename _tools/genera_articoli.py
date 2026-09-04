@@ -26,14 +26,11 @@ from datetime import date
 RADICE = pathlib.Path(__file__).resolve().parent.parent
 SITO = "https://normaria.net"
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import comune  # noqa: E402
+
 MESI = ("gennaio febbraio marzo aprile maggio giugno luglio "
         "agosto settembre ottobre novembre dicembre").split()
-
-FONT = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
-        '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-        '  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700'
-        '&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600'
-        '&display=swap" rel="stylesheet">')
 
 
 # ---------------------------------------------------------------- utilità
@@ -45,84 +42,6 @@ def data_estesa(iso):
 
 def minuti_lettura(testo):
     return max(1, round(len(testo.split()) / 200))
-
-
-def testa(titolo, descrizione, canonico, dentro_cartella, extra=""):
-    """L'intestazione HTML, uguale per tutte le pagine del sito."""
-    su = "../" if dentro_cartella else ""
-    return f"""<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{html.escape(titolo)}</title>
-  <meta name="description" content="{html.escape(descrizione)}">
-  <link rel="canonical" href="{canonico}">
-
-  <meta property="og:type" content="{'article' if dentro_cartella else 'website'}">
-  <meta property="og:title" content="{html.escape(titolo)}">
-  <meta property="og:description" content="{html.escape(descrizione)}">
-  <meta property="og:url" content="{canonico}">
-  <meta property="og:locale" content="it_IT">
-
-  {FONT}
-  <link rel="stylesheet" href="{su}style.css">
-{extra}</head>
-<body>
-
-  <header class="site-header">
-    <div class="wrap">
-      <a href="{su}index.html" class="brand">Normaria<small>Edizioni</small></a>
-      <nav class="nav">
-        <a href="{su}index.html#metodo">Il metodo</a>
-        <a href="{su}index.html#catalogo">Catalogo</a>
-        <a href="{su}articoli.html">Articoli</a>
-        <a href="{su}index.html#estratto">Estratto gratuito</a>
-      </nav>
-    </div>
-  </header>
-"""
-
-
-def piede(dentro_cartella):
-    su = "../" if dentro_cartella else ""
-    return f"""
-  <footer class="site-footer">
-    <div class="wrap">
-      <div class="footer-grid">
-        <div>
-          <p class="brand-f">Normaria Edizioni</p>
-          <p>Manuali normativi per chi prepara i concorsi pubblici. Un metodo, molte materie.</p>
-        </div>
-        <div>
-          <h4>Naviga</h4>
-          <ul>
-            <li><a href="{su}index.html#metodo">Il metodo</a></li>
-            <li><a href="{su}index.html#catalogo">Catalogo</a></li>
-            <li><a href="{su}articoli.html">Articoli</a></li>
-            <li><a href="{su}index.html#estratto">Estratto gratuito</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Legale</h4>
-          <ul>
-            <li><a href="{su}privacy.html">Privacy policy</a></li>
-            <li><a href="{su}cookie.html">Cookie policy</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="legal">
-        Normaria Edizioni · <span class="todo">[Ragione sociale / Titolare da inserire]</span> ·
-        P. IVA <span class="todo">[da inserire]</span> ·
-        Sede: <span class="todo">Grottaferrata (RM) — indirizzo da inserire</span><br>
-        Contatti: <span class="todo">[email da inserire]</span> ·
-        © {date.today().year} Normaria Edizioni. Tutti i diritti riservati.
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
-"""
 
 
 # ------------------------------------------------- da testo semplice a HTML
@@ -140,7 +59,7 @@ def in_linea(s):
 def corpo(testo):
     """Converte il testo dell'articolo in HTML. Sintassi minima:
        ## titolo · ### sottotitolo · - elenco · > citazione · --- riga."""
-    fuori, elenco = [], []
+    fuori, elenco, tabella = [], [], []
 
     def chiudi_elenco():
         if elenco:
@@ -148,8 +67,26 @@ def corpo(testo):
             fuori.append(f"    <ul>\n{voci}\n    </ul>")
             elenco.clear()
 
+    def chiudi_tabella():
+        """Le righe che cominciano con | diventano una tabella.
+           La prima riga è l'intestazione; la riga di soli trattini si salta."""
+        if not tabella:
+            return
+        righe = [x for x in tabella if not set(x.replace("|", "").strip()) <= {"-", " ", ":"}]
+        celle = [[c.strip() for c in x.strip().strip("|").split("|")] for x in righe]
+        cap = "".join(f"<th>{in_linea(c)}</th>" for c in celle[0])
+        corpo_t = "\n".join("      <tr>" + "".join(f"<td>{in_linea(c)}</td>" for c in r) + "</tr>"
+                            for r in celle[1:])
+        fuori.append('    <div class="tabella-scorre">\n    <table>\n'
+                     f"      <thead><tr>{cap}</tr></thead>\n      <tbody>\n{corpo_t}\n      </tbody>\n"
+                     "    </table>\n    </div>")
+        tabella.clear()
+
     for riga in testo.split("\n"):
         r = riga.rstrip()
+        if r.startswith("|"):
+            chiudi_elenco(); tabella.append(r); continue
+        chiudi_tabella()
         if r.startswith("- "):
             elenco.append(r[2:]); continue
         chiudi_elenco()
@@ -165,7 +102,7 @@ def corpo(testo):
             fuori.append("    <hr>")
         else:
             fuori.append(f"    <p>{in_linea(r)}</p>")
-    chiudi_elenco()
+    chiudi_elenco(); chiudi_tabella()
     return "\n".join(fuori)
 
 
@@ -224,10 +161,7 @@ def pagina_articolo(a, per_id):
       </ul>
     </div>"""
 
-    return (testa(f"{a['titolo']} — Normaria Edizioni", a["sommario"], canonico,
-                  True, dati_articolo(a, a["sommario"]))
-            + f"""
-  <main class="wrap doc articolo">
+    corpo_pagina = f"""  <main class="wrap doc articolo" id="contenuto">
     <p class="briciole"><a href="../articoli.html">Articoli</a> · {html.escape(a['occhiello'])}</p>
     <h1>{html.escape(a['titolo'])}</h1>
     <p class="updated">{data_estesa(a['data'])} · {minuti_lettura(testo)} minuti di lettura</p>
@@ -236,8 +170,12 @@ def pagina_articolo(a, per_id):
 {corpo(testo)}
 {fonti}
 {rimandi(a, per_id)}
-  </main>
-""" + piede(True))
+  </main>"""
+
+    return comune.pagina(
+        titolo=f"{a['titolo']} — Normaria Edizioni", descrizione=a["sommario"],
+        canonico=canonico, attiva="articoli", su="../", tipo="article",
+        extra=dati_articolo(a, a["sommario"]), corpo=corpo_pagina)
 
 
 def pagina_indice(articoli):
@@ -261,11 +199,7 @@ def pagina_indice(articoli):
     extra = ('  <script type="application/ld+json">\n'
              + json.dumps(elenco, ensure_ascii=False, indent=2) + "\n  </script>\n")
 
-    return (testa("Articoli — Normaria Edizioni",
-                  "Norme spiegate una alla volta e concorsi pubblici in corso: "
-                  "cosa dice la legge, perché esiste, come cade all'esame.",
-                  f"{SITO}/articoli.html", False, extra)
-            + f"""
+    corpo_pagina = f"""  <main id="contenuto">
   <section class="hero hero-stretto">
     <div class="wrap">
       <div>
@@ -283,11 +217,19 @@ def pagina_indice(articoli):
       </div>
     </div>
   </section>
-""" + piede(False))
+  </main>"""
+
+    return comune.pagina(
+        titolo="Articoli — Normaria Edizioni",
+        descrizione="Norme spiegate una alla volta e concorsi pubblici in corso: "
+                    "cosa dice la legge, perché esiste, come cade all'esame.",
+        canonico=f"{SITO}/articoli.html", attiva="articoli",
+        corpo=corpo_pagina, extra=extra)
 
 
 def mappa_sito(articoli):
-    voci = [(f"{SITO}/", "1.0"), (f"{SITO}/articoli.html", "0.8")]
+    voci = [(f"{SITO}/", "1.0"), (f"{SITO}/metodo.html", "0.9"),
+            (f"{SITO}/articoli.html", "0.8")]
     voci += [(f"{SITO}/articoli/{a['slug']}.html", "0.7") for a in articoli]
     voci += [(f"{SITO}/privacy.html", "0.3"), (f"{SITO}/cookie.html", "0.3")]
     corpo_xml = "\n".join(
