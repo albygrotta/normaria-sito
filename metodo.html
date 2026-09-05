@@ -30,6 +30,7 @@
           <a href="metodo.html" class="attiva">Il metodo</a>
           <a href="index.html#catalogo">Catalogo</a>
           <a href="articoli.html">Articoli</a>
+          <a href="video.html">Video</a>
           <a href="index.html#estratto">Estratto gratuito</a>
       </nav>
     </div>
@@ -144,6 +145,7 @@
             <li><a href="metodo.html">Il metodo</a></li>
             <li><a href="index.html#catalogo">Catalogo</a></li>
             <li><a href="articoli.html">Articoli</a></li>
+            <li><a href="video.html">Video</a></li>
             <li><a href="index.html#estratto">Estratto gratuito</a></li>
           </ul>
         </div>
@@ -181,6 +183,25 @@
           b.setAttribute('aria-expanded', 'false'); }
       });
     })();
+  </script>
+  <script>
+    // Finche' nessuno clicca, di YouTube sul sito non c'e' nulla.
+    document.querySelectorAll('.video').forEach(function (riquadro) {
+      var bottone = riquadro.querySelector('.video-avvia');
+      if (!bottone) return;
+      bottone.addEventListener('click', function () {
+        var telaio = document.createElement('iframe');
+        telaio.src = 'https://www.youtube-nocookie.com/embed/' +
+                     riquadro.getAttribute('data-video') +
+                     '?autoplay=1&rel=0&modestbranding=1';
+        telaio.title = bottone.getAttribute('aria-label') || 'video';
+        telaio.loading = 'lazy';
+        telaio.allow = 'accelerometer; autoplay; encrypted-media; picture-in-picture';
+        telaio.setAttribute('allowfullscreen', '');
+        telaio.className = 'video-telaio';
+        riquadro.replaceChildren(telaio);
+      });
+    });
   </script>
 </body>
 </html>

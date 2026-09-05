@@ -1,0 +1,54 @@
+{
+  "_come_si_usa": "I video del canale YouTube NORMARIA mostrati sul sito. Per aggiungerne uno: copia l'identificativo dall'indirizzo YouTube (la parte dopo /shorts/ o dopo v=) e aggiungi un blocco qui, poi rilancia _tools/genera.py. Il campo 'inHome' decide se il video compare anche nella striscia in home page.",
+  "canale": "https://www.youtube.com/channel/UCjwccuZqNytoNcb5LdxaLrA",
+  "video": [
+    {
+      "id": "EE5SC3lOzPE",
+      "titolo": "L'articolo 36 della Costituzione, spiegato bene",
+      "occhiello": "Diritto del lavoro",
+      "sommario": "Retribuzione proporzionata e sufficiente: due parole che reggono mezzo diritto del lavoro.",
+      "manuale": "lavoro",
+      "inHome": true
+    },
+    {
+      "id": "l1bl-98UNEw",
+      "titolo": "Licenziamento: i due orologi da 60 e 180 giorni",
+      "occhiello": "Diritto del lavoro",
+      "sommario": "Due termini diversi che partono in momenti diversi. Sbagliarne uno chiude la strada.",
+      "manuale": "lavoro",
+      "inHome": true
+    },
+    {
+      "id": "Cw8XX9xFHng",
+      "titolo": "INPS 1695: la doppia soglia 21/30 sulle due sezioni",
+      "occhiello": "Concorso INPS",
+      "sommario": "Non basta la media: la soglia va superata in entrambe le sezioni della prova.",
+      "manuale": "inps-1695",
+      "inHome": true
+    },
+    {
+      "id": "Q5FTI82hdcY",
+      "titolo": "La prescrizione dei crediti di lavoro: cinque anni da quando?",
+      "occhiello": "Previdenza",
+      "sommario": "Il termine si conta, e il punto di partenza non è quello che sembra.",
+      "manuale": "previdenza",
+      "inHome": false
+    },
+    {
+      "id": "mowBvx9L9ng",
+      "titolo": "INPS 499: il principio once only e le piattaforme abilitanti",
+      "occhiello": "Concorso INPS",
+      "sommario": "Il dato lo chiedi una volta sola. Sembra buon senso, è una regola scritta.",
+      "manuale": "inps-499",
+      "inHome": false
+    },
+    {
+      "id": "Xl_wLz2-k1A",
+      "titolo": "Concorso Senato: la paura di sbagliare costa più dell'ignoranza",
+      "occhiello": "Concorso Senato",
+      "sommario": "Con la penalità per l'errore, il calcolo di quando rispondere non è a intuito.",
+      "manuale": "senato",
+      "inHome": false
+    }
+  ]
+}

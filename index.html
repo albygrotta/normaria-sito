@@ -274,6 +274,7 @@
           <a href="metodo.html">Il metodo</a>
           <a href="index.html#catalogo">Catalogo</a>
           <a href="articoli.html">Articoli</a>
+          <a href="video.html">Video</a>
           <a href="index.html#estratto">Estratto gratuito</a>
       </nav>
     </div>
@@ -604,6 +605,69 @@
   </section>
 
   <!-- ===================== ESTRATTO ===================== -->
+<!-- VIDEO:INIZIO -->
+  <section id="video" class="sezione-video">
+    <div class="wrap">
+      <div class="video-intro">
+        <div>
+          <p class="eyebrow">Il metodo in venti secondi</p>
+          <h2>Una norma alla volta, spiegata a voce.</h2>
+          <p class="lead-piccolo">Gli stessi quattro blocchi dei manuali, in formato breve:
+             il testo, perché conta, dove si incastra. Il video parte solo se lo avvii tu.</p>
+        </div>
+        <p class="video-tutti"><a href="video.html">Vedi tutti i video</a></p>
+      </div>
+      <div class="video-griglia">
+        <article class="video" data-video="EE5SC3lOzPE">
+          <button type="button" class="video-avvia" aria-label="Riproduci il video: L&#x27;articolo 36 della Costituzione, spiegato bene">
+            <span class="video-alto">
+              <span class="video-occhiello">Diritto del lavoro</span>
+              <span class="video-titolo">L&#x27;articolo 36 della Costituzione, spiegato bene</span>
+            </span>
+            <span class="video-play" aria-hidden="true">
+              <svg viewBox="0 0 64 64" width="54" height="54" focusable="false">
+                <circle cx="32" cy="32" r="30" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M26 20 L46 32 L26 44 Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="video-basso">Retribuzione proporzionata e sufficiente: due parole che reggono mezzo diritto del lavoro.</span>
+          </button>
+        </article>
+        <article class="video" data-video="l1bl-98UNEw">
+          <button type="button" class="video-avvia" aria-label="Riproduci il video: Licenziamento: i due orologi da 60 e 180 giorni">
+            <span class="video-alto">
+              <span class="video-occhiello">Diritto del lavoro</span>
+              <span class="video-titolo">Licenziamento: i due orologi da 60 e 180 giorni</span>
+            </span>
+            <span class="video-play" aria-hidden="true">
+              <svg viewBox="0 0 64 64" width="54" height="54" focusable="false">
+                <circle cx="32" cy="32" r="30" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M26 20 L46 32 L26 44 Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="video-basso">Due termini diversi che partono in momenti diversi. Sbagliarne uno chiude la strada.</span>
+          </button>
+        </article>
+        <article class="video" data-video="Cw8XX9xFHng">
+          <button type="button" class="video-avvia" aria-label="Riproduci il video: INPS 1695: la doppia soglia 21/30 sulle due sezioni">
+            <span class="video-alto">
+              <span class="video-occhiello">Concorso INPS</span>
+              <span class="video-titolo">INPS 1695: la doppia soglia 21/30 sulle due sezioni</span>
+            </span>
+            <span class="video-play" aria-hidden="true">
+              <svg viewBox="0 0 64 64" width="54" height="54" focusable="false">
+                <circle cx="32" cy="32" r="30" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M26 20 L46 32 L26 44 Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="video-basso">Non basta la media: la soglia va superata in entrambe le sezioni della prova.</span>
+          </button>
+        </article>
+      </div>
+    </div>
+  </section>
+<!-- VIDEO:FINE -->
+
   <section id="estratto" class="section-dark">
     <div class="wrap">
       <div class="estratto-grid">
@@ -649,6 +713,7 @@
             <li><a href="metodo.html">Il metodo</a></li>
             <li><a href="index.html#catalogo">Catalogo</a></li>
             <li><a href="articoli.html">Articoli</a></li>
+            <li><a href="video.html">Video</a></li>
             <li><a href="index.html#estratto">Estratto gratuito</a></li>
           </ul>
         </div>
@@ -686,6 +751,25 @@
           b.setAttribute('aria-expanded', 'false'); }
       });
     })();
+  </script>
+  <script>
+    // Finche' nessuno clicca, di YouTube sul sito non c'e' nulla.
+    document.querySelectorAll('.video').forEach(function (riquadro) {
+      var bottone = riquadro.querySelector('.video-avvia');
+      if (!bottone) return;
+      bottone.addEventListener('click', function () {
+        var telaio = document.createElement('iframe');
+        telaio.src = 'https://www.youtube-nocookie.com/embed/' +
+                     riquadro.getAttribute('data-video') +
+                     '?autoplay=1&rel=0&modestbranding=1';
+        telaio.title = bottone.getAttribute('aria-label') || 'video';
+        telaio.loading = 'lazy';
+        telaio.allow = 'accelerometer; autoplay; encrypted-media; picture-in-picture';
+        telaio.setAttribute('allowfullscreen', '');
+        telaio.className = 'video-telaio';
+        riquadro.replaceChildren(telaio);
+      });
+    });
   </script>
 <!-- FOOTER:FINE -->
 </body>

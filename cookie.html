@@ -22,6 +22,7 @@
           <a href="metodo.html">Il metodo</a>
           <a href="index.html#catalogo">Catalogo</a>
           <a href="articoli.html">Articoli</a>
+          <a href="video.html">Video</a>
           <a href="index.html#estratto">Estratto gratuito</a>
       </nav>
     </div>
@@ -40,11 +41,15 @@
     <h2>Quali cookie usa questo sito</h2>
     <p>Nella sua configurazione attuale, normaria.net è un sito statico e <strong>non utilizza cookie di profilazione né di marketing</strong>. Potrebbero essere presenti soltanto cookie tecnici strettamente necessari, impostati dal fornitore di hosting per il corretto funzionamento e la sicurezza del sito; per questi cookie non è richiesto il consenso preventivo.</p>
 
+    <h2>I video di YouTube</h2>
+    <p>Nella pagina Video e in home page trovi alcuni video ospitati sul canale YouTube di Normaria Edizioni. <strong>Finché non premi il pulsante di riproduzione, sul sito non c'è nulla di YouTube</strong>: quello che vedi è una scheda disegnata da noi, e il tuo browser non contatta in alcun modo Google.</p>
+    <p>Nel momento in cui scegli di avviare un video, il riproduttore viene caricato da <code>youtube-nocookie.com</code>, la versione a privacy rafforzata di YouTube: Google riceve allora l'indirizzo IP e i dati tecnici necessari a far partire il video e può installare cookie o tecnologie simili sul tuo dispositivo. È una scelta tua e riguarda solo i video che decidi di guardare: se non ne avvii nessuno, non parte nessun dato. Il trattamento da parte di Google è disciplinato dalla sua <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">informativa sulla privacy</a>.</p>
+
     <div class="doc" style="padding:0;margin:24px 0">
       <p class="todo" style="display:block;padding:14px 16px">
-        Da aggiornare se in futuro aggiungi strumenti che installano cookie — ad esempio statistiche
-        (Google Analytics, Plausible), video incorporati o widget social. In quei casi dovrai
-        aggiungere un banner di consenso ai cookie e aggiornare l'elenco qui sotto.
+        Da aggiornare se in futuro aggiungi strumenti che installano cookie senza che il visitatore
+        li abbia chiesti — ad esempio le statistiche (Google Analytics, Plausible) o i widget social.
+        In quei casi servirà anche un banner di consenso, che oggi invece non serve.
       </p>
     </div>
 
@@ -68,6 +73,7 @@
             <li><a href="metodo.html">Il metodo</a></li>
             <li><a href="index.html#catalogo">Catalogo</a></li>
             <li><a href="articoli.html">Articoli</a></li>
+            <li><a href="video.html">Video</a></li>
             <li><a href="index.html#estratto">Estratto gratuito</a></li>
           </ul>
         </div>
@@ -105,6 +111,25 @@
           b.setAttribute('aria-expanded', 'false'); }
       });
     })();
+  </script>
+  <script>
+    // Finche' nessuno clicca, di YouTube sul sito non c'e' nulla.
+    document.querySelectorAll('.video').forEach(function (riquadro) {
+      var bottone = riquadro.querySelector('.video-avvia');
+      if (!bottone) return;
+      bottone.addEventListener('click', function () {
+        var telaio = document.createElement('iframe');
+        telaio.src = 'https://www.youtube-nocookie.com/embed/' +
+                     riquadro.getAttribute('data-video') +
+                     '?autoplay=1&rel=0&modestbranding=1';
+        telaio.title = bottone.getAttribute('aria-label') || 'video';
+        telaio.loading = 'lazy';
+        telaio.allow = 'accelerometer; autoplay; encrypted-media; picture-in-picture';
+        telaio.setAttribute('allowfullscreen', '');
+        telaio.className = 'video-telaio';
+        riquadro.replaceChildren(telaio);
+      });
+    });
   </script>
 <!-- FOOTER:FINE -->
 </body>

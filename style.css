@@ -542,3 +542,99 @@ section { padding: 64px 0; }
 
 /* rete di sicurezza: nessun contenuto deve sporgere di lato sul telefono */
 img, svg, video, iframe { max-width: 100%; }
+
+/* =========================================================
+   Video — schede disegnate da noi, YouTube solo dopo il clic
+   ========================================================= */
+.sezione-video { padding: 78px 0; background: var(--navy); color: var(--cream); }
+.sezione-video-piena { padding-top: 12px; }
+
+.video-intro {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  gap: 30px; flex-wrap: wrap; margin-bottom: 42px;
+}
+.video-intro h2 { color: var(--cream); font-size: 30px; margin: 0 0 12px; }
+.video-intro .eyebrow { color: #C98A85; }
+.lead-piccolo { max-width: 46ch; color: rgba(245,240,230,0.74); font-size: 16.5px; line-height: 1.6; }
+.video-tutti a {
+  font-family: "IBM Plex Mono", monospace; font-size: 12px;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--cream); border-bottom: 1px solid rgba(245,240,230,0.4);
+  padding-bottom: 3px;
+}
+.video-tutti a:hover { color: #C98A85; border-color: #C98A85; }
+
+/* tre colonne fisse: i tre video della home riempiono una riga esatta,
+   i sei della pagina video due righe esatte. Il tetto di larghezza tiene le
+   schede in proporzione 9:16 senza farle diventare torri. */
+.video-griglia {
+  display: grid; gap: 26px; max-width: 880px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.video { aspect-ratio: 9 / 16; }
+.video-avvia {
+  width: 100%; height: 100%; display: flex; flex-direction: column;
+  justify-content: space-between; align-items: flex-start; text-align: left;
+  gap: 18px; padding: 24px 22px; cursor: pointer;
+  background: #16233A; color: var(--cream);
+  border: 1px solid rgba(245,240,230,0.16); border-radius: 3px;
+  font: inherit; transition: border-color 0.15s, background 0.15s;
+}
+.video-avvia:hover, .video-avvia:focus-visible {
+  border-color: var(--red); background: #1A2942;
+}
+.video-avvia:hover .video-play { color: #C98A85; }
+.video-occhiello {
+  display: block; font-family: "IBM Plex Mono", monospace; font-size: 10.5px;
+  letter-spacing: 0.16em; text-transform: uppercase; color: #C98A85; margin-bottom: 12px;
+}
+.video-titolo {
+  display: block; font-family: Spectral, Georgia, serif; font-size: 21px;
+  line-height: 1.3; font-weight: 600;
+}
+.video-play { color: rgba(245,240,230,0.75); align-self: flex-start; transition: color 0.15s; }
+.video-basso {
+  display: block; font-family: "IBM Plex Sans", sans-serif; font-size: 13.5px;
+  line-height: 1.55; color: rgba(245,240,230,0.62);
+}
+.video-telaio { width: 100%; height: 100%; border: 0; border-radius: 3px; display: block; }
+
+.video-canale {
+  margin-top: 40px; font-size: 15px; color: rgba(245,240,230,0.7);
+}
+.video-canale a { color: var(--cream); border-bottom: 1px solid rgba(245,240,230,0.4); }
+.video-canale a:hover { color: #C98A85; border-color: #C98A85; }
+
+@media (max-width: 900px) {
+  .video-griglia { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 580px; }
+}
+@media (max-width: 640px) {
+  .sezione-video { padding: 56px 0; }
+  .video-intro { margin-bottom: 32px; }
+  .video-intro h2 { font-size: 25px; }
+  .video-griglia { grid-template-columns: 1fr; max-width: 330px; margin: 0 auto; gap: 22px; }
+}
+
+/* =========================================================
+   Schemi disegnati dentro gli articoli
+   ========================================================= */
+.schema {
+  margin: 38px 0 34px;
+  border: 1px solid var(--line);
+  background: var(--cream);
+  padding: 22px 22px 16px;
+}
+.schema svg { display: block; width: 100%; height: auto; }
+.schema figcaption {
+  margin-top: 16px; padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 13.5px; line-height: 1.55; color: var(--grey);
+}
+/* sul telefono lo schema si allarga fino ai bordi del testo e può scorrere */
+@media (max-width: 640px) {
+  .schema { padding: 14px 14px 12px; overflow-x: auto; }
+  .schema svg { min-width: 480px; }
+  .schema figcaption { min-width: 0; }
+}
