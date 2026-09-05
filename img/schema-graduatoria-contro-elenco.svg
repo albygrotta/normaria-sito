@@ -1,0 +1,71 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Confronto fra il concorso classico, che produce una graduatoria e chiamate in ordine di punteggio, e la selezione aggregata, che produce un elenco di idonei da cui ogni comune attinge con un interpello.">
+  <style>
+    .t { font-family: Spectral, Georgia, serif; }
+    .m { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+    .s { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    .cap  { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+    .tit  { font-size: 18px; font-weight: 600; }
+    .pass { font-size: 12.5px; }
+    .n    { font-size: 10.5px; letter-spacing: 0.1em; }
+  </style>
+  <rect width="760" height="430" fill="#F5F0E6"/>
+
+  <!-- ================= concorso classico ================= -->
+  <text x="0" y="16" class="m cap" fill="#4A5468">Concorso classico</text>
+  <text x="0" y="44" class="t tit" fill="#111D30">Si vince un posto</text>
+  <line x1="0" y1="60" x2="340" y2="60" stroke="#111D30" stroke-opacity="0.18"/>
+
+  <g>
+    <rect x="0" y="80" width="340" height="46" fill="none" stroke="#111D30" stroke-opacity="0.3"/>
+    <text x="16" y="100" class="m n" fill="#9E2B25">1</text>
+    <text x="40" y="103" class="s pass" fill="#111D30">Un ente ha posti scoperti e li mette a bando</text>
+    <path d="M170 126 L170 142 M164 136 L170 143 L176 136" stroke="#4A5468" fill="none" stroke-width="1.2"/>
+
+    <rect x="0" y="148" width="340" height="46" fill="none" stroke="#111D30" stroke-opacity="0.3"/>
+    <text x="16" y="168" class="m n" fill="#9E2B25">2</text>
+    <text x="40" y="171" class="s pass" fill="#111D30">Prove, e una classifica finale</text>
+    <path d="M170 194 L170 210 M164 204 L170 211 L176 204" stroke="#4A5468" fill="none" stroke-width="1.2"/>
+
+    <rect x="0" y="216" width="340" height="60" fill="#111D30"/>
+    <text x="16" y="240" class="m n" fill="#C98A85">GRADUATORIA</text>
+    <text x="16" y="262" class="s pass" fill="#F5F0E6">Si chiama in ordine di punteggio</text>
+    <path d="M170 276 L170 292 M164 286 L170 293 L176 286" stroke="#4A5468" fill="none" stroke-width="1.2"/>
+
+    <rect x="0" y="298" width="340" height="46" fill="none" stroke="#9E2B25"/>
+    <text x="16" y="326" class="s pass" fill="#9E2B25">Assunzione dei vincitori, in ordine</text>
+  </g>
+
+  <!-- linea di separazione -->
+  <line x1="380" y1="0" x2="380" y2="430" stroke="#111D30" stroke-opacity="0.14"/>
+
+  <!-- ================= elenco di idonei ================= -->
+  <text x="420" y="16" class="m cap" fill="#9E2B25">Maxi Avviso ASMEL</text>
+  <text x="420" y="44" class="t tit" fill="#111D30">Si entra in una lista</text>
+  <line x1="420" y1="60" x2="760" y2="60" stroke="#111D30" stroke-opacity="0.18"/>
+
+  <g>
+    <rect x="420" y="80" width="340" height="46" fill="none" stroke="#111D30" stroke-opacity="0.3"/>
+    <text x="436" y="100" class="m n" fill="#9E2B25">1</text>
+    <text x="460" y="103" class="s pass" fill="#111D30">Oltre mille comuni fanno una selezione unica</text>
+    <path d="M590 126 L590 142 M584 136 L590 143 L596 136" stroke="#4A5468" fill="none" stroke-width="1.2"/>
+
+    <rect x="420" y="148" width="340" height="46" fill="none" stroke="#111D30" stroke-opacity="0.3"/>
+    <text x="436" y="168" class="m n" fill="#9E2B25">2</text>
+    <text x="460" y="171" class="s pass" fill="#111D30">Una prova, senza posti già contati</text>
+    <path d="M590 194 L590 210 M584 204 L590 211 L596 204" stroke="#4A5468" fill="none" stroke-width="1.2"/>
+
+    <rect x="420" y="216" width="340" height="60" fill="#111D30"/>
+    <text x="436" y="240" class="m n" fill="#C98A85">ELENCO DI IDONEI · TRE ANNI</text>
+    <text x="436" y="262" class="s pass" fill="#F5F0E6">Superata la prova, non vinto un posto</text>
+    <path d="M590 276 L590 292 M584 286 L590 293 L596 286" stroke="#4A5468" fill="none" stroke-width="1.2"/>
+
+    <rect x="420" y="298" width="340" height="46" fill="none" stroke="#111D30" stroke-opacity="0.3"/>
+    <text x="436" y="326" class="s pass" fill="#111D30">Un comune ha bisogno: avvia un <tspan font-weight="600">interpello</tspan></text>
+    <path d="M590 344 L590 360 M584 354 L590 361 L596 354" stroke="#4A5468" fill="none" stroke-width="1.2"/>
+
+    <rect x="420" y="366" width="340" height="46" fill="none" stroke="#9E2B25"/>
+    <text x="436" y="386" class="s pass" fill="#9E2B25">Rispondi tu, entri nella rosa di quel posto</text>
+    <text x="436" y="404" class="s" font-size="11" fill="#4A5468">Chi non risponde resta in elenco per la volta dopo</text>
+  </g>
+</svg>
