@@ -135,7 +135,7 @@ def invito():
       <p class="eyebrow">Estratto gratuito</p>
       <h2>Vuoi vedere com'è fatta una scheda?</h2>
       <p>Quindici pagine dal Manuale Normativo di Diritto Amministrativo: come si legge
-         una scheda, l'indice completo e le prime venti norme. Te le mandiamo per email.</p>
+         una scheda, l'indice completo e le prime venti norme. Il PDF si scarica subito, senza lasciare la email.</p>
 {comune.modulo(su="../", id_form="modulo-articolo")}
     </aside>"""
 

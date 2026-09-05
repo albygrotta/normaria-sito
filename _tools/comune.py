@@ -36,64 +36,26 @@ def menu(attiva, su=""):
     return "\n".join(voci)
 
 
-# indirizzo del modulo Brevo (lista "Estratto gratuito")
-MODULO = ("https://7afa150f.sibforms.com/serve/MUIFAHGS7Q22mxHcMhBnefBc_lxVtG-KWymnZ3qHRgGF"
-          "Sqrb_IDItqDXUhF3xop4CYa9eYUxTJO0u9YIu_xRLFPcaR2IDti2WsVdOMSOlKAlT50J0PnkDCa3I6eEmhJ"
-          "fBuyVt1vUTr_Mc-qdHqGu-cgLGZsaVdPWHoujCMlyOINI-LgEJcu0CdoF5Vr4_cUEdpmVC323v6HRfTfTdw")
+# ---------------------------------------------------------------- estratto
+#
+# Il modulo di iscrizione è sospeso: Brevo rifiuta gli invii finché l'account
+# non viene attivato dal suo lato (l'indirizzo del modulo risponde
+# "Invalid token"). Finché non è risolto, l'estratto si scarica direttamente:
+# meglio dare subito il PDF che promettere una email che non parte.
+
+ESTRATTO = "estratto/normaria-estratto-diritto-amministrativo-2026.pdf"
 
 
 def modulo(su="", id_form="modulo-estratto"):
-    """Il modulo di iscrizione.
-
-    L'invio va a Brevo dentro un riquadro nascosto (l'iframe qui sotto), così
-    il visitatore resta sul sito: è il modo che Brevo accetta davvero.
-    """
-    return f"""      <form class="signup" id="{id_form}" method="POST" action="{MODULO}"
-            target="brevo-{id_form}" accept-charset="utf-8">
-        <div class="signup-riga">
-          <input type="email" name="EMAIL" required autocomplete="email"
-                 placeholder="La tua email" aria-label="Il tuo indirizzo email">
-          <button type="submit" class="btn btn-light">Ricevi l'estratto</button>
-        </div>
-        <!-- campo trappola per i robot: resta vuoto -->
-        <input type="text" name="email_address_check" value="" tabindex="-1"
-               autocomplete="off" aria-hidden="true" class="trappola">
-        <input type="hidden" name="locale" value="it">
-        <input type="hidden" name="html_type" value="simple">
-        <label class="consenso">
-          <input type="checkbox" required name="consenso">
-          <span>Acconsento a ricevere l'estratto e a essere informato sui nuovi manuali.
-          Ho letto l'<a href="{su}privacy.html">informativa sulla privacy</a> e so che
-          posso disiscrivermi in qualsiasi momento.</span>
-        </label>
-        <p class="esito" role="status" hidden></p>
-      </form>
-      <iframe name="brevo-{id_form}" class="trappola" title="invio del modulo" aria-hidden="true"></iframe>"""
+    """Il riquadro per scaricare l'estratto."""
+    return f"""      <div class="scarica" id="{id_form}">
+        <a class="btn btn-light btn-grande" href="{su}{ESTRATTO}" download>
+          Scarica l'estratto in PDF</a>
+        <p class="scarica-nota">15 pagine · PDF, 113 KB · nessuna registrazione richiesta</p>
+      </div>"""
 
 
-SCRIPT_MODULO = """
-  <script>
-    // l'invio finisce nel riquadro nascosto: mostriamo qui il messaggio
-    document.querySelectorAll('form.signup').forEach(function (f) {
-      var inviato = false;
-      var telaio = document.getElementsByName(f.target)[0];
-      f.addEventListener('submit', function () {
-        inviato = true;
-        f.querySelector('button[type=submit]').disabled = true;
-      });
-      if (telaio) {
-        telaio.addEventListener('load', function () {
-          if (!inviato) return;
-          var esito = f.querySelector('.esito');
-          f.querySelector('.signup-riga').hidden = true;
-          f.querySelector('.consenso').hidden = true;
-          esito.className = 'esito riuscito';
-          esito.textContent = 'Fatto. Ti abbiamo mandato una email con il link per scaricare l\u2019estratto: controlla la posta, e anche la cartella spam se non la vedi.';
-          esito.hidden = false;
-        });
-      }
-    });
-  </script>"""
+SCRIPT_MODULO = ""
 
 
 def testa(attiva, su=""):
