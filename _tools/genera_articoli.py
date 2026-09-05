@@ -56,9 +56,25 @@ def in_linea(s):
     return s
 
 
+def schema(nome, didascalia):
+    """Inserisce nel testo uno schema disegnato.
+
+    Il disegno viene incollato dentro la pagina invece di essere richiamato
+    come immagine: così eredita i caratteri del sito, resta nitido a
+    qualsiasi ingrandimento e non aggiunge una richiesta in più al server.
+    """
+    f = RADICE / "img" / f"schema-{nome}.svg"
+    if not f.exists():
+        sys.exit(f"ERRORE: manca lo schema {f}")
+    disegno = f.read_text(encoding="utf-8").split("?>")[-1].strip()
+    return ('    <figure class="schema">\n      ' + disegno.replace("\n", "\n      ")
+            + f'\n      <figcaption>{in_linea(didascalia)}</figcaption>\n    </figure>')
+
+
 def corpo(testo):
     """Converte il testo dell'articolo in HTML. Sintassi minima:
-       ## titolo · ### sottotitolo · - elenco · > citazione · --- riga."""
+       ## titolo · ### sottotitolo · - elenco · > citazione · --- riga
+       !schema nome | didascalia  inserisce img/schema-nome.svg."""
     fuori, elenco, tabella = [], [], []
 
     def chiudi_elenco():
@@ -92,7 +108,10 @@ def corpo(testo):
         chiudi_elenco()
         if not r.strip():
             continue
-        if r.startswith("### "):
+        if r.startswith("!schema "):
+            nome, _, did = r[8:].partition("|")
+            fuori.append(schema(nome.strip(), did.strip()))
+        elif r.startswith("### "):
             fuori.append(f"    <h3>{in_linea(r[4:])}</h3>")
         elif r.startswith("## "):
             fuori.append(f"    <h2>{in_linea(r[3:])}</h2>")
@@ -242,7 +261,7 @@ def pagina_indice(articoli):
 
 def mappa_sito(articoli):
     voci = [(f"{SITO}/", "1.0"), (f"{SITO}/metodo.html", "0.9"),
-            (f"{SITO}/articoli.html", "0.8")]
+            (f"{SITO}/articoli.html", "0.8"), (f"{SITO}/video.html", "0.7")]
     voci += [(f"{SITO}/articoli/{a['slug']}.html", "0.7") for a in articoli]
     voci += [(f"{SITO}/privacy.html", "0.3"), (f"{SITO}/cookie.html", "0.3")]
     corpo_xml = "\n".join(

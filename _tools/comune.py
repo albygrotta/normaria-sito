@@ -16,6 +16,7 @@ VOCI = [
     ("metodo",   "Il metodo",         "metodo.html"),
     ("catalogo", "Catalogo",          "index.html#catalogo"),
     ("articoli", "Articoli",          "articoli.html"),
+    ("video",    "Video",             "video.html"),
     ("estratto", "Estratto gratuito", "index.html#estratto"),
 ]
 
@@ -57,6 +58,30 @@ def modulo(su="", id_form="modulo-estratto"):
 
 SCRIPT_MODULO = ""
 
+# Lo script che avvia i video solo al clic. Sta qui perché finisce in fondo a
+# tutte le pagine: le schede video ci sono in home e nella pagina video, e uno
+# script che non trova schede semplicemente non fa nulla.
+SCRIPT_VIDEO = """
+  <script>
+    // Finche' nessuno clicca, di YouTube sul sito non c'e' nulla.
+    document.querySelectorAll('.video').forEach(function (riquadro) {
+      var bottone = riquadro.querySelector('.video-avvia');
+      if (!bottone) return;
+      bottone.addEventListener('click', function () {
+        var telaio = document.createElement('iframe');
+        telaio.src = 'https://www.youtube-nocookie.com/embed/' +
+                     riquadro.getAttribute('data-video') +
+                     '?autoplay=1&rel=0&modestbranding=1';
+        telaio.title = bottone.getAttribute('aria-label') || 'video';
+        telaio.loading = 'lazy';
+        telaio.allow = 'accelerometer; autoplay; encrypted-media; picture-in-picture';
+        telaio.setAttribute('allowfullscreen', '');
+        telaio.className = 'video-telaio';
+        riquadro.replaceChildren(telaio);
+      });
+    });
+  </script>"""
+
 
 def testa(attiva, su=""):
     """Intestazione + menu. `su` è '../' per le pagine dentro una cartella."""
@@ -87,6 +112,7 @@ def piede(su=""):
             <li><a href="{su}metodo.html">Il metodo</a></li>
             <li><a href="{su}index.html#catalogo">Catalogo</a></li>
             <li><a href="{su}articoli.html">Articoli</a></li>
+            <li><a href="{su}video.html">Video</a></li>
             <li><a href="{su}index.html#estratto">Estratto gratuito</a></li>
           </ul>
         </div>
@@ -124,7 +150,7 @@ def piede(su=""):
           b.setAttribute('aria-expanded', 'false'); }}
       }});
     }})();
-  </script>""" + SCRIPT_MODULO
+  </script>""" + SCRIPT_MODULO + SCRIPT_VIDEO
 
 
 def pagina(titolo, descrizione, canonico, attiva, corpo, su="", extra="", tipo="website"):
