@@ -327,7 +327,11 @@ section { padding: 64px 0; }
 /* =========================================================
    Pagine di testo (privacy / cookie)
    ========================================================= */
-.doc { padding: 56px 0 72px; max-width: 760px; }
+.doc { padding: 56px 24px 72px; max-width: 760px; }
+/* .doc arriva dopo .wrap nel foglio di stile: se qui si scrive
+   'padding: 56px 0' si cancellano i 24px laterali di .wrap e sul
+   telefono il testo finisce appiccicato ai bordi. I 24px vanno
+   sempre ripetuti. */
 .doc h1 { font-size: clamp(30px, 4vw, 42px); margin-bottom: 8px; }
 .doc .updated { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--grey); margin-bottom: 40px; }
 .doc h2 { font-size: 24px; margin-top: 40px; }
@@ -535,3 +539,6 @@ section { padding: 64px 0; }
   color: rgba(245,240,230,0.6);
 }
 .invito .scarica-nota { color: var(--grey); }
+
+/* rete di sicurezza: nessun contenuto deve sporgere di lato sul telefono */
+img, svg, video, iframe { max-width: 100%; }
