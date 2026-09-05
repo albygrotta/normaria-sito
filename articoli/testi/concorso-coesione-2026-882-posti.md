@@ -67,6 +67,8 @@ In pratica devi rispondere bene a circa tre quarti delle domande di contenuto. N
 
 C'è un conto che vale la pena fare una volta sola, e poi ricordare. Rispondere a caso rende, in media, `0,75 × (probabilità di indovinare) − 0,25 × (probabilità di sbagliare)`. Questo numero diventa positivo solo quando hai **più di una possibilità su quattro** di azzeccare.
 
+!schema quando-rispondere-a-caso | Sotto una possibilità su quattro il tiro a indovinare, in media, toglie punti invece di darne. Sopra, li dà.
+
 Tradotto: se davanti a quattro alternative non hai la più pallida idea, rispondere a caso o lasciare in bianco si equivalgono — in media non guadagni e non perdi nulla. Ma se riesci a escludere anche una sola alternativa sbagliata, le tue probabilità salgono a una su tre e rispondere diventa conveniente. Il nemico non è l'incertezza: è la fretta che ti fa rispondere convinto a una domanda che avevi letto male.
 
 ## Cosa si studia

@@ -30,6 +30,8 @@ Non è però una porta spalancata. L'articolo 5-bis dello stesso decreto elenca 
 
 ## Le tre forme a confronto
 
+!schema tre-forme-accesso | Le stesse informazioni della tabella qui sotto, viste tutte insieme: la porta scura a sinistra è l'unica che chiede un interesse personale.
+
 | | Documentale | Civico semplice | Civico generalizzato |
 | Norma | L. 241/1990, artt. 22 e ss. | D.lgs. 33/2013, art. 5 c. 1 | D.lgs. 33/2013, art. 5 c. 2 |
 | Chi può chiedere | Solo chi ha un interesse diretto, concreto e attuale | Chiunque | Chiunque |

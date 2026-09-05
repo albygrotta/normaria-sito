@@ -14,6 +14,8 @@ Il fondamento sta in una norma precisa: l'**articolo 3-bis del decreto-legge 80 
 
 > Sul portale inPA l'avviso risulta pubblicato da un singolo ente capofila, il Comune di Altavilla Silentina, che fa da soggetto formale per conto degli oltre mille comuni aderenti. È normale in questo tipo di procedure: cercare il proprio comune tra i banditori non ha senso.
 
+!schema graduatoria-contro-elenco | Due percorsi che si somigliano fino alla prova e poi divergono: da una parte una classifica che chiama in ordine, dall'altra una lista da cui mille comuni pescano quando ne hanno bisogno.
+
 ## Chi può partecipare
 
 I trentanove elenchi sono distribuiti su **tre aree** del contratto degli enti locali, e ciascuna ha la sua soglia di studio:
