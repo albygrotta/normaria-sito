@@ -50,6 +50,7 @@
           <a href="../metodo.html">Il metodo</a>
           <a href="../index.html#catalogo">Catalogo</a>
           <a href="../articoli.html" class="attiva">Articoli</a>
+          <a href="../video.html">Video</a>
           <a href="../index.html#estratto">Estratto gratuito</a>
       </nav>
     </div>
@@ -109,6 +110,60 @@
     <p>In pratica devi rispondere bene a circa tre quarti delle domande di contenuto. Non è un esame in cui si passa per un soffio: è un esame in cui o la materia la sai, o non ci arrivi.</p>
     <h3>Conviene tirare a indovinare?</h3>
     <p>C&#x27;è un conto che vale la pena fare una volta sola, e poi ricordare. Rispondere a caso rende, in media, `0,75 × (probabilità di indovinare) − 0,25 × (probabilità di sbagliare)`. Questo numero diventa positivo solo quando hai <strong>più di una possibilità su quattro</strong> di azzeccare.</p>
+    <figure class="schema">
+      <svg viewBox="0 0 760 340" xmlns="http://www.w3.org/2000/svg" role="img"
+           aria-label="Il punteggio del Concorso Coesione 2026: più 0,75 per la risposta esatta, meno 0,25 per quella sbagliata, zero per quella non data. Rispondere a caso conviene solo sopra una possibilità su quattro di indovinare.">
+        <style>
+          .t { font-family: Spectral, Georgia, serif; }
+          .m { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+          .s { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+          .cap { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+          .big { font-family: "IBM Plex Mono", monospace; font-size: 30px; font-weight: 500; }
+          .lab { font-size: 12.5px; }
+        </style>
+        <rect width="760" height="340" fill="#F5F0E6"/>
+      
+        <text x="0" y="16" class="m cap" fill="#9E2B25">Come si muovono i punti</text>
+        <line x1="0" y1="28" x2="760" y2="28" stroke="#111D30" stroke-opacity="0.18"/>
+      
+        <!-- tre valori -->
+        <g>
+          <rect x="0" y="48" width="240" height="92" fill="none" stroke="#111D30" stroke-opacity="0.28"/>
+          <text x="20" y="92" class="big" fill="#111D30">+0,75</text>
+          <text x="20" y="118" class="s lab" fill="#4A5468">risposta esatta</text>
+      
+          <rect x="260" y="48" width="240" height="92" fill="none" stroke="#9E2B25"/>
+          <text x="280" y="92" class="big" fill="#9E2B25">−0,25</text>
+          <text x="280" y="118" class="s lab" fill="#9E2B25">risposta sbagliata</text>
+      
+          <rect x="520" y="48" width="240" height="92" fill="none" stroke="#111D30" stroke-opacity="0.28"/>
+          <text x="540" y="92" class="big" fill="#4A5468">0,00</text>
+          <text x="540" y="118" class="s lab" fill="#4A5468">risposta non data</text>
+        </g>
+      
+        <!-- la soglia -->
+        <text x="0" y="182" class="m cap" fill="#9E2B25">Il punto di pareggio</text>
+        <line x1="0" y1="194" x2="760" y2="194" stroke="#111D30" stroke-opacity="0.18"/>
+      
+        <!-- barra: probabilità di indovinare -->
+        <g>
+          <rect x="0" y="216" width="190" height="42" fill="#111D30" fill-opacity="0.09"/>
+          <rect x="190" y="216" width="570" height="42" fill="#111D30"/>
+          <line x1="190" y1="208" x2="190" y2="272" stroke="#9E2B25" stroke-width="2"/>
+      
+          <text x="14" y="243" class="s lab" fill="#4A5468">rispondere fa perdere punti</text>
+          <text x="206" y="243" class="s lab" fill="#F5F0E6">rispondere conviene, in media</text>
+      
+          <text x="0" y="290" class="m" font-size="11" fill="#4A5468">0</text>
+          <text x="164" y="290" class="m" font-size="11" fill="#9E2B25">1 su 4</text>
+          <text x="742" y="290" class="m" font-size="11" fill="#4A5468">1</text>
+          <text x="0" y="310" class="s" font-size="11.5" fill="#4A5468">quante possibilità hai di azzeccarla</text>
+        </g>
+      
+        <text x="0" y="333" class="m" font-size="12" fill="#111D30">0,75 × (probabilità di indovinare) − 0,25 × (probabilità di sbagliare)</text>
+      </svg>
+      <figcaption>Sotto una possibilità su quattro il tiro a indovinare, in media, toglie punti invece di darne. Sopra, li dà.</figcaption>
+    </figure>
     <p>Tradotto: se davanti a quattro alternative non hai la più pallida idea, rispondere a caso o lasciare in bianco si equivalgono — in media non guadagni e non perdi nulla. Ma se riesci a escludere anche una sola alternativa sbagliata, le tue probabilità salgono a una su tre e rispondere diventa conveniente. Il nemico non è l&#x27;incertezza: è la fretta che ti fa rispondere convinto a una domanda che avevi letto male.</p>
     <h2>Cosa si studia</h2>
     <p>Le materie del bando, raggruppate per come si tengono insieme:</p>
@@ -175,6 +230,7 @@
             <li><a href="../metodo.html">Il metodo</a></li>
             <li><a href="../index.html#catalogo">Catalogo</a></li>
             <li><a href="../articoli.html">Articoli</a></li>
+            <li><a href="../video.html">Video</a></li>
             <li><a href="../index.html#estratto">Estratto gratuito</a></li>
           </ul>
         </div>
@@ -212,6 +268,25 @@
           b.setAttribute('aria-expanded', 'false'); }
       });
     })();
+  </script>
+  <script>
+    // Finche' nessuno clicca, di YouTube sul sito non c'e' nulla.
+    document.querySelectorAll('.video').forEach(function (riquadro) {
+      var bottone = riquadro.querySelector('.video-avvia');
+      if (!bottone) return;
+      bottone.addEventListener('click', function () {
+        var telaio = document.createElement('iframe');
+        telaio.src = 'https://www.youtube-nocookie.com/embed/' +
+                     riquadro.getAttribute('data-video') +
+                     '?autoplay=1&rel=0&modestbranding=1';
+        telaio.title = bottone.getAttribute('aria-label') || 'video';
+        telaio.loading = 'lazy';
+        telaio.allow = 'accelerometer; autoplay; encrypted-media; picture-in-picture';
+        telaio.setAttribute('allowfullscreen', '');
+        telaio.className = 'video-telaio';
+        riquadro.replaceChildren(telaio);
+      });
+    });
   </script>
 </body>
 </html>
