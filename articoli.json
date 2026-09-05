@@ -51,6 +51,32 @@
           "url": "https://www.unipa.it/Differenze-fra-accesso-civico-semplice-accesso-civico-generalizzato-FOIA-e-accesso-documentale/"
         }
       ]
+    },
+    {
+      "slug": "concorso-asmel-2026-elenchi-idonei",
+      "titolo": "Maxi Avviso ASMEL 2026: perché un elenco di idonei non è un concorso",
+      "occhiello": "Concorsi in corso",
+      "sommario": "Oltre mille comuni, trentanove profili, domande dal 15 al 30 settembre. Cosa cambia davvero fra essere idoneo ed essere vincitore, com'è fatta la prova e quali sono le venticinque domande che valgono per tutti.",
+      "data": "2026-09-05",
+      "aggiornato": "2026-09-05",
+      "manuali": [
+        "amministrativo",
+        "lavoro"
+      ],
+      "fonti": [
+        {
+          "testo": "Portale inPA — avviso e presentazione delle domande",
+          "url": "https://www.inpa.gov.it/"
+        },
+        {
+          "testo": "ASMELab — piattaforma della selezione",
+          "url": "https://www.asmelab.it/"
+        },
+        {
+          "testo": "Decreto-legge 9 giugno 2021, n. 80 (art. 3-bis) — Normattiva",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2021-06-09;80"
+        }
+      ]
     }
   ]
 }
