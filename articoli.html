@@ -27,7 +27,7 @@
   "blogPost": [
     {
       "@type": "BlogPosting",
-      "headline": "Maxi Avviso ASMEL 2026: perché un elenco di idonei non è un concorso",
+      "headline": "Concorso ASMEL 2026: cos'è un «elenco di idonei» e perché non è un concorso come gli altri",
       "datePublished": "2026-09-05",
       "url": "https://normaria.net/articoli/concorso-asmel-2026-elenchi-idonei.html"
     },
@@ -80,8 +80,8 @@
       <div class="posts">
         <article class="post">
           <p class="collana">Concorsi in corso · 5 settembre 2026</p>
-          <h2><a href="articoli/concorso-asmel-2026-elenchi-idonei.html">Maxi Avviso ASMEL 2026: perché un elenco di idonei non è un concorso</a></h2>
-          <p>Oltre mille comuni, trentanove profili, domande dal 15 al 30 settembre. Cosa cambia davvero fra essere idoneo ed essere vincitore, com&#x27;è fatta la prova e quali sono le venticinque domande che valgono per tutti.</p>
+          <h2><a href="articoli/concorso-asmel-2026-elenchi-idonei.html">Concorso ASMEL 2026: cos&#x27;è un «elenco di idonei» e perché non è un concorso come gli altri</a></h2>
+          <p>Domande dal 15 al 30 settembre, 39 profili in oltre mille comuni, una prova da casa di 60 quesiti in 60 minuti. Cosa vuol dire davvero entrare in un elenco di idonei, e cosa succede dopo.</p>
           <p class="post-piu"><a href="articoli/concorso-asmel-2026-elenchi-idonei.html">Leggi l'articolo</a></p>
         </article>
 
@@ -153,6 +153,28 @@
           b.setAttribute('aria-expanded', 'false'); }
       });
     })();
+  </script>
+  <script>
+    // l'invio finisce nel riquadro nascosto: mostriamo qui il messaggio
+    document.querySelectorAll('form.signup').forEach(function (f) {
+      var inviato = false;
+      var telaio = document.getElementsByName(f.target)[0];
+      f.addEventListener('submit', function () {
+        inviato = true;
+        f.querySelector('button[type=submit]').disabled = true;
+      });
+      if (telaio) {
+        telaio.addEventListener('load', function () {
+          if (!inviato) return;
+          var esito = f.querySelector('.esito');
+          f.querySelector('.signup-riga').hidden = true;
+          f.querySelector('.consenso').hidden = true;
+          esito.className = 'esito riuscito';
+          esito.textContent = 'Fatto. Ti abbiamo mandato una email con il link per scaricare l’estratto: controlla la posta, e anche la cartella spam se non la vedi.';
+          esito.hidden = false;
+        });
+      }
+    });
   </script>
 </body>
 </html>

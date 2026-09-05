@@ -54,9 +54,9 @@
     },
     {
       "slug": "concorso-asmel-2026-elenchi-idonei",
-      "titolo": "Maxi Avviso ASMEL 2026: perché un elenco di idonei non è un concorso",
+      "titolo": "Concorso ASMEL 2026: cos'è un «elenco di idonei» e perché non è un concorso come gli altri",
       "occhiello": "Concorsi in corso",
-      "sommario": "Oltre mille comuni, trentanove profili, domande dal 15 al 30 settembre. Cosa cambia davvero fra essere idoneo ed essere vincitore, com'è fatta la prova e quali sono le venticinque domande che valgono per tutti.",
+      "sommario": "Domande dal 15 al 30 settembre, 39 profili in oltre mille comuni, una prova da casa di 60 quesiti in 60 minuti. Cosa vuol dire davvero entrare in un elenco di idonei, e cosa succede dopo.",
       "data": "2026-09-05",
       "aggiornato": "2026-09-05",
       "manuali": [
@@ -65,16 +65,24 @@
       ],
       "fonti": [
         {
-          "testo": "Portale inPA — avviso e presentazione delle domande",
-          "url": "https://www.inpa.gov.it/"
+          "testo": "Maxi avviso ASMEL 2026 per la formazione di 39 elenchi di idonei — portale inPA",
+          "url": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=de84971ad8794b8ab62112c77c0f06ea"
         },
         {
-          "testo": "ASMELab — piattaforma della selezione",
-          "url": "https://www.asmelab.it/"
+          "testo": "Art. 3-bis del D.L. 9 giugno 2021, n. 80 (conv. L. 113/2021) — Selezioni uniche per la formazione di elenchi di idonei negli enti locali",
+          "url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=21A04886&art.idArticolo=3&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2021-08-07&art.progressivo=0"
         },
         {
-          "testo": "Decreto-legge 9 giugno 2021, n. 80 (art. 3-bis) — Normattiva",
-          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2021-06-09;80"
+          "testo": "Concorso ASMEL 2026, domande dal 15 settembre: come candidarsi e prepararsi — Ticonsiglio",
+          "url": "https://www.ticonsiglio.com/concorso-asmel-2026-maxi-bando/"
+        },
+        {
+          "testo": "Maxi Concorso ASMEL 2026: 39 elenchi di idonei, prova da remoto — Ediltecnico",
+          "url": "https://ediltecnico.it/concorso-asmel-2026-profili-tecnici/"
+        },
+        {
+          "testo": "Portale ASMELab — presentazione delle candidature",
+          "url": "https://www.asmelab.it"
         }
       ]
     }
