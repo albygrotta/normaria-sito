@@ -522,3 +522,16 @@ section { padding: 64px 0; }
 }
 
 @media (max-width: 860px) { .estratto-grid { grid-template-columns: 1fr; gap: 34px; } }
+
+/* ---------- riquadro per scaricare l'estratto ---------- */
+.scarica { max-width: 460px; }
+.btn-grande {
+  display: inline-block; font-size: 1.02rem; padding: 15px 30px;
+  letter-spacing: 0.02em;
+}
+.scarica-nota {
+  margin-top: 14px; font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem; letter-spacing: 0.04em;
+  color: rgba(245,240,230,0.6);
+}
+.invito .scarica-nota { color: var(--grey); }
