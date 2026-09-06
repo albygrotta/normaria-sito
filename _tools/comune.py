@@ -39,24 +39,71 @@ def menu(attiva, su=""):
 
 # ---------------------------------------------------------------- estratto
 #
-# Il modulo di iscrizione è sospeso: Brevo rifiuta gli invii finché l'account
-# non viene attivato dal suo lato (l'indirizzo del modulo risponde
-# "Invalid token"). Finché non è risolto, l'estratto si scarica direttamente:
-# meglio dare subito il PDF che promettere una email che non parte.
+# ATTENZIONE all'indirizzo qui sotto: il token finisce con due segni "=" e
+# vanno tenuti. Sono la chiusura di una codifica base64: se si troncano,
+# Brevo risponde "Invalid token" e l'iscrizione non arriva mai, senza che il
+# visitatore se ne accorga. È esattamente l'errore che ci è costato due giorni.
+
+MODULO = ("https://7afa150f.sibforms.com/serve/"
+          "MUIFABosbj4hT2Yvsj0W-kZ0voENwylTou3RlSRGPmx-CRmm-NXQyfma-gCysB2WYgqjTDdk8Yj9QktUwY8iBF2Jvp4zGc51-vW1M0_Hl1"
+          "pcVZ4MA135X7Zv0vALkcWuTj3XOXZUmFqyLIVO2hv0wUM6wGn0SSHSZQYiZDmziZ9SyDg-RjenrLE1v56bJdmjJxRuJQoFamgJHIzK8Q==")
 
 ESTRATTO = "estratto/normaria-estratto-diritto-amministrativo-2026.pdf"
 
 
 def modulo(su="", id_form="modulo-estratto"):
-    """Il riquadro per scaricare l'estratto."""
-    return f"""      <div class="scarica" id="{id_form}">
-        <a class="btn btn-light btn-grande" href="{su}{ESTRATTO}" download>
-          Scarica l'estratto in PDF</a>
-        <p class="scarica-nota">15 pagine · PDF, 113 KB · nessuna registrazione richiesta</p>
-      </div>"""
+    """Il modulo per ricevere l'estratto.
+
+    L'invio va a Brevo dentro un riquadro nascosto, così il visitatore resta
+    sul sito: è il modo che Brevo accetta senza caricare suoi script.
+    """
+    return f"""      <form class="signup" id="{id_form}" method="POST" action="{MODULO}"
+            target="brevo-{id_form}" accept-charset="utf-8">
+        <div class="signup-riga">
+          <input type="email" name="EMAIL" required autocomplete="email"
+                 placeholder="La tua email" aria-label="Il tuo indirizzo email">
+          <button type="submit" class="btn btn-light">Ricevi l'estratto</button>
+        </div>
+        <!-- campo trappola per i robot: resta vuoto -->
+        <input type="text" name="email_address_check" value="" tabindex="-1"
+               autocomplete="off" aria-hidden="true" class="trappola">
+        <input type="hidden" name="locale" value="it">
+        <input type="hidden" name="html_type" value="simple">
+        <label class="consenso">
+          <input type="checkbox" required name="consenso">
+          <span>Acconsento a ricevere l'estratto in PDF via email. Ho letto
+          l'<a href="{su}privacy.html">informativa sulla privacy</a> e so che posso
+          disiscrivermi in qualsiasi momento.</span>
+        </label>
+        <p class="esito" role="status" hidden></p>
+      </form>
+      <iframe name="brevo-{id_form}" class="trappola" title="invio del modulo" aria-hidden="true"></iframe>"""
 
 
-SCRIPT_MODULO = ""
+SCRIPT_MODULO = """
+  <script>
+    // l'invio finisce nel riquadro nascosto: il messaggio lo mostriamo qui
+    document.querySelectorAll('form.signup').forEach(function (f) {
+      var inviato = false;
+      var telaio = document.getElementsByName(f.target)[0];
+      f.addEventListener('submit', function () {
+        inviato = true;
+        f.querySelector('button[type=submit]').disabled = true;
+      });
+      if (telaio) {
+        telaio.addEventListener('load', function () {
+          if (!inviato) return;
+          var esito = f.querySelector('.esito');
+          f.querySelector('.signup-riga').hidden = true;
+          f.querySelector('.consenso').hidden = true;
+          esito.className = 'esito riuscito';
+          esito.textContent = 'Fatto. Ti abbiamo mandato una email con l\u2019estratto: controlla la posta, e anche la cartella spam se non la vedi.';
+          esito.hidden = false;
+        });
+      }
+    });
+  </script>"""
+
 
 # Lo script che avvia i video solo al clic. Sta qui perché finisce in fondo a
 # tutte le pagine: le schede video ci sono in home e nella pagina video, e uno
