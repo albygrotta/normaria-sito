@@ -674,23 +674,39 @@
         <div>
           <p class="eyebrow">Estratto gratuito</p>
           <h2>Quindici pagine, per capire se il metodo fa per te.</h2>
-          <p>Un estratto in PDF del <strong>Manuale Normativo di Diritto
-             Amministrativo</strong>, da scaricare subito. Dentro ci sono:</p>
+          <p>Lascia la tua email e ti mandiamo un estratto in PDF del
+             <strong>Manuale Normativo di Diritto Amministrativo</strong>. Dentro ci sono:</p>
           <ul class="dentro">
             <li>la pagina che spiega <strong>come si legge una scheda</strong>, blocco per blocco</li>
             <li>l'indice completo delle sei parti del manuale</li>
             <li><strong>le prime venti schede</strong> sui fondamenti costituzionali — dall'art. 23 Cost. in poi</li>
           </ul>
-          <p class="dentro-nota">Nessuna registrazione, nessuna email richiesta,
-             nessuna pubblicità di terzi. Il file si apre e si legge.</p>
+          <p class="dentro-nota">Ti scriviamo per mandarti l'estratto. Nessuna newsletter
+             quotidiana, nessuna pubblicità di terzi, e ti disiscrivi con un clic.</p>
         </div>
         <div>
 <!-- MODULO:INIZIO -->
-      <div class="scarica" id="modulo-estratto">
-        <a class="btn btn-light btn-grande" href="estratto/normaria-estratto-diritto-amministrativo-2026.pdf" download>
-          Scarica l'estratto in PDF</a>
-        <p class="scarica-nota">15 pagine · PDF, 113 KB · nessuna registrazione richiesta</p>
-      </div>
+      <form class="signup" id="modulo-estratto" method="POST" action="https://7afa150f.sibforms.com/serve/MUIFABosbj4hT2Yvsj0W-kZ0voENwylTou3RlSRGPmx-CRmm-NXQyfma-gCysB2WYgqjTDdk8Yj9QktUwY8iBF2Jvp4zGc51-vW1M0_Hl1pcVZ4MA135X7Zv0vALkcWuTj3XOXZUmFqyLIVO2hv0wUM6wGn0SSHSZQYiZDmziZ9SyDg-RjenrLE1v56bJdmjJxRuJQoFamgJHIzK8Q=="
+            target="brevo-modulo-estratto" accept-charset="utf-8">
+        <div class="signup-riga">
+          <input type="email" name="EMAIL" required autocomplete="email"
+                 placeholder="La tua email" aria-label="Il tuo indirizzo email">
+          <button type="submit" class="btn btn-light">Ricevi l'estratto</button>
+        </div>
+        <!-- campo trappola per i robot: resta vuoto -->
+        <input type="text" name="email_address_check" value="" tabindex="-1"
+               autocomplete="off" aria-hidden="true" class="trappola">
+        <input type="hidden" name="locale" value="it">
+        <input type="hidden" name="html_type" value="simple">
+        <label class="consenso">
+          <input type="checkbox" required name="consenso">
+          <span>Acconsento a ricevere l'estratto in PDF via email. Ho letto
+          l'<a href="privacy.html">informativa sulla privacy</a> e so che posso
+          disiscrivermi in qualsiasi momento.</span>
+        </label>
+        <p class="esito" role="status" hidden></p>
+      </form>
+      <iframe name="brevo-modulo-estratto" class="trappola" title="invio del modulo" aria-hidden="true"></iframe>
 <!-- MODULO:FINE -->
         </div>
       </div>
@@ -751,6 +767,28 @@
           b.setAttribute('aria-expanded', 'false'); }
       });
     })();
+  </script>
+  <script>
+    // l'invio finisce nel riquadro nascosto: il messaggio lo mostriamo qui
+    document.querySelectorAll('form.signup').forEach(function (f) {
+      var inviato = false;
+      var telaio = document.getElementsByName(f.target)[0];
+      f.addEventListener('submit', function () {
+        inviato = true;
+        f.querySelector('button[type=submit]').disabled = true;
+      });
+      if (telaio) {
+        telaio.addEventListener('load', function () {
+          if (!inviato) return;
+          var esito = f.querySelector('.esito');
+          f.querySelector('.signup-riga').hidden = true;
+          f.querySelector('.consenso').hidden = true;
+          esito.className = 'esito riuscito';
+          esito.textContent = 'Fatto. Ti abbiamo mandato una email con l’estratto: controlla la posta, e anche la cartella spam se non la vedi.';
+          esito.hidden = false;
+        });
+      }
+    });
   </script>
   <script>
     // Finche' nessuno clicca, di YouTube sul sito non c'e' nulla.
