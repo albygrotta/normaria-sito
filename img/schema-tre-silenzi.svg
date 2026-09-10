@@ -1,0 +1,60 @@
+<svg viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Tre tipi di silenzio della pubblica amministrazione: il silenzio-assenso vale come accoglimento della domanda, il silenzio-rigetto vale come diniego, il silenzio-inadempimento non vale niente e lascia il procedimento aperto.">
+  <style>
+    .m { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+    .s { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    .cap { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+    .nome { font-family: Spectral, Georgia, serif; font-size: 16px; font-weight: 600; }
+    .big { font-family: "IBM Plex Mono", monospace; font-size: 34px; font-weight: 500; }
+    .lab { font-size: 12px; }
+  </style>
+  <rect width="760" height="320" fill="#F5F0E6"/>
+
+  <text x="0" y="16" class="m cap" fill="#9E2B25">Il termine scade e non arriva risposta</text>
+  <line x1="0" y1="28" x2="760" y2="28" stroke="#111D30" stroke-opacity="0.18"/>
+
+  <!-- linea di derivazione -->
+  <line x1="380" y1="34" x2="380" y2="52" stroke="#111D30" stroke-opacity="0.35"/>
+  <line x1="120" y1="52" x2="640" y2="52" stroke="#111D30" stroke-opacity="0.35"/>
+  <line x1="120" y1="52" x2="120" y2="70" stroke="#111D30" stroke-opacity="0.35"/>
+  <line x1="380" y1="52" x2="380" y2="70" stroke="#111D30" stroke-opacity="0.35"/>
+  <line x1="640" y1="52" x2="640" y2="70" stroke="#111D30" stroke-opacity="0.35"/>
+
+  <!-- 1. assenso -->
+  <g>
+    <rect x="0" y="70" width="240" height="176" fill="#111D30"/>
+    <text x="20" y="102" class="m cap" fill="#F5F0E6" fill-opacity="0.65">Silenzio-assenso</text>
+    <text x="20" y="152" class="big" fill="#F5F0E6">SÌ</text>
+    <text x="20" y="182" class="s lab" fill="#F5F0E6" fill-opacity="0.85">la domanda si intende</text>
+    <text x="20" y="200" class="s lab" fill="#F5F0E6" fill-opacity="0.85">accolta, senza atto scritto</text>
+    <line x1="20" y1="214" x2="220" y2="214" stroke="#F5F0E6" stroke-opacity="0.3"/>
+    <text x="20" y="233" class="m lab" fill="#F5F0E6" fill-opacity="0.65">art. 20 L. 241/1990</text>
+  </g>
+
+  <!-- 2. rigetto -->
+  <g>
+    <rect x="260" y="70" width="240" height="176" fill="none" stroke="#9E2B25" stroke-width="1.5"/>
+    <text x="280" y="102" class="m cap" fill="#9E2B25">Silenzio-rigetto</text>
+    <text x="280" y="152" class="big" fill="#9E2B25">NO</text>
+    <text x="280" y="182" class="s lab" fill="#4A5468">la domanda si intende</text>
+    <text x="280" y="200" class="s lab" fill="#4A5468">respinta: si può impugnare</text>
+    <line x1="280" y1="214" x2="480" y2="214" stroke="#9E2B25" stroke-opacity="0.4"/>
+    <text x="280" y="233" class="m lab" fill="#9E2B25">solo dove una norma lo dice</text>
+  </g>
+
+  <!-- 3. inadempimento -->
+  <g>
+    <rect x="520" y="70" width="240" height="176" fill="none" stroke="#111D30" stroke-opacity="0.28"
+          stroke-dasharray="5 4"/>
+    <text x="540" y="102" class="m cap" fill="#4A5468">Silenzio-inadempimento</text>
+    <text x="540" y="152" class="big" fill="#4A5468">—</text>
+    <text x="540" y="182" class="s lab" fill="#4A5468">non decide niente:</text>
+    <text x="540" y="200" class="s lab" fill="#4A5468">il procedimento resta aperto</text>
+    <line x1="540" y1="214" x2="740" y2="214" stroke="#111D30" stroke-opacity="0.22"/>
+    <text x="540" y="233" class="m lab" fill="#4A5468">art. 31 cod. proc. amm.</text>
+  </g>
+
+  <line x1="0" y1="274" x2="760" y2="274" stroke="#111D30" stroke-opacity="0.18"/>
+  <text x="0" y="296" class="s" font-size="12.5" fill="#4A5468">Lo stesso fatto — nessuna risposta — con tre effetti giuridici opposti. Il primo è la regola</text>
+  <text x="0" y="314" class="s" font-size="12.5" fill="#4A5468">nei procedimenti a istanza di parte; gli altri due valgono nei casi che la legge indica.</text>
+</svg>
