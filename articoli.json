@@ -85,6 +85,39 @@
           "url": "https://www.asmelab.it"
         }
       ]
+    },
+    {
+      "slug": "silenzio-assenso-quando-vale-si",
+      "titolo": "Se l'amministrazione non risponde, la domanda è accolta? Il silenzio-assenso spiegato bene",
+      "occhiello": "Il diritto spiegato",
+      "sommario": "Tre silenzi diversi e uno solo vale come un sì: quando si forma, in quali materie non vale mai, e cosa è cambiato con il decreto PNRR 2026.",
+      "data": "2026-09-10",
+      "aggiornato": "2026-09-10",
+      "manuali": [
+        "amministrativo"
+      ],
+      "fonti": [
+        {
+          "testo": "Art. 20 legge 241/1990 — Silenzio assenso, testo aggiornato — Brocardi.it",
+          "url": "https://www.brocardi.it/legge-sul-procedimento-amministrativo/capo-iv/art20.html"
+        },
+        {
+          "testo": "Legge 7 agosto 1990 n. 241, testo coordinato (artt. 2, 2-bis, 17-bis, 20, 21-nonies) — Bosetti & Gatti",
+          "url": "https://www.bosettiegatti.eu/info/norme/statali/1990_0241.htm"
+        },
+        {
+          "testo": "DL 19/2026: cosa cambia nella legge 241/1990 su conferenza di servizi, SCIA e silenzio assenso — LavoriPubblici",
+          "url": "https://www.lavoripubblici.it/news/dl-19-2026-modifiche-legge-241-1990-37530"
+        },
+        {
+          "testo": "Silenzio-assenso: cosa cambia con il Decreto PNRR 2026 — BibLus",
+          "url": "https://biblus.acca.it/notizie/silenzio-assenso-ecco-cosa-cambia-con-il-decreto-pnrr-2026/"
+        },
+        {
+          "testo": "Art. 31 codice del processo amministrativo — Azione avverso il silenzio — Brocardi.it",
+          "url": "https://www.brocardi.it/codice-del-processo-amministrativo/libro-primo/titolo-iii/capo-ii/art31.html"
+        }
+      ]
     }
   ]
 }

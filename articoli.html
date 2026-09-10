@@ -27,6 +27,12 @@
   "blogPost": [
     {
       "@type": "BlogPosting",
+      "headline": "Se l'amministrazione non risponde, la domanda è accolta? Il silenzio-assenso spiegato bene",
+      "datePublished": "2026-09-10",
+      "url": "https://normaria.net/articoli/silenzio-assenso-quando-vale-si.html"
+    },
+    {
+      "@type": "BlogPosting",
       "headline": "Concorso ASMEL 2026: cos'è un «elenco di idonei» e perché non è un concorso come gli altri",
       "datePublished": "2026-09-05",
       "url": "https://normaria.net/articoli/concorso-asmel-2026-elenchi-idonei.html"
@@ -79,6 +85,13 @@
   <section id="elenco">
     <div class="wrap">
       <div class="posts">
+        <article class="post">
+          <p class="collana">Il diritto spiegato · 10 settembre 2026</p>
+          <h2><a href="articoli/silenzio-assenso-quando-vale-si.html">Se l&#x27;amministrazione non risponde, la domanda è accolta? Il silenzio-assenso spiegato bene</a></h2>
+          <p>Tre silenzi diversi e uno solo vale come un sì: quando si forma, in quali materie non vale mai, e cosa è cambiato con il decreto PNRR 2026.</p>
+          <p class="post-piu"><a href="articoli/silenzio-assenso-quando-vale-si.html">Leggi l'articolo</a></p>
+        </article>
+
         <article class="post">
           <p class="collana">Concorsi in corso · 5 settembre 2026</p>
           <h2><a href="articoli/concorso-asmel-2026-elenchi-idonei.html">Concorso ASMEL 2026: cos&#x27;è un «elenco di idonei» e perché non è un concorso come gli altri</a></h2>
@@ -155,6 +168,28 @@
           b.setAttribute('aria-expanded', 'false'); }
       });
     })();
+  </script>
+  <script>
+    // l'invio finisce nel riquadro nascosto: il messaggio lo mostriamo qui
+    document.querySelectorAll('form.signup').forEach(function (f) {
+      var inviato = false;
+      var telaio = document.getElementsByName(f.target)[0];
+      f.addEventListener('submit', function () {
+        inviato = true;
+        f.querySelector('button[type=submit]').disabled = true;
+      });
+      if (telaio) {
+        telaio.addEventListener('load', function () {
+          if (!inviato) return;
+          var esito = f.querySelector('.esito');
+          f.querySelector('.signup-riga').hidden = true;
+          f.querySelector('.consenso').hidden = true;
+          esito.className = 'esito riuscito';
+          esito.textContent = 'Fatto. Ti abbiamo mandato una email con l’estratto: controlla la posta, e anche la cartella spam se non la vedi.';
+          esito.hidden = false;
+        });
+      }
+    });
   </script>
   <script>
     // Finche' nessuno clicca, di YouTube sul sito non c'e' nulla.
