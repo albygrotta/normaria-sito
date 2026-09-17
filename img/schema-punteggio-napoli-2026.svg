@@ -1,0 +1,53 @@
+<svg viewBox="0 0 330 474" style="min-width:0;max-width:340px;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Il punteggio della prova del Concorso Comune di Napoli 2026: più 1 punto per la risposta esatta, meno 0,30 per quella sbagliata, zero per quella non data. Il pareggio sta a 23 possibilità su 100 di indovinare.">
+  <style>
+    .m { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+    .s { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    .cap { font-size: 10px; letter-spacing: 0.13em; text-transform: uppercase; }
+    .big { font-family: "IBM Plex Mono", monospace; font-size: 22px; font-weight: 500; }
+    .lab { font-size: 11px; }
+  </style>
+  <rect width="330" height="474" fill="#F5F0E6"/>
+
+  <text x="0" y="13" class="m cap" fill="#9E2B25">Come si muovono i punti</text>
+  <line x1="0" y1="24" x2="330" y2="24" stroke="#111D30" stroke-opacity="0.18"/>
+
+  <g>
+    <rect x="0" y="38" width="330" height="56" fill="none" stroke="#111D30" stroke-opacity="0.28"/>
+    <text x="14" y="73" class="big" fill="#111D30">+1,00</text>
+    <text x="120" y="72" class="s lab" fill="#4A5468">risposta esatta</text>
+
+    <rect x="0" y="104" width="330" height="56" fill="none" stroke="#9E2B25"/>
+    <text x="14" y="139" class="big" fill="#9E2B25">−0,30</text>
+    <text x="120" y="138" class="s lab" fill="#9E2B25">risposta sbagliata</text>
+
+    <rect x="0" y="170" width="330" height="56" fill="none" stroke="#111D30" stroke-opacity="0.28"/>
+    <text x="14" y="205" class="big" fill="#4A5468">0,00</text>
+    <text x="120" y="204" class="s lab" fill="#4A5468">risposta non data</text>
+  </g>
+
+  <text x="0" y="272" class="m cap" fill="#9E2B25">Il punto di pareggio</text>
+  <line x1="0" y1="283" x2="330" y2="283" stroke="#111D30" stroke-opacity="0.18"/>
+
+  <g>
+    <rect x="0" y="302" width="76" height="42" fill="#111D30" fill-opacity="0.09"/>
+    <rect x="76" y="302" width="254" height="42" fill="#111D30"/>
+    <line x1="76" y1="295" x2="76" y2="358" stroke="#9E2B25" stroke-width="2"/>
+
+    <text x="6" y="320" class="s" font-size="9.5" fill="#4A5468">rispondere</text>
+    <text x="6" y="333" class="s" font-size="9.5" fill="#4A5468">fa perdere</text>
+    <text x="6" y="346" class="s" font-size="9.5" fill="#4A5468">punti</text>
+    <text x="88" y="322" class="s" font-size="10.5" fill="#F5F0E6">rispondere conviene,</text>
+    <text x="88" y="336" class="s" font-size="10.5" fill="#F5F0E6">in media</text>
+
+    <text x="0" y="374" class="m" font-size="10" fill="#4A5468">0</text>
+    <text x="48" y="374" class="m" font-size="10" fill="#9E2B25">23 su 100</text>
+    <text x="320" y="374" class="m" font-size="10" fill="#4A5468">1</text>
+    <text x="0" y="398" class="s" font-size="11" fill="#4A5468">quante possibilità hai di azzeccare</text>
+    <text x="0" y="412" class="s" font-size="11" fill="#4A5468">la risposta</text>
+
+    <line x1="0" y1="430" x2="330" y2="430" stroke="#111D30" stroke-opacity="0.12"/>
+    <text x="0" y="450" class="m" font-size="9.5" fill="#4A5468">1,00 × (probabilità di indovinare)</text>
+    <text x="0" y="466" class="m" font-size="9.5" fill="#4A5468">− 0,30 × (probabilità di sbagliare) = 0</text>
+  </g>
+</svg>
