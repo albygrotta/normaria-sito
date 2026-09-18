@@ -144,6 +144,39 @@
           "url": "https://www.inpa.gov.it/"
         }
       ]
+    },
+    {
+      "slug": "concussione-induzione-corruzione",
+      "titolo": "Concussione o corruzione? La differenza sta in chi ha ancora una scelta",
+      "occhiello": "Il diritto spiegato",
+      "sommario": "Tre articoli del codice penale puniscono lo stesso scambio di denaro in tre modi diversi, e in uno solo chi paga è una vittima. Il criterio delle Sezioni Unite, le pene e le quattro trappole dei quesiti.",
+      "data": "2026-09-18",
+      "aggiornato": "2026-09-18",
+      "manuali": [
+        "penale"
+      ],
+      "fonti": [
+        {
+          "testo": "Codice penale, artt. 317-322 — Normattiva",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1930-10-19;1398"
+        },
+        {
+          "testo": "Art. 319-quater c.p., Induzione indebita a dare o promettere utilità — Brocardi",
+          "url": "https://www.brocardi.it/codice-penale/libro-secondo/titolo-ii/capo-i/art319quater.html"
+        },
+        {
+          "testo": "Corruzione e concussione: la differenza (artt. 317-319 c.p.) — Diritto-Penale.it",
+          "url": "https://www.diritto-penale.it/corruzione-e-concussione-la-differenza.htm"
+        },
+        {
+          "testo": "I rapporti fra corruzione, concussione e induzione indebita fra dottrina e giurisprudenza — Ratio Iuris",
+          "url": "https://ratioiuris.it/i-rapporti-fra-corruzione-concussione-e-induzione-indebita-fra-dottrina-e-giurisprudenza/"
+        },
+        {
+          "testo": "Abuso d'ufficio: una partita ancora aperta — Questione Giustizia",
+          "url": "https://www.questionegiustizia.it/articolo/abuso-d-ufficio"
+        }
+      ]
     }
   ]
 }
