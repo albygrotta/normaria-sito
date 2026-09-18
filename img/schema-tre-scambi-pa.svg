@@ -1,0 +1,59 @@
+<svg viewBox="0 0 330 486" style="min-width:0;max-width:340px;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="I tre reati a confronto. Concussione, art. 317 c.p., da 6 a 12 anni: il funzionario costringe minacciando un danno ingiusto, chi paga è la vittima e non è punibile. Induzione indebita, art. 319-quater c.p., da 6 anni a 10 anni e 6 mesi: il funzionario spinge prospettando un danno legittimo o un vantaggio indebito, chi paga è punibile fino a 3 anni. Corruzione, artt. 318 e 319 c.p., da 3 a 8 anni e da 6 a 10 anni: i due si accordano alla pari, chi paga risponde con la stessa pena del funzionario.">
+  <style>
+    .t { font-family: Spectral, Georgia, serif; }
+    .m { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+    .s { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    .cap  { font-size: 10px; letter-spacing: 0.13em; text-transform: uppercase; }
+    .voce { font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; }
+    .nome { font-size: 16px; font-weight: 600; }
+    .pena { font-size: 10.5px; }
+    .val  { font-size: 11.5px; }
+  </style>
+
+  <rect width="330" height="486" fill="#F5F0E6"/>
+
+  <text x="0" y="13" class="m cap" fill="#9E2B25">Chi ha ancora una scelta</text>
+  <line x1="0" y1="24" x2="330" y2="24" stroke="#111D30" stroke-opacity="0.18"/>
+
+  <!-- 1. concussione -->
+  <g>
+    <rect x="0" y="38" width="330" height="134" fill="#111D30"/>
+    <text x="14" y="60" class="t nome" fill="#F5F0E6">Concussione</text>
+    <text x="316" y="60" class="m pena" fill="#C98A85" text-anchor="end">6 – 12 anni</text>
+    <text x="14" y="78" class="m" font-size="10" fill="#F5F0E6" fill-opacity="0.62">art. 317 c.p.</text>
+    <line x1="14" y1="88" x2="316" y2="88" stroke="#F5F0E6" stroke-opacity="0.22"/>
+    <text x="14" y="106" class="s val" fill="#F5F0E6">Il funzionario costringe:</text>
+    <text x="14" y="122" class="s val" fill="#F5F0E6">minaccia un danno ingiusto</text>
+    <text x="14" y="142" class="m voce" fill="#C98A85">Chi paga</text>
+    <text x="14" y="158" class="s val" fill="#F5F0E6">È la vittima. Non è punibile.</text>
+  </g>
+
+  <!-- 2. induzione indebita -->
+  <g>
+    <rect x="0" y="184" width="330" height="134" fill="none" stroke="#9E2B25"/>
+    <text x="14" y="206" class="t nome" fill="#111D30">Induzione indebita</text>
+    <text x="316" y="206" class="m pena" fill="#9E2B25" text-anchor="end">6 – 10 anni e 6 mesi</text>
+    <text x="14" y="224" class="m" font-size="10" fill="#4A5468">art. 319-quater c.p.</text>
+    <line x1="14" y1="234" x2="316" y2="234" stroke="#111D30" stroke-opacity="0.16"/>
+    <text x="14" y="252" class="s val" fill="#111D30">Il funzionario spinge: prospetta</text>
+    <text x="14" y="268" class="s val" fill="#111D30">un danno legittimo o un vantaggio</text>
+    <text x="14" y="288" class="m voce" fill="#9E2B25">Chi paga</text>
+    <text x="14" y="304" class="s val" fill="#111D30">È punibile: fino a 3 anni.</text>
+  </g>
+
+  <!-- 3. corruzione -->
+  <g>
+    <rect x="0" y="330" width="330" height="134" fill="none" stroke="#111D30" stroke-opacity="0.28"/>
+    <text x="14" y="352" class="t nome" fill="#111D30">Corruzione</text>
+    <text x="316" y="352" class="m pena" fill="#4A5468" text-anchor="end">3 – 8 e 6 – 10 anni</text>
+    <text x="14" y="370" class="m" font-size="10" fill="#4A5468">artt. 318 e 319 c.p.</text>
+    <line x1="14" y1="380" x2="316" y2="380" stroke="#111D30" stroke-opacity="0.16"/>
+    <text x="14" y="398" class="s val" fill="#111D30">I due si accordano alla pari:</text>
+    <text x="14" y="414" class="s val" fill="#111D30">nessuno costringe nessuno</text>
+    <text x="14" y="434" class="m voce" fill="#9E2B25">Chi paga</text>
+    <text x="14" y="450" class="s val" fill="#111D30">Stessa pena del funzionario.</text>
+  </g>
+
+  <text x="0" y="478" class="s" font-size="11" fill="#4A5468">Scendendo, chi paga è sempre più responsabile.</text>
+</svg>
