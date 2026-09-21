@@ -1,0 +1,74 @@
+<svg viewBox="0 0 330 470" style="min-width:0;max-width:340px;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Concorso Comune di Brescia 2026: ogni prova richiede almeno 21 punti su 30. Il candidato A prende 30 allo scritto e 20 all'orale, media 25, ed è escluso perché l'orale sta sotto la soglia. Il candidato B prende 21 e 21, media 21, e resta in graduatoria. La media non entra nel bando.">
+  <style>
+    .m { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+    .s { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    .cap { font-size: 10px; letter-spacing: 0.13em; text-transform: uppercase; }
+    .lab { font-size: 11px; }
+    .num { font-family: "IBM Plex Mono", monospace; font-size: 13px; font-weight: 500; }
+    .esito { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.12em; }
+  </style>
+  <rect width="330" height="470" fill="#F5F0E6"/>
+
+  <text x="0" y="13" class="m cap" fill="#9E2B25">Il cancello, non la media</text>
+  <line x1="0" y1="24" x2="330" y2="24" stroke="#111D30" stroke-opacity="0.18"/>
+  <text x="0" y="42" class="s lab" fill="#4A5468">Ogni prova vuole almeno 21 punti su 30.</text>
+
+  <!-- soglia: riferimento -->
+  <text x="222" y="66" text-anchor="end" class="m" font-size="9" fill="#9E2B25">soglia 21/30</text>
+  <line x1="224" y1="58" x2="224" y2="70" stroke="#9E2B25" stroke-width="2"/>
+
+  <!-- CANDIDATO A -->
+  <g>
+    <text x="0" y="94" class="m cap" fill="#111D30">Candidato A</text>
+
+    <text x="0" y="119" class="s lab" fill="#4A5468">scritto</text>
+    <rect x="70" y="108" width="220" height="15" fill="#111D30" fill-opacity="0.08"/>
+    <rect x="70" y="108" width="220" height="15" fill="#111D30"/>
+    <text x="298" y="120" class="num" fill="#111D30">30</text>
+
+    <text x="0" y="145" class="s lab" fill="#4A5468">orale</text>
+    <rect x="70" y="134" width="220" height="15" fill="#111D30" fill-opacity="0.08"/>
+    <rect x="70" y="134" width="147" height="15" fill="#9E2B25"/>
+    <text x="298" y="146" class="num" fill="#9E2B25">20</text>
+
+    <line x1="224" y1="101" x2="224" y2="156" stroke="#9E2B25" stroke-width="2"/>
+
+    <text x="0" y="176" class="esito" fill="#9E2B25">ESCLUSO</text>
+    <text x="90" y="176" class="s" font-size="10.5" fill="#4A5468">media 25, orale sotto soglia</text>
+  </g>
+
+  <line x1="0" y1="196" x2="330" y2="196" stroke="#111D30" stroke-opacity="0.18"/>
+
+  <!-- CANDIDATO B -->
+  <g>
+    <text x="0" y="222" class="m cap" fill="#111D30">Candidato B</text>
+
+    <text x="0" y="247" class="s lab" fill="#4A5468">scritto</text>
+    <rect x="70" y="236" width="220" height="15" fill="#111D30" fill-opacity="0.08"/>
+    <rect x="70" y="236" width="154" height="15" fill="#111D30"/>
+    <text x="298" y="248" class="num" fill="#111D30">21</text>
+
+    <text x="0" y="273" class="s lab" fill="#4A5468">orale</text>
+    <rect x="70" y="262" width="220" height="15" fill="#111D30" fill-opacity="0.08"/>
+    <rect x="70" y="262" width="154" height="15" fill="#111D30"/>
+    <text x="298" y="274" class="num" fill="#111D30">21</text>
+
+    <line x1="224" y1="229" x2="224" y2="284" stroke="#9E2B25" stroke-width="2"/>
+
+    <text x="0" y="304" class="esito" fill="#111D30">IN GRADUATORIA</text>
+    <text x="0" y="322" class="s" font-size="10.5" fill="#4A5468">media 21, tutte e due le prove a soglia</text>
+  </g>
+
+  <line x1="0" y1="342" x2="330" y2="342" stroke="#111D30" stroke-opacity="0.18"/>
+
+  <!-- NOTA -->
+  <g>
+    <text x="0" y="364" class="m cap" fill="#9E2B25">La regola</text>
+    <rect x="0" y="378" width="330" height="80" fill="none" stroke="#111D30" stroke-opacity="0.28"/>
+    <text x="14" y="401" class="s" font-size="11" fill="#111D30">Il 21 è uno sbarramento, non un addendo:</text>
+    <text x="14" y="419" class="s" font-size="11" fill="#111D30">non si somma e non si media con l'altra</text>
+    <text x="14" y="437" class="s" font-size="11" fill="#111D30">prova. Si alza il voto più basso,</text>
+    <text x="14" y="450" class="s" font-size="11" fill="#111D30">non il più alto.</text>
+  </g>
+</svg>
