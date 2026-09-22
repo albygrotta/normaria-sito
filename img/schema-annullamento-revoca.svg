@@ -1,0 +1,60 @@
+<svg viewBox="0 0 330 470" style="min-width:0;max-width:340px;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Annullamento d'ufficio e revoca a confronto. Annullamento d'ufficio, art. 21-nonies legge 241 del 1990: l'atto è illegittimo fin dall'origine; termine massimo sei mesi dall'adozione per autorizzazioni e vantaggi economici; effetti cancellati dall'origine; nessun indennizzo. Revoca, art. 21-quinquies: l'atto è legittimo ma non più opportuno; nessun termine fisso; effetti solo per il futuro; indennizzo dovuto, limitato al danno emergente. La domanda che separa i due casi: l'errore c'era già, oppure il mondo è cambiato.">
+  <style>
+    .t { font-family: Spectral, Georgia, serif; }
+    .m { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+    .s { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    .cap  { font-size: 10px; letter-spacing: 0.13em; text-transform: uppercase; }
+    .voce { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; }
+    .nome { font-size: 16px; font-weight: 600; }
+    .art  { font-size: 10px; }
+    .val  { font-size: 11.5px; }
+  </style>
+
+  <rect width="330" height="470" fill="#F5F0E6"/>
+
+  <text x="0" y="13" class="m cap" fill="#9E2B25">Da che parte stava l'errore</text>
+  <line x1="0" y1="24" x2="330" y2="24" stroke="#111D30" stroke-opacity="0.18"/>
+
+  <!-- 1. annullamento d'ufficio -->
+  <g>
+    <rect x="0" y="38" width="330" height="182" fill="#111D30"/>
+    <text x="14" y="60" class="t nome" fill="#F5F0E6">Annullamento</text>
+    <text x="316" y="60" class="m art" fill="#C98A85" text-anchor="end">art. 21-nonies</text>
+    <text x="14" y="78" class="s val" fill="#F5F0E6" fill-opacity="0.72">L'atto nasce storto: è illegittimo</text>
+    <line x1="14" y1="90" x2="316" y2="90" stroke="#F5F0E6" stroke-opacity="0.22"/>
+
+    <text x="14" y="108" class="m voce" fill="#C98A85">Termine</text>
+    <text x="14" y="124" class="s val" fill="#F5F0E6">6 mesi dall'adozione, per</text>
+    <text x="14" y="139" class="s val" fill="#F5F0E6">autorizzazioni e vantaggi economici</text>
+
+    <text x="14" y="163" class="m voce" fill="#C98A85">Effetti</text>
+    <text x="14" y="179" class="s val" fill="#F5F0E6">Cancellati dall'origine</text>
+
+    <text x="14" y="200" class="m voce" fill="#C98A85">Indennizzo</text>
+    <text x="150" y="200" class="s val" fill="#F5F0E6">Nessuno</text>
+  </g>
+
+  <!-- 2. revoca -->
+  <g>
+    <rect x="0" y="232" width="330" height="182" fill="none" stroke="#9E2B25"/>
+    <text x="14" y="254" class="t nome" fill="#111D30">Revoca</text>
+    <text x="316" y="254" class="m art" fill="#9E2B25" text-anchor="end">art. 21-quinquies</text>
+    <text x="14" y="272" class="s val" fill="#4A5468">L'atto è legittimo: non è più opportuno</text>
+    <line x1="14" y1="284" x2="316" y2="284" stroke="#111D30" stroke-opacity="0.16"/>
+
+    <text x="14" y="302" class="m voce" fill="#9E2B25">Termine</text>
+    <text x="14" y="318" class="s val" fill="#111D30">Nessun termine fisso: servono</text>
+    <text x="14" y="333" class="s val" fill="#111D30">fatti nuovi o un interesse nuovo</text>
+
+    <text x="14" y="357" class="m voce" fill="#9E2B25">Effetti</text>
+    <text x="14" y="373" class="s val" fill="#111D30">Solo da qui in avanti</text>
+
+    <text x="14" y="394" class="m voce" fill="#9E2B25">Indennizzo</text>
+    <text x="150" y="394" class="s val" fill="#111D30">Dovuto (danno emergente)</text>
+  </g>
+
+  <line x1="0" y1="434" x2="330" y2="434" stroke="#111D30" stroke-opacity="0.18"/>
+  <text x="0" y="452" class="s" font-size="11" fill="#4A5468">La domanda da farsi: l'errore c'era già,</text>
+  <text x="0" y="466" class="s" font-size="11" fill="#4A5468">oppure è cambiato il mondo intorno all'atto?</text>
+</svg>
