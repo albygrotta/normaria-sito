@@ -1,0 +1,50 @@
+<svg viewBox="0 0 330 444" style="min-width:0;max-width:340px;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="L'ordine delle operazioni in un concorso per titoli ed esami: prima la prova scritta, poi la valutazione dei titoli a elaborati ancora chiusi, poi la correzione degli scritti, poi l'esito dei titoli reso noto ai candidati, poi la prova orale, infine la somma dei punteggi. Le prove valgono 60 punti, i titoli al massimo 10.">
+  <style>
+    .m { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+    .s { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    .cap { font-size: 10px; letter-spacing: 0.13em; text-transform: uppercase; }
+    .tit { font-size: 12.5px; font-weight: 600; }
+    .det { font-size: 10.5px; }
+  </style>
+  <rect width="330" height="444" fill="#F5F0E6"/>
+
+  <text x="0" y="13" class="m cap" fill="#9E2B25">L'ordine delle operazioni</text>
+  <line x1="0" y1="24" x2="330" y2="24" stroke="#111D30" stroke-opacity="0.18"/>
+
+  <line x1="13" y1="48" x2="13" y2="350" stroke="#111D30" stroke-opacity="0.22"/>
+
+  <rect x="28" y="100" width="302" height="46" fill="#9E2B25" fill-opacity="0.08"/>
+
+  <circle cx="13" cy="48" r="5" fill="#111D30"/>
+  <text x="34" y="45" class="s tit" fill="#111D30">Prova scritta</text>
+  <text x="34" y="61" class="s det" fill="#4A5468">30 punti, minimo 21/30</text>
+
+  <circle cx="13" cy="118" r="6" fill="#9E2B25"/>
+  <text x="34" y="115" class="s tit" fill="#9E2B25">Valutazione dei titoli</text>
+  <text x="34" y="131" class="s det" fill="#9E2B25">fino a 10 punti, a elaborati ancora chiusi</text>
+
+  <circle cx="13" cy="176" r="5" fill="#111D30"/>
+  <text x="34" y="173" class="s tit" fill="#111D30">Correzione degli scritti</text>
+  <text x="34" y="189" class="s det" fill="#4A5468">solo adesso la commissione legge i voti</text>
+
+  <circle cx="13" cy="234" r="5" fill="#111D30"/>
+  <text x="34" y="231" class="s tit" fill="#111D30">Esito dei titoli reso noto</text>
+  <text x="34" y="247" class="s det" fill="#4A5468">ai candidati, prima dell'orale</text>
+
+  <circle cx="13" cy="292" r="5" fill="#111D30"/>
+  <text x="34" y="289" class="s tit" fill="#111D30">Prova orale</text>
+  <text x="34" y="305" class="s det" fill="#4A5468">30 punti, minimo 21/30</text>
+
+  <circle cx="13" cy="350" r="5" fill="#111D30"/>
+  <text x="34" y="347" class="s tit" fill="#111D30">Somma finale</text>
+  <text x="34" y="363" class="s det" fill="#4A5468">voto delle prove più punteggio dei titoli</text>
+
+  <line x1="0" y1="388" x2="330" y2="388" stroke="#111D30" stroke-opacity="0.18"/>
+  <text x="0" y="406" class="m cap" fill="#9E2B25">Come si dividono i punti</text>
+
+  <rect x="0" y="414" width="283" height="14" fill="#111D30"/>
+  <rect x="283" y="414" width="47" height="14" fill="#9E2B25"/>
+  <text x="0" y="441" class="m" font-size="10" fill="#4A5468">prove 60</text>
+  <text x="330" y="441" class="m" font-size="10" fill="#9E2B25" text-anchor="end">titoli 10</text>
+</svg>
