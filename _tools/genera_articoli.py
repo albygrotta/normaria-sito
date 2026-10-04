@@ -260,12 +260,18 @@ def pagina_indice(articoli):
 
 
 def mappa_sito(articoli):
-    voci = [(f"{SITO}/", "1.0"), (f"{SITO}/metodo.html", "0.9"),
-            (f"{SITO}/articoli.html", "0.8"), (f"{SITO}/video.html", "0.7")]
-    voci += [(f"{SITO}/articoli/{a['slug']}.html", "0.7") for a in articoli]
-    voci += [(f"{SITO}/privacy.html", "0.3"), (f"{SITO}/cookie.html", "0.3")]
+    # La data dell'ultimo articolo vale anche per le pagine indice: quando esce
+    # un pezzo nuovo, home e indice cambiano davvero.
+    ultima = max((a.get("aggiornato") or a["data"]) for a in articoli) if articoli else ""
+    voci = [(f"{SITO}/", "1.0", ultima), (f"{SITO}/metodo.html", "0.9", ""),
+            (f"{SITO}/articoli.html", "0.8", ultima), (f"{SITO}/video.html", "0.7", "")]
+    voci += [(f"{SITO}/articoli/{a['slug']}.html", "0.7",
+              a.get("aggiornato") or a["data"]) for a in articoli]
+    voci += [(f"{SITO}/privacy.html", "0.3", ""), (f"{SITO}/cookie.html", "0.3", "")]
     corpo_xml = "\n".join(
-        f"  <url><loc>{u}</loc><priority>{p}</priority></url>" for u, p in voci)
+        f"  <url><loc>{u}</loc>"
+        + (f"<lastmod>{d}</lastmod>" if d else "")
+        + f"<priority>{p}</priority></url>" for u, p, d in voci)
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             + corpo_xml + "\n</urlset>\n")
