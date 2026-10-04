@@ -8,11 +8,11 @@
         {
           "id": "amministrativo",
           "titolo": "Diritto Amministrativo",
-          "materia": "Le 320 norme fondamentali",
-          "misura": "320 norme",
+          "materia": "Le 384 norme essenziali",
+          "misura": "384 norme",
           "link": "https://www.amazon.it/dp/B0H7NZXCMD",
           "stato": "disponibile",
-          "descrizione": "Il cuore di quasi ogni concorso pubblico: procedimento, provvedimento, accesso agli atti e giustizia amministrativa, in 320 schede tutte della stessa forma.",
+          "descrizione": "Il cuore di quasi ogni concorso pubblico: procedimento, provvedimento, accesso agli atti e giustizia amministrativa, in 384 schede tutte della stessa forma.",
           "copertina": "img/amministrativo.jpg"
         },
         {
@@ -71,6 +71,16 @@
       "nome": "Manuali per concorso",
       "sommario": "Un bando alla volta: le materie richieste, nella forma in cui vengono chieste.",
       "manuali": [
+        {
+          "id": "coesione-882",
+          "titolo": "Concorso RIPAM Coesione 2026 — 882 Specialisti tecnici",
+          "materia": "Manuale normativo",
+          "misura": "",
+          "link": "https://www.amazon.it/dp/B0HJFLFZL6",
+          "stato": "disponibile",
+          "descrizione": "Per la prova scritta degli 882 posti: le norme e le regole tecniche che il bando mette in programma, ridotte a schede della stessa forma. 532 pagine.",
+          "copertina": "img/coesione-882.jpg"
+        },
         {
           "id": "inps-1695",
           "titolo": "Concorso INPS 2026 — 1.695 Funzionari PECS",
