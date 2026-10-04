@@ -121,12 +121,31 @@ def sostituisci(testo, nome, contenuto):
     return schema.sub(f"{inizio}\n{contenuto}\n{fine}", testo, count=1)
 
 
+def cifre(sezioni):
+    """Le tre cifre dell'apertura, contate sui dati invece che scritte a mano.
+    Si sbagliavano da sole ogni volta che il catalogo cambiava."""
+    manuali = tutti(sezioni)
+    per_materia = next((s for s in sezioni
+                        if "per materia" in s["nome"].lower()), {"manuali": []})
+    norme = sum(int(re.sub(r"\D", "", m["misura"]) or 0)
+                for m in per_materia["manuali"] if m.get("misura"))
+    return ('<div class="cifre">\n'
+            f'          <div><p class="n">{len(manuali)}</p>'
+            '<p class="e">manuali<br>in catalogo</p></div>\n'
+            f'          <div><p class="n">{norme:,}</p>'.replace(",", ".")
+            + '<p class="e">norme ridotte a scheda<br>nella collana per materia</p></div>\n'
+            '          <div><p class="n">4</p>'
+            '<p class="e">blocchi, sempre gli stessi,<br>su ogni norma</p></div>\n'
+            '        </div>')
+
+
 def main():
     sezioni = json.loads(DATI.read_text(encoding="utf-8"))["sezioni"]
     pagina = PAGINA.read_text(encoding="utf-8")
     pagina = sostituisci(pagina, "CATALOGO",
                          "\n\n".join(sezione(s) for s in sezioni))
     pagina = sostituisci(pagina, "SCHEMA", dati_per_google(tutti(sezioni)))
+    pagina = sostituisci(pagina, "CIFRE", "        " + cifre(sezioni))
     PAGINA.write_text(pagina, encoding="utf-8")
     print(f"Fatto: {len(tutti(sezioni))} manuali in {len(sezioni)} sezioni")
 
