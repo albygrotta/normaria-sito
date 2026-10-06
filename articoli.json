@@ -274,6 +274,40 @@
           "url": "https://www.lavoro.gov.it/sites/default/files/archivio-doc-pregressi/Documents/Resources/Lavoro/Personale/1994_05_09_487.pdf"
         }
       ]
+    },
+    {
+      "slug": "danno-erariale-colpa-grave-legge-1-2026",
+      "titolo": "Quando un dipendente pubblico paga di tasca propria? Il danno erariale dopo la legge 1/2026",
+      "occhiello": "Il diritto spiegato",
+      "sommario": "Dal 22 gennaio 2026 la colpa grave ha una definizione scritta nella legge e la condanna ha un tetto: il minore fra il 30% del danno e il doppio della retribuzione annua. Due numeri nuovi che nei quesiti si invertono facilmente.",
+      "data": "2026-10-06",
+      "aggiornato": "2026-10-06",
+      "manuali": [
+        "amministrativo",
+        "lavoro"
+      ],
+      "fonti": [
+        {
+          "testo": "Legge 7 gennaio 2026, n. 1 — in Gazzetta Ufficiale la riforma della Corte dei conti (ANCE)",
+          "url": "https://ance.it/2026/01/in-gazzetta-ufficiale-la-legge-di-riforma-della-corte-dei-conti/"
+        },
+        {
+          "testo": "Legge 1/2026: colpa grave tipizzata e tetti al danno erariale — Diritto.it",
+          "url": "https://www.diritto.it/legge-1-2026-colpa-grave-tetti-danno-erariale/"
+        },
+        {
+          "testo": "Responsabilità per danno erariale: cosa cambia con la l. n. 1/2026 — CMS",
+          "url": "https://cms.law/it/ita/publication/responsabilita-per-danno-erariale-cosa-cambia-con-la-l.-1-2026"
+        },
+        {
+          "testo": "La riforma della Corte dei conti e del danno erariale (l. n. 1/2026) — Ambrosio e Commodo",
+          "url": "https://ambrosioecommodo.it/approfondimenti/la-riforma-della-corte-dei-conti-e-del-danno-erariale-l-n-1-2026/"
+        },
+        {
+          "testo": "Legge 14 gennaio 1994, n. 20 — testo vigente su Normattiva",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1994-01-14;20"
+        }
+      ]
     }
   ]
 }
