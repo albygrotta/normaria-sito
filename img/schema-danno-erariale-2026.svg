@@ -1,0 +1,50 @@
+<svg viewBox="0 0 330 452" style="min-width:0;max-width:340px;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Il danno erariale dopo la legge 1 del 2026. Colpa lieve: non si risponde, il danno resta all'ente. Colpa grave, definita dalla legge dal 2026 come errore grossolano e non semplice errore: si risponde, ma la condanna non può superare il minore fra il 30 per cento del danno accertato e il doppio della retribuzione lorda annua. Dolo: si risponde per intero, nessun tetto. Esempio: danno 400.000 euro, retribuzione lorda 45.000 euro; il 30 per cento fa 120.000 euro, il doppio della retribuzione fa 90.000 euro; con colpa grave si pagano 90.000 euro.">
+  <style>
+    .t { font-family: Spectral, Georgia, serif; }
+    .m { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+    .s { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    .cap  { font-size: 10px; letter-spacing: 0.13em; text-transform: uppercase; }
+    .voce { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; }
+    .val  { font-size: 11.5px; }
+  </style>
+
+  <rect width="330" height="452" fill="#F5F0E6"/>
+
+  <text x="0" y="13" class="m cap" fill="#9E2B25">Chi paga, e quanto</text>
+  <line x1="0" y1="24" x2="330" y2="24" stroke="#111D30" stroke-opacity="0.18"/>
+
+  <!-- 1. colpa lieve -->
+  <g>
+    <rect x="0" y="36" width="330" height="72" fill="none" stroke="#111D30" stroke-opacity="0.35"/>
+    <text x="14" y="58" class="m voce" fill="#4A5468">Colpa lieve</text>
+    <text x="14" y="78" class="s val" fill="#111D30">Non si risponde.</text>
+    <text x="14" y="95" class="s val" fill="#4A5468">Il danno resta all'ente.</text>
+  </g>
+
+  <!-- 2. colpa grave -->
+  <g>
+    <rect x="0" y="120" width="330" height="150" fill="#111D30"/>
+    <text x="14" y="142" class="m voce" fill="#C98A85">Colpa grave</text>
+    <text x="14" y="162" class="s val" fill="#F5F0E6">Dal 2026 la definisce la legge:</text>
+    <text x="14" y="179" class="s val" fill="#F5F0E6">errore grossolano, non semplice errore.</text>
+    <line x1="14" y1="195" x2="316" y2="195" stroke="#F5F0E6" stroke-opacity="0.22"/>
+    <text x="14" y="214" class="m voce" fill="#C98A85">Quanto si paga</text>
+    <text x="14" y="234" class="s val" fill="#F5F0E6">Il minore fra il 30% del danno</text>
+    <text x="14" y="251" class="s val" fill="#F5F0E6">e il doppio della retribuzione annua.</text>
+  </g>
+
+  <!-- 3. dolo -->
+  <g>
+    <rect x="0" y="282" width="330" height="72" fill="none" stroke="#9E2B25"/>
+    <text x="14" y="304" class="m voce" fill="#9E2B25">Dolo</text>
+    <text x="14" y="324" class="s val" fill="#111D30">Si risponde per intero.</text>
+    <text x="14" y="341" class="s val" fill="#4A5468">Nessun tetto.</text>
+  </g>
+
+  <line x1="0" y1="376" x2="330" y2="376" stroke="#111D30" stroke-opacity="0.18"/>
+  <text x="0" y="396" class="s" font-size="11" fill="#4A5468">Esempio. Danno 400.000 euro, retribuzione</text>
+  <text x="0" y="412" class="s" font-size="11" fill="#4A5468">lorda 45.000: il 30% fa 120.000, il doppio</text>
+  <text x="0" y="428" class="s" font-size="11" fill="#4A5468">della retribuzione fa 90.000. Con colpa</text>
+  <text x="0" y="444" class="s" font-size="11" fill="#4A5468">grave si pagano 90.000 euro.</text>
+</svg>
