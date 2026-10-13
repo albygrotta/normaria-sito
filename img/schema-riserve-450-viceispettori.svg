@@ -1,0 +1,74 @@
+<svg viewBox="0 0 330 466" style="min-width:0;max-width:340px;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="I 450 posti del concorso per allievi vice ispettori della Polizia penitenziaria, divisi per quota: 343 posti al concorso ordinario, 75 riservati al personale interno con almeno tre anni di servizio, 22 ai superstiti del personale deceduto per causa di servizio, 9 agli ufficiali che hanno concluso la ferma biennale, 1 a chi ha l'attestato di bilinguismo. In totale 107 posti riservati su 450, cioè meno del 24 per cento, sotto il tetto di legge del 50 per cento. I posti riservati che restano senza idonei scendono lungo la graduatoria generale e vanno agli altri candidati.">
+  <style>
+    .m { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+    .s { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    .cap { font-size: 10px; letter-spacing: 0.13em; text-transform: uppercase; }
+    .num { font-family: "IBM Plex Mono", monospace; font-size: 13px; font-weight: 500; }
+    .vce { font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 10.5px; }
+  </style>
+  <rect width="330" height="466" fill="#F5F0E6"/>
+
+  <text x="0" y="13" class="m cap" fill="#9E2B25">450 posti, cinque quote</text>
+  <line x1="0" y1="24" x2="330" y2="24" stroke="#111D30" stroke-opacity="0.18"/>
+  <text x="0" y="42" class="s" font-size="11" fill="#4A5468">Il bando mette da parte 107 posti.</text>
+
+  <!-- BARRA: 300 px per 450 posti -->
+  <g>
+    <rect x="0" y="56" width="228.7" height="20" fill="#111D30"/>
+    <rect x="228.7" y="56" width="50" height="20" fill="#9E2B25"/>
+    <rect x="278.7" y="56" width="21.3" height="20" fill="#9E2B25" fill-opacity="0.55"/>
+    <rect x="0" y="56" width="300" height="20" fill="none" stroke="#111D30" stroke-opacity="0.3"/>
+
+    <text x="0" y="90" class="m" font-size="9" fill="#111D30">343 ordinari</text>
+    <text x="300" y="90" text-anchor="end" class="m" font-size="9" fill="#9E2B25">107 riservati</text>
+  </g>
+
+  <line x1="0" y1="104" x2="330" y2="104" stroke="#111D30" stroke-opacity="0.18"/>
+
+  <!-- ELENCO QUOTE -->
+  <g>
+    <text x="0" y="124" class="m cap" fill="#111D30">Come si dividono</text>
+
+    <rect x="0" y="136" width="8" height="8" fill="#111D30"/>
+    <text x="18" y="144" class="vce" fill="#111D30">Concorso ordinario</text>
+    <text x="330" y="145" text-anchor="end" class="num" fill="#111D30">343</text>
+
+    <rect x="0" y="160" width="8" height="8" fill="#9E2B25"/>
+    <text x="18" y="168" class="vce" fill="#111D30">Interni, 3 anni di servizio</text>
+    <text x="330" y="169" text-anchor="end" class="num" fill="#9E2B25">75</text>
+
+    <rect x="0" y="184" width="8" height="8" fill="#9E2B25" fill-opacity="0.55"/>
+    <text x="18" y="192" class="vce" fill="#111D30">Superstiti per causa di servizio</text>
+    <text x="330" y="193" text-anchor="end" class="num" fill="#9E2B25">22</text>
+
+    <rect x="0" y="208" width="8" height="8" fill="#9E2B25" fill-opacity="0.55"/>
+    <text x="18" y="216" class="vce" fill="#111D30">Ufficiali, ferma biennale</text>
+    <text x="330" y="217" text-anchor="end" class="num" fill="#9E2B25">9</text>
+
+    <rect x="0" y="232" width="8" height="8" fill="#9E2B25" fill-opacity="0.55"/>
+    <text x="18" y="240" class="vce" fill="#111D30">Attestato di bilinguismo</text>
+    <text x="330" y="241" text-anchor="end" class="num" fill="#9E2B25">1</text>
+
+    <line x1="0" y1="256" x2="330" y2="256" stroke="#111D30" stroke-opacity="0.18"/>
+    <text x="18" y="275" class="m" font-size="10.5" fill="#111D30">Totale riservati</text>
+    <text x="330" y="276" text-anchor="end" class="num" fill="#9E2B25">107</text>
+  </g>
+
+  <!-- TETTO DI LEGGE -->
+  <g>
+    <text x="0" y="306" class="m cap" fill="#9E2B25">Il tetto di legge</text>
+    <text x="0" y="326" class="s" font-size="11" fill="#111D30">Le riserve non superano la metà dei posti</text>
+    <text x="0" y="342" class="s" font-size="11" fill="#111D30">a bando. Qui sono 107 su 450: il 23,8%.</text>
+  </g>
+
+  <!-- RIASSORBIMENTO -->
+  <g>
+    <rect x="0" y="358" width="330" height="100" fill="none" stroke="#111D30" stroke-opacity="0.28"/>
+    <text x="14" y="380" class="m cap" fill="#111D30">Se la riserva resta vuota</text>
+    <text x="14" y="402" class="s" font-size="11" fill="#111D30">I posti riservati senza idonei non si</text>
+    <text x="14" y="418" class="s" font-size="11" fill="#111D30">annullano: scendono lungo la graduatoria</text>
+    <text x="14" y="434" class="s" font-size="11" fill="#111D30">generale. Per chi viene da fuori i 343</text>
+    <text x="14" y="450" class="s" font-size="11" fill="#111D30">posti possono solo crescere.</text>
+  </g>
+</svg>
