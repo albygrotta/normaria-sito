@@ -308,6 +308,40 @@
           "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1994-01-14;20"
         }
       ]
+    },
+    {
+      "slug": "concorso-viceispettori-penitenziaria-450-posti",
+      "titolo": "Concorso 450 vice ispettori penitenziari: quanti posti ci sono davvero per chi viene da fuori?",
+      "occhiello": "Concorsi in corso",
+      "sommario": "Domande entro il 29 ottobre 2026, nessuna preselettiva e due soglie diverse, 7/10 e 6/10. Ma dei 450 posti del titolo 107 sono riservati: ecco come si leggono le quote e che cosa cambia per la preparazione.",
+      "data": "2026-10-13",
+      "aggiornato": "2026-10-13",
+      "manuali": [
+        "penale",
+        "amministrativo"
+      ],
+      "fonti": [
+        {
+          "testo": "Polizia penitenziaria, concorso per 450 viceispettori: domande entro il 29 ottobre — Corriere dell'Universita'",
+          "url": "https://corriereuniv.it/concorso-polizia-penitenziaria-2026-450-posti/"
+        },
+        {
+          "testo": "Concorso Allievi Vice Ispettori Polizia Penitenziaria 2026: 450 posti, classi di laurea e prove — Concorsando",
+          "url": "https://www.concorsando.it/blog/concorso-allievi-vice-ispettori-polizia-penitenziaria-2026/"
+        },
+        {
+          "testo": "Concorso Polizia Penitenziaria per 450 Allievi viceispettori: riserve, requisiti e materie — Cammino Diritto",
+          "url": "https://formazione.camminodiritto.it/eventi.asp?idpage=590"
+        },
+        {
+          "testo": "Riserva di posti nei concorsi pubblici: normativa e applicazioni — Simone Concorsi",
+          "url": "https://simoneconcorsi.it/riserva-di-posti-nei-concorsi-pubblici/"
+        },
+        {
+          "testo": "Portale del reclutamento inPA",
+          "url": "https://www.inpa.gov.it/"
+        }
+      ]
     }
   ]
 }
