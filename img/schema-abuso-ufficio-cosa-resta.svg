@@ -1,0 +1,50 @@
+<svg viewBox="0 0 330 466" style="min-width:0;max-width:340px;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Che reato resta dopo l'abrogazione dell'abuso d'ufficio. Se il funzionario si appropria del bene: peculato, articolo 314 del codice penale, reclusione da quattro anni a dieci anni e sei mesi. Se lo destina a un altro uso, e si tratta solo di denaro o cose mobili, con violazione di una regola di legge che non lascia margini di scelta e con vantaggio o danno voluto: indebita destinazione, articolo 314-bis del codice penale, da sei mesi a tre anni. Se il bene e' un immobile, oppure la legge lascia un margine di scelta: nessun reato, l'articolo 323 non c'e' piu'. La direttiva dell'Unione europea 2026/1021 chiede di punire l'esercizio illecito di funzioni pubbliche, con recepimento entro il primo giugno 2028.">
+  <style>
+    .m { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+    .s { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    .cap  { font-size: 10px; letter-spacing: 0.13em; text-transform: uppercase; }
+    .voce { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; }
+    .val  { font-size: 11.5px; }
+  </style>
+
+  <rect width="330" height="466" fill="#F5F0E6"/>
+
+  <text x="0" y="13" class="m cap" fill="#9E2B25">Che reato resta</text>
+  <line x1="0" y1="24" x2="330" y2="24" stroke="#111D30" stroke-opacity="0.18"/>
+
+  <!-- 1. peculato -->
+  <g>
+    <rect x="0" y="36" width="330" height="86" fill="none" stroke="#111D30" stroke-opacity="0.35"/>
+    <text x="14" y="58" class="m voce" fill="#4A5468">Se se ne appropria</text>
+    <text x="14" y="78" class="s val" fill="#111D30">Peculato — art. 314 c.p.</text>
+    <text x="14" y="96" class="s val" fill="#4A5468">Da 4 anni a 10 anni e 6 mesi.</text>
+    <text x="14" y="113" class="s val" fill="#4A5468">Tratta il bene pubblico come suo.</text>
+  </g>
+
+  <!-- 2. indebita destinazione -->
+  <g>
+    <rect x="0" y="134" width="330" height="146" fill="#111D30"/>
+    <text x="14" y="156" class="m voce" fill="#C98A85">Se lo destina a un altro uso</text>
+    <text x="14" y="176" class="s val" fill="#F5F0E6">Solo denaro o cose mobili;</text>
+    <text x="14" y="193" class="s val" fill="#F5F0E6">solo contro una regola di legge</text>
+    <text x="14" y="210" class="s val" fill="#F5F0E6">che non lascia margini di scelta;</text>
+    <text x="14" y="227" class="s val" fill="#F5F0E6">solo con vantaggio o danno voluto.</text>
+    <line x1="14" y1="243" x2="316" y2="243" stroke="#F5F0E6" stroke-opacity="0.22"/>
+    <text x="14" y="262" class="s val" fill="#F5F0E6">Art. 314-bis c.p. — da 6 mesi a 3 anni.</text>
+  </g>
+
+  <!-- 3. il vuoto -->
+  <g>
+    <rect x="0" y="292" width="330" height="86" fill="none" stroke="#9E2B25"/>
+    <text x="14" y="314" class="m voce" fill="#9E2B25">Immobili, o margini di scelta</text>
+    <text x="14" y="334" class="s val" fill="#111D30">Nessun reato.</text>
+    <text x="14" y="352" class="s val" fill="#4A5468">È il vuoto lasciato dall'art. 323,</text>
+    <text x="14" y="369" class="s val" fill="#4A5468">abrogato nel 2024.</text>
+  </g>
+
+  <line x1="0" y1="400" x2="330" y2="400" stroke="#111D30" stroke-opacity="0.18"/>
+  <text x="0" y="420" class="s" font-size="11" fill="#4A5468">La direttiva (UE) 2026/1021 chiede di punire</text>
+  <text x="0" y="436" class="s" font-size="11" fill="#4A5468">l'esercizio illecito di funzioni pubbliche:</text>
+  <text x="0" y="452" class="s" font-size="11" fill="#4A5468">recepimento entro il 1° giugno 2028.</text>
+</svg>
