@@ -342,6 +342,52 @@
           "url": "https://www.inpa.gov.it/"
         }
       ]
+    },
+    {
+      "slug": "abuso-ufficio-abrogato-cosa-resta",
+      "titolo": "L'abuso d'ufficio non c'è più: di che cosa risponde il funzionario che favorisce qualcuno?",
+      "occhiello": "Il diritto spiegato",
+      "sommario": "Abrogato nel 2024, salvato dalla Consulta nel 2025, rimesso in gioco dalla direttiva europea del 2026 con scadenza al 1° giugno 2028. Nel vuoto lasciato dall'art. 323 c.p. restano il peculato e il nuovo art. 314-bis: ecco dove passa il confine, e le quattro trappole nei quesiti.",
+      "data": "2026-10-20",
+      "aggiornato": "2026-10-20",
+      "manuali": [
+        "penale",
+        "amministrativo"
+      ],
+      "fonti": [
+        {
+          "testo": "Art. 314-bis codice penale — Indebita destinazione di denaro o cose mobili (testo e norma introduttiva) — Brocardi",
+          "url": "https://www.brocardi.it/codice-penale/libro-secondo/titolo-ii/capo-i/art314bis.html"
+        },
+        {
+          "testo": "Art. 314 codice penale — Peculato (testo e pene) — Brocardi",
+          "url": "https://www.brocardi.it/codice-penale/libro-secondo/titolo-ii/capo-i/art314.html"
+        },
+        {
+          "testo": "La Cassazione sul nuovo art. 314-bis c.p.: continuità normativa con l'abuso d'ufficio distrattivo (Cass. sez. VI n. 4520/2025) — Sistema Penale",
+          "url": "https://www.sistemapenale.it/it/scheda/la-cassazione-sul-nuovo-art-314-bis-cp-continuita-normativa-con-labuso-dufficio-distrattivo-e-nessuna-interferenza-con-il-peculato"
+        },
+        {
+          "testo": "L'abrogazione dell'abuso d'ufficio non è incostituzionale: Corte costituzionale n. 95 del 2025 — Diritto.it",
+          "url": "https://www.diritto.it/abrogazione-abuso-ufficio-non-e-incostituzionale/"
+        },
+        {
+          "testo": "Direttiva (UE) 2026/1021 sulla lotta contro la corruzione: contenuti e termini di recepimento — Diritto Bancario",
+          "url": "https://www.dirittobancario.it/art/la-direttiva-ue-2026-1021-su-anticorruzione/"
+        },
+        {
+          "testo": "Approvata la direttiva UE anticorruzione: i reati previsti e l'art. 7 sull'esercizio illecito di funzioni pubbliche — Edizioni Simone",
+          "url": "https://edizioni.simone.it/2026/06/08/direttiva-ue-anticorruzione/"
+        },
+        {
+          "testo": "Direttiva UE 2026/1021: ritorna l'abuso d'ufficio? — Altalex",
+          "url": "https://www.altalex.com/documents/news/2026/05/26/ritorna-l-abuso-d-ufficio"
+        },
+        {
+          "testo": "Il nuovo abuso d'ufficio dopo il decreto semplificazioni (d.l. n. 76/2020) — Segretari Comunali Vighenzi",
+          "url": "https://www.segretaricomunalivighenzi.it/29-09-2020-il-nuovo-abuso-dufficio-art-323-cp/"
+        }
+      ]
     }
   ]
 }
