@@ -388,6 +388,61 @@
           "url": "https://www.segretaricomunalivighenzi.it/29-09-2020-il-nuovo-abuso-dufficio-art-323-cp/"
         }
       ]
+    },
+    {
+      "slug": "difesa-1100-assistenti-riapertura-stranieri",
+      "titolo": "Concorso Difesa, 1.100 assistenti: perché le domande sono state riaperte solo per gli stranieri",
+      "occhiello": "Concorsi in corso",
+      "sommario": "Il Tribunale di Milano ha dichiarato discriminatorio il requisito della cittadinanza italiana e il bando è stato riaperto fino al 5 dicembre. Chi può presentare domanda, con quali requisiti e a che data si misurano.",
+      "data": "2026-11-09",
+      "aggiornato": "2026-11-09",
+      "manuali": [
+        "amministrativo",
+        "lavoro"
+      ],
+      "fonti": [
+        {
+          "testo": "inPA — Modifica parziale e riapertura del concorso per 1.100 assistenti del Ministero della difesa",
+          "url": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=068a4ba9d6554bbe9ac71d5f3b822094"
+        },
+        {
+          "testo": "Riaperto il concorso per 1.100 assistenti: domande fino al 5 dicembre 2026",
+          "url": "https://www.ticonsiglio.com/riaperto-concorso-ministero-difesa-1100-assistenti-stranieri/"
+        },
+        {
+          "testo": "Il Tribunale di Milano ha ordinato di riaprire il concorso: cosa cambia per chi ha già fatto domanda",
+          "url": "https://www.ticonsiglio.com/tribunale-milano-ha-ordinato-riaprire-concorso-difesa-assistenti-cosa-succede/"
+        },
+        {
+          "testo": "Concorso Difesa, domande riaperte dopo la sentenza: chi può candidarsi entro il 5 dicembre",
+          "url": "https://corriereuniv.it/mantenere-concorso-difesa-2026-prove-scritte/"
+        }
+      ]
+    },
+    {
+      "slug": "preavviso-di-rigetto-art-10-bis",
+      "titolo": "Il preavviso di rigetto: la lettera che l'amministrazione deve mandare prima di dire no",
+      "occhiello": "Il diritto spiegato",
+      "sommario": "L'art. 10-bis della legge 241/1990 obbliga l'ufficio ad anticipare i motivi del diniego e a dare dieci giorni per replicare. Che effetto ha sui termini, che cosa deve contenere il provvedimento finale e dove la regola non si applica.",
+      "data": "2026-11-09",
+      "aggiornato": "2026-11-09",
+      "manuali": [
+        "amministrativo"
+      ],
+      "fonti": [
+        {
+          "testo": "Preavviso di rigetto ex art. 10-bis l. 241/1990: garanzie, deflazione e prospettiva sostanzialistica",
+          "url": "https://www.aequitasmagazine.it/ark:/56778/10533"
+        },
+        {
+          "testo": "ANUSCA — Preavviso di rigetto e termini: sospensione e non interruzione del procedimento",
+          "url": "https://www.anusca.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11757"
+        },
+        {
+          "testo": "Le novità in tema di preavviso di rigetto dopo il decreto semplificazioni",
+          "url": "https://journals.uniurb.it/index.php/pea/article/download/3762/3279/14856"
+        }
+      ]
     }
   ]
 }
