@@ -8,12 +8,125 @@
       "sommario": "Applicants aged 65 or over with 20 years as permanent residents take a shorter civics test in their own language. What the rule gives, what it leaves in place, and which twenty questions apply.",
       "data": "2026-11-08",
       "aggiornato": "2026-11-08",
-      "libri": ["us-citizenship-seniors", "us-citizenship-128"],
+      "libri": [
+        "us-citizenship-seniors",
+        "us-citizenship-128"
+      ],
       "fonti": [
-        { "testo": "USCIS — Civics Questions and Answers for the 65/20 Special Consideration", "url": "https://www.uscis.gov/archive/civics-questions-and-answers-for-the-6520-special-consideration" },
-        { "testo": "USCIS — M-1781, Civics Questions and Answers for the 65/20 Special Consideration (PDF)", "url": "https://www.uscis.gov/sites/default/files/document/crc/M_1781.pdf" },
-        { "testo": "The naturalization interview and test: 2008 and 2025 versions compared", "url": "https://www.sglegalgroup.com/updates/uscis-update-the-naturalization-interview-and-test-2008-vs-2025-versions" },
-        { "testo": "Citizenship test exemptions: 50/20, 55/15, 65/20", "url": "https://citizenryapp.com/blog/citizenship-test-exemptions.html" }
+        {
+          "testo": "USCIS — Civics Questions and Answers for the 65/20 Special Consideration",
+          "url": "https://www.uscis.gov/archive/civics-questions-and-answers-for-the-6520-special-consideration"
+        },
+        {
+          "testo": "USCIS — M-1781, Civics Questions and Answers for the 65/20 Special Consideration (PDF)",
+          "url": "https://www.uscis.gov/sites/default/files/document/crc/M_1781.pdf"
+        },
+        {
+          "testo": "The naturalization interview and test: 2008 and 2025 versions compared",
+          "url": "https://www.sglegalgroup.com/updates/uscis-update-the-naturalization-interview-and-test-2008-vs-2025-versions"
+        },
+        {
+          "testo": "Citizenship test exemptions: 50/20, 55/15, 65/20",
+          "url": "https://citizenryapp.com/blog/citizenship-test-exemptions.html"
+        }
+      ]
+    },
+    {
+      "slug": "the-2025-civics-test",
+      "titolo": "The 2025 civics test: what changed, and which version applies",
+      "occhiello": "The test explained",
+      "sommario": "Since 20 October 2025 two civics tests have been in use at the same time. The filing date on Form N-400 decides which one an applicant sits, and the two differ in bank size, questions asked and answers needed.",
+      "data": "2026-11-09",
+      "aggiornato": "2026-11-09",
+      "libri": [
+        "us-citizenship-128",
+        "us-citizenship-seniors"
+      ],
+      "fonti": [
+        {
+          "testo": "USCIS — Study for the test",
+          "url": "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test"
+        },
+        {
+          "testo": "The naturalization interview and test: 2008 and 2025 versions compared",
+          "url": "https://www.sglegalgroup.com/updates/uscis-update-the-naturalization-interview-and-test-2008-vs-2025-versions"
+        },
+        {
+          "testo": "American Civics Test — the 2008, 2020 and 2025 versions",
+          "url": "https://en.wikipedia.org/wiki/American_Civics_Test"
+        }
+      ]
+    },
+    {
+      "slug": "the-naturalization-interview",
+      "titolo": "The naturalization interview, in the order it happens",
+      "occhiello": "The test explained",
+      "sommario": "The appointment follows the same sequence almost every time: the N-400 review, then speaking, reading and writing, then civics. What each part asks for, and what happens when one of them goes wrong.",
+      "data": "2026-11-09",
+      "aggiornato": "2026-11-09",
+      "libri": [
+        "us-citizenship-128",
+        "us-citizenship-seniors"
+      ],
+      "fonti": [
+        {
+          "testo": "USCIS — Preparing for the naturalization test: a pocket study guide (M-1122)",
+          "url": "https://www.uscis.gov/sites/default/files/document/guides/M-1122.pdf"
+        },
+        {
+          "testo": "Guide to the USCIS naturalization test and interview",
+          "url": "https://usahello.org/citizenship/prepare/interview/"
+        },
+        {
+          "testo": "What happens at the U.S. citizenship interview",
+          "url": "https://herrerafirm.com/what-happens-at-the-u-s-citizenship-interview/"
+        }
+      ]
+    },
+    {
+      "slug": "hesi-a2-score-explained",
+      "titolo": "Your HESI A2 score: why there is no passing mark",
+      "occhiello": "Exam preparation",
+      "sommario": "The HESI A2 reports a percentage for each section and leaves the threshold to the nursing program. Which sections count, how schools combine them, and what that means for how a candidate should study.",
+      "data": "2026-11-09",
+      "aggiornato": "2026-11-09",
+      "libri": [
+        "hesi-a2"
+      ],
+      "fonti": [
+        {
+          "testo": "Nurse.org — What the HESI exam is and how to prepare for it",
+          "url": "https://nurse.org/resources/hesi-exam-guide/"
+        },
+        {
+          "testo": "What is the HESI A2 exam? Sections, scoring and what to expect",
+          "url": "https://allhealthcarecareers.com/what-is-the-hesi-a2-exam/"
+        }
+      ]
+    },
+    {
+      "slug": "hearsay-in-plain-words",
+      "titolo": "Hearsay in plain words: the two conditions, and why so much of it comes in",
+      "occhiello": "Law, rule by rule",
+      "sommario": "Rule 801 makes a statement hearsay only when two conditions are met together. Identifying the purpose of the offer settles most arguments, and Rule 801(d) removes two whole groups from the definition.",
+      "data": "2026-11-09",
+      "aggiornato": "2026-11-09",
+      "libri": [
+        "federal-rules-evidence"
+      ],
+      "fonti": [
+        {
+          "testo": "Federal Rules of Evidence, Rule 801 — Definitions and exclusions",
+          "url": "https://www.law.cornell.edu/rules/fre/rule_801"
+        },
+        {
+          "testo": "Federal Rules of Evidence, Rule 802 — The rule against hearsay",
+          "url": "https://www.law.cornell.edu/rules/fre/rule_802"
+        },
+        {
+          "testo": "Federal Rules of Evidence, Rule 803 — Exceptions",
+          "url": "https://www.law.cornell.edu/rules/fre/rule_803"
+        }
       ]
     }
   ]
