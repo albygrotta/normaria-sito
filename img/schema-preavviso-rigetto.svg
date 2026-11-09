@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 476" width="330" height="476"
+     role="img" aria-label="Il percorso del preavviso di rigetto previsto dall'articolo 10-bis"
+     style="min-width:0;max-width:340px;margin:0 auto">
+  <style>
+    .bg   { fill:#F5F0E6; }
+    .card { fill:#ffffff; stroke:#D8D0BE; stroke-width:1; }
+    .head { font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:500;
+            fill:#9E2B25; letter-spacing:1.6px; }
+    .n    { font-family:"IBM Plex Mono",monospace; font-size:12px; font-weight:500; fill:#F5F0E6; }
+    .t    { font-family:"IBM Plex Sans",sans-serif; font-size:13px; font-weight:600; fill:#111D30; }
+    .d    { font-family:"IBM Plex Sans",sans-serif; font-size:12px; fill:#4A5468; }
+    .foot { font-family:"IBM Plex Sans",sans-serif; font-size:11.5px; fill:#4A5468; }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="330" height="476"/>
+  <text class="head" x="14" y="22">ART. 10-BIS, PASSO PER PASSO</text>
+  <line x1="14" y1="32" x2="316" y2="32" stroke="#9E2B25" stroke-width="2"/>
+
+  <line x1="30" y1="60" x2="30" y2="392" stroke="#D8D0BE" stroke-width="2"/>
+
+  <circle cx="30" cy="66" r="11" fill="#9E2B25"/>
+  <text class="n" x="26.5" y="70">1</text>
+  <text class="t" x="52" y="62">L'ufficio scrive</text>
+  <text class="d" x="52" y="80">Indica i motivi che impediscono</text>
+  <text class="d" x="52" y="96">di accogliere la domanda.</text>
+
+  <circle cx="30" cy="136" r="11" fill="#9E2B25"/>
+  <text class="n" x="26.5" y="140">2</text>
+  <text class="t" x="52" y="132">I termini si fermano</text>
+  <text class="d" x="52" y="150">Sospensione, non interruzione:</text>
+  <text class="d" x="52" y="166">il tempo già trascorso resta.</text>
+
+  <circle cx="30" cy="206" r="11" fill="#9E2B25"/>
+  <text class="n" x="26.5" y="210">3</text>
+  <text class="t" x="52" y="202">Dieci giorni per replicare</text>
+  <text class="d" x="52" y="220">Osservazioni scritte, con</text>
+  <text class="d" x="52" y="236">documenti. È una facoltà.</text>
+
+  <circle cx="30" cy="276" r="11" fill="#9E2B25"/>
+  <text class="n" x="26.5" y="280">4</text>
+  <text class="t" x="52" y="272">Il cronometro riparte</text>
+  <text class="d" x="52" y="290">Dieci giorni dopo le osservazioni,</text>
+  <text class="d" x="52" y="306">o alla scadenza se non arrivano.</text>
+
+  <circle cx="30" cy="346" r="11" fill="#9E2B25"/>
+  <text class="n" x="26.5" y="350">5</text>
+  <text class="t" x="52" y="342">Il provvedimento finale</text>
+  <text class="d" x="52" y="360">Dice perché le osservazioni</text>
+  <text class="d" x="52" y="376">non sono state accolte.</text>
+
+  <rect class="card" x="14" y="408" width="302" height="54" rx="2"/>
+  <text class="foot" x="28" y="430">Fuori dalla regola: le procedure</text>
+  <text class="foot" x="28" y="447">concorsuali e i procedimenti previdenziali.</text>
+</svg>

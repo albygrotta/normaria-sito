@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 466" width="330" height="466"
+     role="img" aria-label="The order of the naturalization interview"
+     style="min-width:0;max-width:340px;margin:0 auto">
+  <style>
+    .bg   { fill:#F5F0E6; }
+    .card { fill:#ffffff; stroke:#D8D0BE; stroke-width:1; }
+    .head { font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:500;
+            fill:#9E2B25; letter-spacing:1.6px; }
+    .n    { font-family:"IBM Plex Mono",monospace; font-size:12px; font-weight:500; fill:#F5F0E6; }
+    .t    { font-family:"IBM Plex Sans",sans-serif; font-size:13px; font-weight:600; fill:#111D30; }
+    .d    { font-family:"IBM Plex Sans",sans-serif; font-size:12px; fill:#4A5468; }
+    .foot { font-family:"IBM Plex Sans",sans-serif; font-size:11.5px; fill:#4A5468; }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="330" height="466"/>
+  <text class="head" x="14" y="22">THE INTERVIEW, IN ORDER</text>
+  <line x1="14" y1="32" x2="316" y2="32" stroke="#9E2B25" stroke-width="2"/>
+
+  <line x1="30" y1="60" x2="30" y2="368" stroke="#D8D0BE" stroke-width="2"/>
+
+  <circle cx="30" cy="66" r="11" fill="#9E2B25"/>
+  <text class="n" x="26.5" y="70">1</text>
+  <text class="t" x="52" y="62">Form N-400 reviewed</text>
+  <text class="d" x="52" y="80">Answers confirmed, documents</text>
+  <text class="d" x="52" y="96">checked, changes recorded.</text>
+
+  <circle cx="30" cy="136" r="11" fill="#9E2B25"/>
+  <text class="n" x="26.5" y="140">2</text>
+  <text class="t" x="52" y="132">Speaking</text>
+  <text class="d" x="52" y="150">Judged from the conversation</text>
+  <text class="d" x="52" y="166">itself. No separate exercise.</text>
+
+  <circle cx="30" cy="206" r="11" fill="#9E2B25"/>
+  <text class="n" x="26.5" y="210">3</text>
+  <text class="t" x="52" y="202">Reading</text>
+  <text class="d" x="52" y="220">Up to three sentences shown.</text>
+  <text class="d" x="52" y="236">One read correctly is enough.</text>
+
+  <circle cx="30" cy="276" r="11" fill="#9E2B25"/>
+  <text class="n" x="26.5" y="280">4</text>
+  <text class="t" x="52" y="272">Writing</text>
+  <text class="d" x="52" y="290">Up to three sentences dictated.</text>
+  <text class="d" x="52" y="306">One written correctly is enough.</text>
+
+  <circle cx="30" cy="346" r="11" fill="#9E2B25"/>
+  <text class="n" x="26.5" y="350">5</text>
+  <text class="t" x="52" y="342">Civics</text>
+  <text class="d" x="52" y="360">Asked and answered aloud.</text>
+
+  <rect class="card" x="14" y="392" width="302" height="58" rx="2"/>
+  <text class="foot" x="28" y="414">Fail one part and only that part is retested,</text>
+  <text class="foot" x="28" y="431">at a second interview 60 to 90 days later.</text>
+</svg>
