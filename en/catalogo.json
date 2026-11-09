@@ -1,0 +1,73 @@
+{
+  "_come_si_usa": "Elenco dei libri in inglese del sito (sezione /en/). Stessi campi del catalogo italiano: id (nome breve, serve anche al nome del file di copertina in img/), titolo, materia (la riga piccola sopra il titolo), misura (la cifra sotto la scheda), link Amazon, stato (disponibile | in-arrivo), descrizione, copertina.",
+  "sezioni": [
+    {
+      "nome": "Exam preparation",
+      "sommario": "Official questions, explained one at a time, with everything printed in the book.",
+      "manuali": [
+        {
+          "id": "hesi-a2",
+          "titolo": "Unofficial HESI A2 Study Guide 2027–2028",
+          "materia": "Nursing school admission",
+          "misura": "1,324 questions",
+          "link": "https://www.amazon.com/dp/B0HLJB1Z2F",
+          "stato": "disponibile",
+          "descrizione": "Every section of the HESI A2 covered, with 1,324 practice questions and a full-length practice test. All of it printed in the book: no access codes, no apps, no subscriptions.",
+          "copertina": "../img/hesi-a2.jpg"
+        },
+        {
+          "id": "us-citizenship-128",
+          "titolo": "US Citizenship Test Study Guide 2026–2027",
+          "materia": "Naturalization test",
+          "misura": "128 questions",
+          "link": "https://www.amazon.com/dp/B0H87T1R2G",
+          "stato": "disponibile",
+          "descrizione": "All 128 official USCIS civics questions for the 2025 test, each one explained and connected to the others, plus interview preparation. 183 pages.",
+          "copertina": "../img/us-citizenship-128.jpg"
+        },
+        {
+          "id": "us-citizenship-seniors",
+          "titolo": "US Citizenship Test for Seniors 2026–2027",
+          "materia": "The 65/20 rule · English + Español",
+          "misura": "20 questions",
+          "link": "https://www.amazon.com/dp/B0HFN8LJMZ",
+          "stato": "disponibile",
+          "descrizione": "For applicants aged 65 or over with 20 years as a permanent resident: only the 20 questions that rule allows, in English and Spanish, set in extra large print. 106 pages.",
+          "copertina": "../img/us-citizenship-seniors.jpg"
+        }
+      ]
+    },
+    {
+      "nome": "Law, rule by rule",
+      "sommario": "The same four-block card the Italian manuals are built on, applied to American law.",
+      "manuali": [
+        {
+          "id": "federal-rules-evidence",
+          "titolo": "Federal Rules of Evidence — 2026 Edition",
+          "materia": "US law of evidence",
+          "misura": "163 pages",
+          "link": "https://www.amazon.com/dp/B0H8RSBQHV",
+          "stato": "disponibile",
+          "descrizione": "All the rules in force, in full text, annotated and connected to one another, current through the December 1, 2024 amendments. The rule-by-rule method to understand, connect and remember the law of evidence.",
+          "copertina": "../img/federal-rules-evidence.jpg"
+        }
+      ]
+    },
+    {
+      "nome": "Reader's guides",
+      "sommario": "Long documents made readable, without shortening them.",
+      "manuali": [
+        {
+          "id": "magnifica-humanitas-en",
+          "titolo": "Magnifica Humanitas: A Reader's Guide",
+          "materia": "Pope Leo XIV's encyclical on artificial intelligence",
+          "misura": "82 pages",
+          "link": "https://www.amazon.com/dp/B0HCJ54Q39",
+          "stato": "disponibile",
+          "descrizione": "A guided reading of the encyclical on artificial intelligence: what each part says, the questions it answers, and the passages worth going back to.",
+          "copertina": ""
+        }
+      ]
+    }
+  ]
+}

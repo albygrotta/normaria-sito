@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles — Normaria Edizioni</title>
+  <meta name="description" content="Rules explained one at a time, and the American exams that test them: what the rule says, why it exists, how it is asked.">
+  <link rel="canonical" href="https://normaria.net/en/articles.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Articles — Normaria Edizioni">
+  <meta property="og:description" content="Rules explained one at a time, and the American exams that test them: what the rule says, why it exists, how it is asked.">
+  <meta property="og:url" content="https://normaria.net/en/articles.html">
+  <meta property="og:locale" content="en_US">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <a class="salta" href="#contenuto">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="/en/" class="brand">Normaria<small>Edizioni</small></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu"
+              aria-label="Open the menu"><span></span><span></span><span></span></button>
+      <nav class="nav" id="menu">
+          <a href="/en/#method">The method</a>
+          <a href="/en/#catalog">Catalog</a>
+          <a href="/en/articles.html" class="attiva">Articles</a>
+          <a href="/" class="lingua" hreflang="it" lang="it">Italiano</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenuto">
+  <section class="hero hero-stretto">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Articles</p>
+        <h1>One rule at a time.</h1>
+        <p class="lead">What a rule says, why it exists, and how it turns into an exam question.
+          Written for readers who are not lawyers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="list">
+    <div class="wrap">
+      <div class="posts">
+        <article class="post">
+          <p class="collana">The test explained · November 8, 2026</p>
+          <h2><a href="articles/the-65-20-rule.html">The 65/20 rule: who studies 20 civics questions instead of 128</a></h2>
+          <p>Applicants aged 65 or over with 20 years as permanent residents take a shorter civics test in their own language. What the rule gives, what it leaves in place, and which twenty questions apply.</p>
+          <p class="post-piu"><a href="articles/the-65-20-rule.html">Read the article</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <p class="brand-f">Normaria Edizioni</p>
+          <p>Study guides built on one idea: every rule on a card of the same four blocks.</p>
+        </div>
+        <div>
+          <h4>Browse</h4>
+          <ul>
+            <li><a href="/en/#method">The method</a></li>
+            <li><a href="/en/#catalog">Catalog</a></li>
+            <li><a href="/en/articles.html">Articles</a></li>
+            <li><a href="/" hreflang="it" lang="it">Sito in italiano</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="../privacy.html">Privacy policy</a></li>
+            <li><a href="../cookie.html">Cookie policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="legal">
+        Normaria Edizioni · <span class="todo">[Legal name to be added]</span> ·
+        VAT <span class="todo">[to be added]</span> ·
+        Registered office: <span class="todo">Grottaferrata (Rome), Italy — address to be added</span><br>
+        Contact: <span class="todo">[email to be added]</span> ·
+        © 2026 Normaria Edizioni. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // apre e chiude il menu sul telefono
+    (function () {
+      var b = document.querySelector('.nav-toggle');
+      var m = document.getElementById('menu');
+      if (!b || !m) return;
+      b.addEventListener('click', function () {
+        var aperto = m.classList.toggle('aperto');
+        b.setAttribute('aria-expanded', aperto);
+        b.setAttribute('aria-label', aperto ? 'Close the menu' : 'Open the menu');
+      });
+      m.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') { m.classList.remove('aperto');
+          b.setAttribute('aria-expanded', 'false'); }
+      });
+    })();
+  </script>
+</body>
+</html>

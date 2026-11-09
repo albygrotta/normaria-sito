@@ -1,0 +1,20 @@
+{
+  "_come_si_usa": "Elenco degli articoli in inglese. Campi: slug (nome del file), titolo, occhiello (il filone), sommario, data (AAAA-MM-GG), aggiornato, libri (gli id presi da en/catalogo.json), fonti.",
+  "articoli": [
+    {
+      "slug": "the-65-20-rule",
+      "titolo": "The 65/20 rule: who studies 20 civics questions instead of 128",
+      "occhiello": "The test explained",
+      "sommario": "Applicants aged 65 or over with 20 years as permanent residents take a shorter civics test in their own language. What the rule gives, what it leaves in place, and which twenty questions apply.",
+      "data": "2026-11-08",
+      "aggiornato": "2026-11-08",
+      "libri": ["us-citizenship-seniors", "us-citizenship-128"],
+      "fonti": [
+        { "testo": "USCIS — Civics Questions and Answers for the 65/20 Special Consideration", "url": "https://www.uscis.gov/archive/civics-questions-and-answers-for-the-6520-special-consideration" },
+        { "testo": "USCIS — M-1781, Civics Questions and Answers for the 65/20 Special Consideration (PDF)", "url": "https://www.uscis.gov/sites/default/files/document/crc/M_1781.pdf" },
+        { "testo": "The naturalization interview and test: 2008 and 2025 versions compared", "url": "https://www.sglegalgroup.com/updates/uscis-update-the-naturalization-interview-and-test-2008-vs-2025-versions" },
+        { "testo": "Citizenship test exemptions: 50/20, 55/15, 65/20", "url": "https://citizenryapp.com/blog/citizenship-test-exemptions.html" }
+      ]
+    }
+  ]
+}
