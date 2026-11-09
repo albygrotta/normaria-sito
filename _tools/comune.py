@@ -13,11 +13,12 @@ SITO = "https://normaria.net"
 
 # le voci del menu, in ordine. La chiave serve a evidenziare la pagina attiva.
 VOCI = [
-    ("metodo",   "Il metodo",         "metodo.html"),
-    ("catalogo", "Catalogo",          "index.html#catalogo"),
-    ("articoli", "Articoli",          "articoli.html"),
-    ("video",    "Video",             "video.html"),
-    ("estratto", "Estratto gratuito", "index.html#estratto"),
+    ("metodo",   "Il metodo",         "/metodo.html"),
+    ("catalogo", "Catalogo",          "/#catalogo"),
+    ("articoli", "Articoli",          "/articoli.html"),
+    ("video",    "Video",             "/video.html"),
+    ("estratto", "Estratto gratuito", "/#estratto"),
+    ("en",       "English",           "/en/"),
 ]
 
 FONT = (
@@ -33,7 +34,10 @@ def menu(attiva, su=""):
     voci = []
     for chiave, testo, href in VOCI:
         classe = ' class="attiva"' if chiave == attiva else ""
-        voci.append(f'          <a href="{su}{href}"{classe}>{testo}</a>')
+        # gli indirizzi che cominciano con "/" partono dalla radice del sito:
+        # non vanno preceduti dai "../" delle pagine dentro una cartella
+        pre = "" if href.startswith("/") else su
+        voci.append(f'          <a href="{pre}{href}"{classe}>{testo}</a>')
     return "\n".join(voci)
 
 
@@ -135,7 +139,7 @@ def testa(attiva, su=""):
     return f"""  <a class="salta" href="#contenuto">Vai al contenuto</a>
   <header class="site-header">
     <div class="wrap">
-      <a href="{su}index.html" class="brand">Normaria<small>Edizioni</small></a>
+      <a href="/" class="brand">Normaria<small>Edizioni</small></a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="menu"
               aria-label="Apri il menu"><span></span><span></span><span></span></button>
       <nav class="nav" id="menu">
@@ -157,10 +161,11 @@ def piede(su=""):
           <h4>Naviga</h4>
           <ul>
             <li><a href="{su}metodo.html">Il metodo</a></li>
-            <li><a href="{su}index.html#catalogo">Catalogo</a></li>
+            <li><a href="/#catalogo">Catalogo</a></li>
             <li><a href="{su}articoli.html">Articoli</a></li>
             <li><a href="{su}video.html">Video</a></li>
-            <li><a href="{su}index.html#estratto">Estratto gratuito</a></li>
+            <li><a href="/#estratto">Estratto gratuito</a></li>
+            <li><a href="/en/" hreflang="en" lang="en">English catalog</a></li>
           </ul>
         </div>
         <div>

@@ -115,7 +115,7 @@ __SCHEDA__
       <div class="rimandi">
         <h2>Vedere il metodo all'opera</h2>
         <p>Ogni manuale del catalogo è costruito su questa struttura, materia per materia e concorso per concorso.</p>
-        <p class="rimandi-piu"><a href="index.html#catalogo">Vai al catalogo</a></p>
+        <p class="rimandi-piu"><a href="/#catalogo">Vai al catalogo</a></p>
       </div>
 
     </div>

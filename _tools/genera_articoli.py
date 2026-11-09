@@ -143,7 +143,7 @@ def rimandi(a, per_id):
       <ul>
 {voci}
       </ul>
-      <p class="rimandi-piu"><a href="../index.html#catalogo">Vedi tutto il catalogo</a></p>
+      <p class="rimandi-piu"><a href="/#catalogo">Vedi tutto il catalogo</a></p>
     </aside>"""
 
 
@@ -267,6 +267,15 @@ def mappa_sito(articoli):
             (f"{SITO}/articoli.html", "0.8", ultima), (f"{SITO}/video.html", "0.7", "")]
     voci += [(f"{SITO}/articoli/{a['slug']}.html", "0.7",
               a.get("aggiornato") or a["data"]) for a in articoli]
+    # la sezione inglese, se c'e'
+    en = RADICE / "en" / "articoli.json"
+    if en.exists():
+        en_art = json.loads(en.read_text(encoding="utf-8"))["articoli"]
+        ultima_en = max((a.get("aggiornato") or a["data"]) for a in en_art) if en_art else ""
+        voci += [(f"{SITO}/en/", "0.9", ultima_en),
+                 (f"{SITO}/en/articles.html", "0.8", ultima_en)]
+        voci += [(f"{SITO}/en/articles/{a['slug']}.html", "0.7",
+                  a.get("aggiornato") or a["data"]) for a in en_art]
     voci += [(f"{SITO}/privacy.html", "0.3", ""), (f"{SITO}/cookie.html", "0.3", "")]
     corpo_xml = "\n".join(
         f"  <url><loc>{u}</loc>"
