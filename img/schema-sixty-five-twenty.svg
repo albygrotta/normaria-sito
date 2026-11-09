@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 474" width="330" height="474"
+     role="img" aria-label="The three age-based rules for the naturalization test"
+     style="min-width:0;max-width:340px;margin:0 auto">
+  <style>
+    .bg   { fill:#F5F0E6; }
+    .card { fill:#ffffff; stroke:#D8D0BE; stroke-width:1; }
+    .name { font-family:"IBM Plex Mono",monospace; font-size:21px; font-weight:500; fill:#111D30; }
+    .cond { font-family:"IBM Plex Sans",sans-serif; font-size:12px; fill:#4A5468; }
+    .ben  { font-family:"IBM Plex Sans",sans-serif; font-size:12.5px; fill:#111D30; }
+    .head { font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:500;
+            fill:#9E2B25; letter-spacing:1.6px; }
+    .foot { font-family:"IBM Plex Sans",sans-serif; font-size:11.5px; fill:#4A5468; }
+    .dot  { fill:#9E2B25; }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="330" height="474"/>
+  <text class="head" x="14" y="22">AGE-BASED RULES</text>
+  <line x1="14" y1="32" x2="316" y2="32" stroke="#9E2B25" stroke-width="2"/>
+
+  <!-- 50/20 -->
+  <rect class="card" x="14" y="46" width="302" height="112" rx="2"/>
+  <text class="name" x="28" y="76">50 / 20</text>
+  <text class="cond" x="28" y="95">Age 50 or over · 20 years a permanent resident</text>
+  <circle class="dot" cx="31" cy="115" r="2.5"/>
+  <text class="ben" x="41" y="119">No English test</text>
+  <circle class="dot" cx="31" cy="137" r="2.5"/>
+  <text class="ben" x="41" y="141">Civics in your own language, full list</text>
+
+  <!-- 55/15 -->
+  <rect class="card" x="14" y="170" width="302" height="112" rx="2"/>
+  <text class="name" x="28" y="200">55 / 15</text>
+  <text class="cond" x="28" y="219">Age 55 or over · 15 years a permanent resident</text>
+  <circle class="dot" cx="31" cy="239" r="2.5"/>
+  <text class="ben" x="41" y="243">No English test</text>
+  <circle class="dot" cx="31" cy="261" r="2.5"/>
+  <text class="ben" x="41" y="265">Civics in your own language, full list</text>
+
+  <!-- 65/20 -->
+  <rect class="card" x="14" y="294" width="302" height="134" rx="2" stroke="#9E2B25" stroke-width="2"/>
+  <text class="name" x="28" y="324" fill="#9E2B25">65 / 20</text>
+  <text class="cond" x="28" y="343">Age 65 or over · 20 years a permanent resident</text>
+  <circle class="dot" cx="31" cy="363" r="2.5"/>
+  <text class="ben" x="41" y="367">No English test</text>
+  <circle class="dot" cx="31" cy="385" r="2.5"/>
+  <text class="ben" x="41" y="389">Civics in your own language</text>
+  <circle class="dot" cx="31" cy="407" r="2.5"/>
+  <text class="ben" x="41" y="411">Only 20 questions: 10 asked, 6 to pass</text>
+
+  <text class="foot" x="14" y="452">Both conditions are read on the day</text>
+  <text class="foot" x="14" y="467">Form N-400 is filed.</text>
+</svg>
