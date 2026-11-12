@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 470" width="330" height="470"
+     role="img" aria-label="I tre vizi di legittimità dell'articolo 21-octies e il confine con la nullità"
+     style="min-width:0;max-width:340px;margin:0 auto">
+  <style>
+    .bg   { fill:#F5F0E6; }
+    .card { fill:#ffffff; stroke:#D8D0BE; stroke-width:1; }
+    .head { font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:500;
+            fill:#9E2B25; letter-spacing:1.6px; }
+    .n    { font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:500; fill:#F5F0E6; }
+    .t    { font-family:"IBM Plex Sans",sans-serif; font-size:13px; font-weight:600; fill:#111D30; }
+    .d    { font-family:"IBM Plex Sans",sans-serif; font-size:12px; fill:#4A5468; }
+    .e    { font-family:"IBM Plex Mono",monospace; font-size:9.5px; font-weight:500;
+            fill:#9E2B25; letter-spacing:1.1px; }
+    .foot { font-family:"IBM Plex Sans",sans-serif; font-size:11.5px; fill:#4A5468; }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="330" height="470"/>
+  <text class="head" x="14" y="22">ART. 21-OCTIES: I TRE VIZI</text>
+  <line x1="14" y1="32" x2="316" y2="32" stroke="#9E2B25" stroke-width="2"/>
+
+  <rect class="card" x="14" y="46" width="302" height="98" rx="2"/>
+  <rect x="28" y="60" width="18" height="18" rx="2" fill="#9E2B25"/>
+  <text class="n" x="33.5" y="73">1</text>
+  <text class="t" x="56" y="74">Incompetenza</text>
+  <text class="d" x="56" y="96">L'atto lo firma un organo diverso</text>
+  <text class="d" x="56" y="112">da quello che la legge indica.</text>
+  <text class="e" x="56" y="132">SE RELATIVA: ANNULLABILE</text>
+
+  <rect class="card" x="14" y="156" width="302" height="98" rx="2"/>
+  <rect x="28" y="170" width="18" height="18" rx="2" fill="#9E2B25"/>
+  <text class="n" x="33.5" y="183">2</text>
+  <text class="t" x="56" y="184">Eccesso di potere</text>
+  <text class="d" x="56" y="206">Il potere discrezionale è usato</text>
+  <text class="d" x="56" y="222">male: sviamento, o un sintomo.</text>
+  <text class="e" x="56" y="242">SOLO SE C'È UNA SCELTA</text>
+
+  <rect class="card" x="14" y="266" width="302" height="98" rx="2"/>
+  <rect x="28" y="280" width="18" height="18" rx="2" fill="#9E2B25"/>
+  <text class="n" x="33.5" y="293">3</text>
+  <text class="t" x="56" y="294">Violazione di legge</text>
+  <text class="d" x="56" y="316">Ogni altra difformità dalla norma:</text>
+  <text class="d" x="56" y="332">è la categoria residuale.</text>
+  <text class="e" x="56" y="352">ANCHE SUGLI ATTI VINCOLATI</text>
+
+  <line x1="14" y1="382" x2="316" y2="382" stroke="#D8D0BE" stroke-width="1"/>
+  <text class="foot" x="14" y="406">Fuori dai tre: il difetto assoluto di</text>
+  <text class="foot" x="14" y="423">attribuzione. Il provvedimento è nullo</text>
+  <text class="foot" x="14" y="440">(art. 21-septies) e l'azione dura 180 giorni.</text>
+</svg>
