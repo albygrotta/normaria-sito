@@ -481,6 +481,39 @@
           "url": "https://www.inpa.gov.it/"
         }
       ]
+    },
+    {
+      "slug": "eccesso-di-potere-figure-sintomatiche",
+      "titolo": "Eccesso di potere: come si riconosce il vizio che la legge non descrive",
+      "occhiello": "Il diritto spiegato",
+      "sommario": "L'art. 21-octies della legge 241/1990 elenca tre vizi di legittimità e ne descrive zero. L'eccesso di potere si accerta per indizi: le sei figure sintomatiche che la giurisprudenza ha costruito, il confine con il merito amministrativo che il giudice non può attraversare, e i casi in cui il vizio c'è ma il provvedimento resta in piedi.",
+      "data": "2026-11-12",
+      "aggiornato": "2026-11-12",
+      "manuali": [
+        "amministrativo"
+      ],
+      "fonti": [
+        {
+          "testo": "Legge 7 agosto 1990, n. 241 — Normattiva",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-08-07;241"
+        },
+        {
+          "testo": "Art. 21-octies l. 241/1990, Annullabilità del provvedimento — Brocardi",
+          "url": "https://www.brocardi.it/legge-sul-procedimento-amministrativo/capo-iv-bis/art21octies.html"
+        },
+        {
+          "testo": "L'eccesso di potere nel diritto amministrativo — Edizioni Simone",
+          "url": "https://edizioni.simone.it/2022/03/17/leccesso-di-potere-nel-diritto-amministrativo/"
+        },
+        {
+          "testo": "I vizi del provvedimento amministrativo — G. Gardini, Università di Ferrara",
+          "url": "https://docente.unife.it/gianluca.gardini/materiale-didattico-integrativo/diritto-amministrativo-2019-2020-ii-semestre/slide-lezioni/Lezione%2019%20-%20Unife.pdf/at_download/file"
+        },
+        {
+          "testo": "Art. 31, comma 4, codice del processo amministrativo — Brocardi",
+          "url": "https://brocardi.it/codice-del-processo-amministrativo/libro-primo/titolo-iii/capo-ii/art31.html"
+        }
+      ]
     }
   ]
 }
