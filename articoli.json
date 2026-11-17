@@ -552,6 +552,43 @@
           "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-07;209"
         }
       ]
+    },
+    {
+      "slug": "conferenza-di-servizi-come-funziona-2026",
+      "titolo": "Chi decide quando per un'opera servono dieci permessi? La conferenza di servizi dopo la riforma del 2026",
+      "occhiello": "Il diritto spiegato",
+      "sommario": "Quando la conclusione di un procedimento dipende dagli assensi di più amministrazioni, la legge impone di riunirle in un procedimento solo. Dal 20 febbraio 2026 i termini si sono accorciati — 30 giorni al posto di 45, 60 al posto di 90 — e il dissenso non porta più alla conferenza simultanea ma a una riunione telematica che chiude subito. Come funziona la forma semplificata, perché il silenzio di un ufficio vale sì e quali sono le sei trappole che tornano nei quesiti.",
+      "data": "2026-11-17",
+      "aggiornato": "2026-11-17",
+      "manuali": [
+        "amministrativo"
+      ],
+      "fonti": [
+        {
+          "testo": "Art. 14-bis l. n. 241/1990, testo vigente — Brocardi",
+          "url": "https://www.brocardi.it/legge-sul-procedimento-amministrativo/capo-iv/art14bis.html"
+        },
+        {
+          "testo": "Art. 14-ter l. n. 241/1990, testo vigente — Brocardi",
+          "url": "https://www.brocardi.it/legge-sul-procedimento-amministrativo/capo-iv/art14ter.html"
+        },
+        {
+          "testo": "Art. 14-quinquies l. n. 241/1990, testo vigente — Brocardi",
+          "url": "https://www.brocardi.it/legge-sul-procedimento-amministrativo/capo-iv/art14quinquies.html"
+        },
+        {
+          "testo": "DL 19/2026: cosa cambia nella legge 241/1990 su conferenza di servizi, SCIA e silenzio assenso — LavoriPubblici",
+          "url": "https://www.lavoripubblici.it/news/stampa/37530"
+        },
+        {
+          "testo": "Conferenza di servizi: dal 20 febbraio 2026 in vigore le novità, la Guida — BuildNews",
+          "url": "https://www.buildnews.it/articolo/conferenza-di-servizi-dal-20-febbraio-2026-in-vigore-novita-guida"
+        },
+        {
+          "testo": "Legge 7 agosto 1990, n. 241 — Normattiva",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-08-07;241"
+        }
+      ]
     }
   ]
 }
