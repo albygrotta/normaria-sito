@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 480" width="330" height="480"
+     role="img" aria-label="I termini della conferenza di servizi semplificata in vigore dal 20 febbraio 2026"
+     style="min-width:0;max-width:340px;margin:0 auto">
+  <style>
+    .bg   { fill:#F5F0E6; }
+    .card { fill:#ffffff; stroke:#D8D0BE; stroke-width:1; }
+    .head { font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:500;
+            fill:#9E2B25; letter-spacing:1.6px; }
+    .term { font-family:"IBM Plex Mono",monospace; font-size:9.5px; font-weight:500;
+            fill:#9E2B25; letter-spacing:1.1px; }
+    .t    { font-family:"IBM Plex Sans",sans-serif; font-size:13px; font-weight:600; fill:#111D30; }
+    .d    { font-family:"IBM Plex Sans",sans-serif; font-size:11px; fill:#4A5468; }
+    .bar  { fill:#9E2B25; }
+    .arr  { stroke:#4A5468; stroke-width:1.2; fill:none; }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="330" height="480"/>
+  <text class="head" x="14" y="22">CONFERENZA SEMPLIFICATA</text>
+
+  <!-- 1 -->
+  <rect class="card" x="14" y="36" width="302" height="66" rx="2"/>
+  <rect class="bar"  x="14" y="36" width="3" height="66"/>
+  <text class="term" x="28" y="55">5 GIORNI LAVORATIVI</text>
+  <text class="t"    x="28" y="74">Indizione</text>
+  <text class="d"    x="28" y="92">Apertura da parte dell'ufficio procedente.</text>
+  <path class="arr" d="M165 105 L165 112"/>
+  <path class="bar" d="M161 111 L169 111 L165 117 Z"/>
+
+  <!-- 2 -->
+  <rect class="card" x="14" y="120" width="302" height="66" rx="2"/>
+  <rect class="bar"  x="14" y="120" width="3" height="66"/>
+  <text class="term" x="28" y="139">15 GIORNI — PERENTORIO</text>
+  <text class="t"    x="28" y="158">Integrazioni</text>
+  <text class="d"    x="28" y="176">Gli uffici chiedono documenti o chiarimenti.</text>
+  <path class="arr" d="M165 189 L165 196"/>
+  <path class="bar" d="M161 195 L169 195 L165 201 Z"/>
+
+  <!-- 3 -->
+  <rect class="card" x="14" y="204" width="302" height="78" rx="2"/>
+  <rect class="bar"  x="14" y="204" width="3" height="78"/>
+  <text class="term" x="28" y="223">30 GIORNI — 60 CON LE TUTELE</text>
+  <text class="t"    x="28" y="242">Determinazioni</text>
+  <text class="d"    x="28" y="259">Assenso, o dissenso motivato con le</text>
+  <text class="d"    x="28" y="274">prescrizioni. Chi tace, o non motiva, dice sì.</text>
+  <path class="arr" d="M165 285 L165 292"/>
+  <path class="bar" d="M161 291 L169 291 L165 297 Z"/>
+
+  <!-- 4 -->
+  <rect class="card" x="14" y="300" width="302" height="78" rx="2"/>
+  <rect class="bar"  x="14" y="300" width="3" height="78"/>
+  <text class="term" x="28" y="319">5 GIORNI LAVORATIVI</text>
+  <text class="t"    x="28" y="338">Conclusione positiva o negativa</text>
+  <text class="d"    x="28" y="355">Positiva se ci sono solo assensi; negativa</text>
+  <text class="d"    x="28" y="370">se il dissenso non si può superare.</text>
+  <path class="arr" d="M165 381 L165 388"/>
+  <path class="bar" d="M161 387 L169 387 L165 393 Z"/>
+
+  <!-- 5 -->
+  <rect class="card" x="14" y="396" width="302" height="78" rx="2"/>
+  <rect class="bar"  x="14" y="396" width="3" height="78"/>
+  <text class="term" x="28" y="415">ENTRO 10 GIORNI</text>
+  <text class="t"    x="28" y="434">Riunione telematica</text>
+  <text class="d"    x="28" y="451">Negli altri casi decide l'ufficio procedente</text>
+  <text class="d"    x="28" y="466">sulle posizioni prevalenti.</text>
+</svg>
