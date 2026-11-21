@@ -1,0 +1,52 @@
+<svg viewBox="0 0 330 432" style="min-width:0;max-width:340px;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Come si forma il punteggio finale del concorso per 1.000 allievi vice ispettori della Polizia di Stato. La prova orale vale 60 punti e si supera con almeno 36 su 60. I titoli dichiarati nella domanda valgono fino a 20 punti, divisi in 12 punti per i titoli di cultura e 8 per le pubblicazioni scientifiche. La corsa sui 1.000 metri aggiunge fino a 2 punti a chi la chiude in un tempo migliore di quello richiesto per l'idoneità. La preselezione, quando si svolge, non porta punti in graduatoria: serve solo ad ammettere alle prove successive. Il totale massimo è di 82 punti.">
+  <style>
+    .m { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+    .s { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    .cap { font-size: 10px; letter-spacing: 0.13em; text-transform: uppercase; }
+    .lab { font-family: "IBM Plex Mono", monospace; font-size: 9px; letter-spacing: 0.1em; }
+    .num { font-family: "IBM Plex Mono", monospace; font-size: 11px; font-weight: 500; }
+    .vce { font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 10px; }
+  </style>
+  <rect width="330" height="432" fill="#F5F0E6"/>
+
+  <text x="0" y="13" class="m cap" fill="#9E2B25">Il punteggio finale</text>
+  <line x1="0" y1="24" x2="330" y2="24" stroke="#111D30" stroke-opacity="0.18"/>
+  <text x="0" y="42" class="s" font-size="11" fill="#4A5468">Un massimo di 82 punti, da tre fonti.</text>
+
+  <!-- SCALA: 4 px per punto -->
+
+  <!-- ORALE -->
+  <text x="0" y="62" class="lab" fill="#111D30">PROVA ORALE</text>
+  <rect x="0" y="70" width="240" height="22" fill="#111D30"/>
+  <line x1="144" y1="64" x2="144" y2="98" stroke="#9E2B25" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <text x="248" y="85" class="num" fill="#111D30">60 punti</text>
+  <text x="144" y="110" text-anchor="middle" class="m" font-size="9" fill="#9E2B25">soglia 36</text>
+
+  <!-- TITOLI -->
+  <text x="0" y="136" class="lab" fill="#111D30">TITOLI DICHIARATI</text>
+  <rect x="0" y="144" width="80" height="22" fill="#9E2B25"/>
+  <text x="88" y="159" class="num" fill="#9E2B25">fino a 20</text>
+  <text x="0" y="182" class="vce" fill="#4A5468">12 di cultura, 8 di pubblicazioni.</text>
+
+  <!-- CORSA -->
+  <text x="0" y="208" class="lab" fill="#111D30">CORSA, 1.000 METRI</text>
+  <rect x="0" y="216" width="8" height="22" fill="#9E2B25" fill-opacity="0.55"/>
+  <text x="16" y="231" class="num" fill="#9E2B25">fino a 2</text>
+  <text x="0" y="254" class="vce" fill="#4A5468">Solo per chi corre più veloce.</text>
+
+  <!-- PRESELEZIONE -->
+  <text x="0" y="280" class="lab" fill="#4A5468">PRESELEZIONE</text>
+  <rect x="0" y="288" width="240" height="22" fill="none" stroke="#4A5468" stroke-opacity="0.5" stroke-dasharray="4 3"/>
+  <text x="248" y="303" class="num" fill="#4A5468">0 punti</text>
+  <text x="0" y="326" class="vce" fill="#4A5468">Ammette alle prove, non dà punteggio.</text>
+
+  <line x1="0" y1="344" x2="330" y2="344" stroke="#111D30" stroke-opacity="0.18"/>
+
+  <!-- TOTALE -->
+  <text x="0" y="372" class="m cap" fill="#111D30">Totale massimo</text>
+  <text x="330" y="376" text-anchor="end" class="m" font-size="24" font-weight="500" fill="#9E2B25">82</text>
+
+  <text x="0" y="402" class="vce" fill="#4A5468">L'orale è l'unica prova d'esame. I titoli</text>
+  <text x="0" y="416" class="vce" fill="#4A5468">si contano solo dopo che è stato superato.</text>
+</svg>
