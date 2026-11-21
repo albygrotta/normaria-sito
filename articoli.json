@@ -589,6 +589,45 @@
           "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-08-07;241"
         }
       ]
+    },
+    {
+      "slug": "polizia-1000-vice-ispettori-senza-scritto",
+      "titolo": "Concorso Polizia di Stato, 1.000 vice ispettori: se non c'è la prova scritta, che cosa decide la graduatoria?",
+      "occhiello": "Concorsi in corso",
+      "sommario": "Il Ministero dell'Interno assume 1.000 allievi vice ispettori con quattro concorsi distinti, uno per ciascuna specializzazione: informatica, economia, lingue e comunicazione. Le domande si chiudono il 17 dicembre 2026. Questi bandi non prevedono la prova scritta. La graduatoria si forma con l'orale, che vale 60 punti e si supera con 36, con i titoli dichiarati nella domanda, fino a 20 punti, e con il tempo nella corsa, fino a 2. Chi studia deve quindi sapere su che cosa si gioca davvero il concorso.",
+      "data": "2026-11-21",
+      "aggiornato": "2026-11-21",
+      "manuali": [
+        "amministrativo",
+        "penale",
+        "lavoro"
+      ],
+      "fonti": [
+        {
+          "testo": "Concorso Polizia di Stato per 1.000 vice ispettori 2026: 4 bandi per laureati — Ti Consiglio",
+          "url": "https://www.ticonsiglio.com/concorso-polizia-stato-1000-vice-ispettori-bandi-laureati/"
+        },
+        {
+          "testo": "Il concorso per 1.000 posti in Polizia: le lauree, lo stipendio e le prove fisiche — Open",
+          "url": "https://www.open.online/2026/11/21/concorso-polizia-1000-posti-viceispettore-requisiti-dicembre-26/"
+        },
+        {
+          "testo": "Concorso Vice Ispettori Polizia di Stato 2026-2027: 1.000 posti in 4 bandi — Concorsando",
+          "url": "https://www.concorsando.it/blog/concorso-vice-ispettori-polizia-stato-2026-2027/"
+        },
+        {
+          "testo": "Scheda ufficiale del bando per 300 allievi vice ispettori, competenze informatiche — portale inPA",
+          "url": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=321aeec94ecd40b58088c73ac8acf1d8"
+        },
+        {
+          "testo": "Pubblicati i concorsi per 1.000 vice ispettori laureati — Simone Concorsi",
+          "url": "https://simoneconcorsi.it/concorsi-1000-vice-ispettori-polizia/"
+        },
+        {
+          "testo": "Portale Concorsi online della Polizia di Stato",
+          "url": "https://concorsionline.poliziadistato.it"
+        }
+      ]
     }
   ]
 }
