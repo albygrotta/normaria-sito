@@ -628,6 +628,44 @@
           "url": "https://concorsionline.poliziadistato.it"
         }
       ]
+    },
+    {
+      "slug": "a-quale-giudice-si-ricorre-pa",
+      "titolo": "Contro un atto della pubblica amministrazione, a quale giudice si ricorre?",
+      "occhiello": "Il diritto spiegato",
+      "sommario": "La scelta fra il giudice amministrativo e il giudice ordinario non dipende dal fatto che la controparte sia un'amministrazione pubblica, ma dalla posizione che il ricorrente fa valere: un interesse legittimo porta al TAR, un diritto soggettivo al giudice civile. A questa regola si aggiungono le materie di giurisdizione esclusiva dell'art. 133 del codice del processo amministrativo e la disciplina del pubblico impiego, dove le controversie vanno al giudice del lavoro salvo le procedure concorsuali. Cambia anche il tempo per agire: sessanta giorni di decadenza davanti al TAR, i termini di prescrizione davanti al giudice ordinario.",
+      "data": "2026-11-25",
+      "aggiornato": "2026-11-25",
+      "manuali": [
+        "amministrativo",
+        "lavoro"
+      ],
+      "fonti": [
+        {
+          "testo": "Il riparto di giurisdizione tra giudice ordinario e amministrativo — Studio Cataldi",
+          "url": "https://www.studiocataldi.it/articoli/30485-il-riparto-di-giurisdizione-tra-giudice-ordinario-e-amministrativo.asp"
+        },
+        {
+          "testo": "Interesse legittimo: nozione, differenziazione e qualificazione — ilDiritto",
+          "url": "https://ildiritto.it/amministrativo/interesse-legittimo/"
+        },
+        {
+          "testo": "Art. 7 del codice del processo amministrativo, giurisdizione amministrativa — Brocardi",
+          "url": "https://www.brocardi.it/codice-del-processo-amministrativo/libro-primo/titolo-i/capo-iii/art7.html"
+        },
+        {
+          "testo": "Art. 133 del codice del processo amministrativo, materie di giurisdizione esclusiva — Brocardi",
+          "url": "https://www.brocardi.it/codice-del-processo-amministrativo/libro-quinto/art133.html"
+        },
+        {
+          "testo": "Art. 63 del d.lgs. 165/2001, controversie relative ai rapporti di lavoro — Brocardi",
+          "url": "https://www.brocardi.it/testo-unico-sul-pubblico-impiego/titolo-vi/art63.html"
+        },
+        {
+          "testo": "Testo integrale del codice del processo amministrativo (d.lgs. 104/2010) — Università di Palermo",
+          "url": "https://www.unipa.it/dipartimenti/di.gi./specializzazioni/professionilegali/.content/documenti/Codice-Processo-Amministrativo-d-lgs-104-del-2010.pdf"
+        }
+      ]
     }
   ]
 }
