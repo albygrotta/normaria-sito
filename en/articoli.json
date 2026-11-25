@@ -128,6 +128,44 @@
           "url": "https://www.law.cornell.edu/rules/fre/rule_803"
         }
       ]
+    },
+    {
+      "slug": "failing-part-of-the-naturalization-test",
+      "titolo": "If you fail part of the naturalization test, what happens next?",
+      "occhiello": "The test explained",
+      "sommario": "A failed portion at the first examination is not a denial. 8 CFR 312.5(a) gives a second opportunity within 90 days of the first examination, and USCIS ordinarily retests only the part that was failed. A missed second appointment counts as a failure. After a second failure the application is denied, and a hearing before a different officer can be requested within 30 days of receiving the notice. Permanent resident status is a separate matter and is not affected.",
+      "data": "2026-11-25",
+      "aggiornato": "2026-11-25",
+      "libri": [
+        "us-citizenship-128",
+        "us-citizenship-seniors"
+      ],
+      "fonti": [
+        {
+          "testo": "8 CFR 312.5 — Failure to meet educational and literacy requirements",
+          "url": "https://www.law.cornell.edu/cfr/text/8/312.5"
+        },
+        {
+          "testo": "8 CFR 312.1 — Literacy requirements, and the exemptions by age and residence",
+          "url": "https://www.law.cornell.edu/cfr/text/8/312.1"
+        },
+        {
+          "testo": "8 CFR 312.2 — Knowledge of the history and government of the United States",
+          "url": "https://www.law.cornell.edu/cfr/text/8/312.2"
+        },
+        {
+          "testo": "8 CFR 336.1 — Denial after the examination",
+          "url": "https://www.law.cornell.edu/cfr/text/8/336.1"
+        },
+        {
+          "testo": "8 CFR 336.2 — Hearing before an immigration officer",
+          "url": "https://www.law.cornell.edu/cfr/text/8/336.2"
+        },
+        {
+          "testo": "USCIS — Study for the test: speaking, reading, writing and civics",
+          "url": "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test"
+        }
+      ]
     }
   ]
 }
