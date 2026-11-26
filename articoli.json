@@ -666,6 +666,40 @@
           "url": "https://www.unipa.it/dipartimenti/di.gi./specializzazioni/professionilegali/.content/documenti/Codice-Processo-Amministrativo-d-lgs-104-del-2010.pdf"
         }
       ]
+    },
+    {
+      "slug": "inl-300-ispettori-tecnici-una-regione",
+      "titolo": "Concorso INL, 300 ispettori tecnici: per quanti posti si concorre davvero?",
+      "occhiello": "Concorsi in corso",
+      "sommario": "L'Ispettorato nazionale del lavoro ha bandito 300 posti di ispettore di vigilanza tecnica per la salute e la sicurezza, ma i concorsi sono otto, uno per regione, con graduatorie separate: si va dai 108 posti della Lombardia ai 5 della Valle d'Aosta, e la domanda vale per una sola procedura, a pena di esclusione. La selezione si decide su una sola prova scritta al computer, sei quesiti a risposta aperta in tre ore, soglia di idoneità a 21 su 30, senza preselezione e senza orale. Le candidature si chiudono il 19 dicembre 2026 sul portale inPA.",
+      "data": "2026-11-26",
+      "aggiornato": "2026-11-26",
+      "manuali": [
+        "lavoro",
+        "penale"
+      ],
+      "fonti": [
+        {
+          "testo": "Scheda ufficiale del concorso INL per 300 ispettori di vigilanza tecnica — Portale inPA",
+          "url": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=48b728efb6f7489b8d7dc0445c51d027"
+        },
+        {
+          "testo": "Concorso Ispettorato del lavoro 2026, 300 ispettori tecnici: requisiti, prova e domanda entro il 19 dicembre — Money.it",
+          "url": "https://www.money.it/concorso-inl-2026-300-ispettori-tecnici-requisiti-prova-domanda"
+        },
+        {
+          "testo": "Concorso INL 300 ispettori vigilanza tecnica 2026 — ConcorsoPA",
+          "url": "https://www.concorsopa.it/blog/concorso-inl-300-ispettori-vigilanza-tecnica-2026"
+        },
+        {
+          "testo": "Concorso INL 2026: 300 ispettori tecnici, posti per ingegneri e architetti — Ingenio",
+          "url": "https://www.ingenio-web.it/articoli/concorso-inl-2026-300-ispettori-tecnici-ingegneri-architetti/"
+        },
+        {
+          "testo": "INL: concorso per 300 ispettori vigilanza tecnica salute e sicurezza — Dottrina Lavoro",
+          "url": "https://www.dottrinalavoro.it/notizie-c/inl-concorso-per-300-ispettori-vigilanza-tecnica-salute-e-sicurezza"
+        }
+      ]
     }
   ]
 }
