@@ -44,11 +44,15 @@ def scheda(m):
     misura = (f'<span class="norme mono">{html.escape(testo_misura)}</span>'
               if testo_misura else "")
 
+    # "Copertina di Diritto Penale" ma "Copertina de La Bibbia...": in italiano
+    # davanti a un titolo che comincia con l'articolo si usa "de".
+    prep = "de" if titolo.startswith(("La ", "Il ", "Lo ", "Le ", "I ", "Gli ", "L'")) else "di"
+
     copertina = ""
     if m.get("copertina"):
         copertina = (f'            <a class="book-cover" href="{m["link"]}" target="_blank" rel="noopener"\n'
-                     f'               aria-label="Copertina di {titolo}">\n'
-                     f'              <img src="{html.escape(m["copertina"], quote=True)}" alt="Copertina di {titolo}" loading="lazy">\n'
+                     f'               aria-label="Copertina {prep} {titolo}">\n'
+                     f'              <img src="{html.escape(m["copertina"], quote=True)}" alt="Copertina {prep} {titolo}" loading="lazy">\n'
                      f'            </a>\n')
 
     return f"""          <article class="book">

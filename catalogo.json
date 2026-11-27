@@ -72,6 +72,16 @@
       "sommario": "Un bando alla volta: le materie richieste, nella forma in cui vengono chieste.",
       "manuali": [
         {
+          "id": "bibbia-camera-commercio",
+          "titolo": "La Bibbia della Camera di Commercio",
+          "materia": "Tutti i concorsi camerali",
+          "misura": "361 schede",
+          "copertina": "img/bibbia-camera-commercio.jpg",
+          "link": "https://www.amazon.it/dp/B0HSQVS8M5",
+          "stato": "disponibile",
+          "descrizione": "Il programma che torna in ogni bando camerale, spiegato a chi non ha mai studiato diritto: ordinamento della Camera, Registro delle imprese, regolazione del mercato, contabilità. Con 600 quiz commentati e 15 atti svolti."
+        },
+        {
           "id": "coesione-882",
           "titolo": "Concorso RIPAM Coesione 2026 — 882 Specialisti tecnici",
           "materia": "Manuale normativo",
