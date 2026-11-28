@@ -1,5 +1,5 @@
 {
-  "_come_si_usa": "Elenco degli articoli in inglese. Campi: slug (nome del file), titolo, occhiello (il filone), sommario, data (AAAA-MM-GG), aggiornato, libri (gli id presi da en/catalogo.json), fonti.",
+  "_come_si_usa": "Elenco degli articoli in inglese. Campi: slug (nome del file), titolo, occhiello (il filone), sommario, data (AAAA-MM-GG), aggiornato, libri (gli id presi da en/catalogo.json), fonti. Campi SEO facoltativi: titolo_seo (max 50 caratteri, diventa il titolo nella scheda del browser e su Google, seguito da «| Normaria») e descrizione_seo (max 155 caratteri, il testo sotto il titolo su Google). Se mancano si usano titolo e sommario.",
   "articoli": [
     {
       "slug": "the-65-20-rule",
@@ -29,7 +29,9 @@
           "testo": "Citizenship test exemptions: 50/20, 55/15, 65/20",
           "url": "https://citizenryapp.com/blog/citizenship-test-exemptions.html"
         }
-      ]
+      ],
+      "titolo_seo": "The 65/20 Rule for the US Citizenship Civics Test",
+      "descrizione_seo": "Applicants aged 65 or over with 20 years as permanent residents take a shorter civics test in their own language. What the rule changes, and the 20 questions."
     },
     {
       "slug": "the-2025-civics-test",
@@ -55,7 +57,9 @@
           "testo": "American Civics Test — the 2008, 2020 and 2025 versions",
           "url": "https://en.wikipedia.org/wiki/American_Civics_Test"
         }
-      ]
+      ],
+      "titolo_seo": "2025 Civics Test: What Changed, Which One You Take",
+      "descrizione_seo": "Two US civics tests have been in use since 20 October 2025. The N-400 filing date decides which one you take, and they differ in questions and answers."
     },
     {
       "slug": "the-naturalization-interview",
@@ -81,7 +85,9 @@
           "testo": "What happens at the U.S. citizenship interview",
           "url": "https://herrerafirm.com/what-happens-at-the-u-s-citizenship-interview/"
         }
-      ]
+      ],
+      "titolo_seo": "The Naturalization Interview, Step by Step",
+      "descrizione_seo": "What happens at the USCIS naturalization interview, in order: the N-400 review, speaking, reading and writing, then civics, and what if a part goes wrong."
     },
     {
       "slug": "hesi-a2-score-explained",
@@ -102,7 +108,9 @@
           "testo": "What is the HESI A2 exam? Sections, scoring and what to expect",
           "url": "https://allhealthcarecareers.com/what-is-the-hesi-a2-exam/"
         }
-      ]
+      ],
+      "titolo_seo": "HESI A2 Passing Score: How Your Score Works",
+      "descrizione_seo": "There is no official HESI A2 passing score: each nursing program sets its own. Which sections count, how schools combine them and how to study for it."
     },
     {
       "slug": "hearsay-in-plain-words",
@@ -127,7 +135,9 @@
           "testo": "Federal Rules of Evidence, Rule 803 — Exceptions",
           "url": "https://www.law.cornell.edu/rules/fre/rule_803"
         }
-      ]
+      ],
+      "titolo_seo": "What Is Hearsay? FRE Rule 801 in Plain Words",
+      "descrizione_seo": "Under Federal Rule of Evidence 801 a statement is hearsay only when two conditions meet. How to spot it, and the two groups Rule 801(d) excludes."
     },
     {
       "slug": "failing-part-of-the-naturalization-test",
@@ -165,7 +175,9 @@
           "testo": "USCIS — Study for the test: speaking, reading, writing and civics",
           "url": "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test"
         }
-      ]
+      ],
+      "titolo_seo": "Failed the Citizenship Test? What Happens Next",
+      "descrizione_seo": "Failing part of the naturalization test is not a denial: USCIS retests the failed part within 90 days. What a second failure means and how to ask for a hearing."
     }
   ]
 }
