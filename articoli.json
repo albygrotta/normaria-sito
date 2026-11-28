@@ -1,18 +1,23 @@
 {
-  "_come_si_usa": "Elenco degli articoli del sito. Per pubblicarne uno: (1) scrivi il testo in articoli/testi/<slug>.md, (2) aggiungi qui un blocco con gli stessi dati, (3) rilancia _tools/genera_articoli.py. Campi: slug (il nome del file, senza spazi né accenti), titolo, occhiello (il filone: 'Concorsi in corso' oppure 'Il diritto spiegato'), sommario (due righe: è anche il testo che Google mostra sotto il titolo), data e aggiornato in formato AAAA-MM-GG, manuali (gli id presi da catalogo.json, per i rimandi in fondo), fonti.",
+  "_come_si_usa": "Elenco degli articoli del sito. Per pubblicarne uno: (1) scrivi il testo in articoli/testi/<slug>.md, (2) aggiungi qui un blocco con gli stessi dati, (3) rilancia _tools/genera_articoli.py. Campi: slug (il nome del file, senza spazi né accenti), titolo, occhiello (il filone: 'Concorsi in corso' oppure 'Il diritto spiegato'), sommario (due righe: è anche il testo che Google mostra sotto il titolo), data e aggiornato in formato AAAA-MM-GG, manuali (gli id presi da catalogo.json, per i rimandi in fondo), fonti. Campi SEO facoltativi: titolo_seo (max 50 caratteri, diventa il titolo nella scheda del browser e su Google, seguito da «| Normaria») e descrizione_seo (max 155 caratteri, il testo sotto il titolo su Google). Se mancano si usano titolo e sommario.",
   "articoli": [
     {
       "slug": "concorso-coesione-2026-882-posti",
-      "titolo": "Concorso Coesione 2026, 882 posti al Sud: chi può partecipare e com'è fatta la prova",
+      "titolo": "Concorso Coesione 2026, 882 posti: la prova del 4 dicembre, sedi, orari e punteggio",
       "occhiello": "Concorsi in corso",
-      "sommario": "Domande entro il 23 settembre, una sola prova scritta da 40 quesiti in 60 minuti e una soglia al 70%. Tutti i numeri del bando, e cosa significano davvero per chi si prepara.",
+      "sommario": "Domande chiuse, prova scritta venerdì 4 dicembre 2026 in sette sedi, con turni alle 9:30 e alle 14:30. Dove si va, che cosa portare, com'è fatta la prova da 40 quesiti in 60 minuti e quante risposte servono per arrivare a 21/30.",
       "data": "2026-09-03",
-      "aggiornato": "2026-09-03",
+      "aggiornato": "2026-11-28",
       "manuali": [
+        "coesione-882",
         "amministrativo",
         "unione-europea"
       ],
       "fonti": [
+        {
+          "testo": "Prova scritta del 4 dicembre 2026: sedi, orari e cosa portare — Ticonsiglio",
+          "url": "https://www.ticonsiglio.com/prova-concorso-ripam-coesione-882-dicembre-2026-sedi-orari/"
+        },
         {
           "testo": "Concorso RIPAM Coesione 2026: bando per 882 Specialisti tecnici — LeggiOggi",
           "url": "https://www.leggioggi.it/concorso-ripam-coesione-2026/"
@@ -25,7 +30,9 @@
           "testo": "Portale inPA — presentazione delle domande",
           "url": "https://www.inpa.gov.it/"
         }
-      ]
+      ],
+      "titolo_seo": "Concorso Coesione 882: prova del 4 dicembre, sedi",
+      "descrizione_seo": "Prova scritta del concorso RIPAM Coesione 882 il 4 dicembre 2026: sedi, turni delle 9:30 e 14:30, cosa portare, punteggio e soglia di 21/30."
     },
     {
       "slug": "accesso-agli-atti-tre-forme",
@@ -50,7 +57,9 @@
           "testo": "Differenze fra accesso civico semplice, generalizzato e documentale — Università di Palermo",
           "url": "https://www.unipa.it/Differenze-fra-accesso-civico-semplice-accesso-civico-generalizzato-FOIA-e-accesso-documentale/"
         }
-      ]
+      ],
+      "titolo_seo": "Accesso agli atti: le tre forme a confronto",
+      "descrizione_seo": "Accesso documentale, civico semplice e civico generalizzato: chi può chiedere che cosa, quale legge si applica e le trappole più frequenti nei quiz."
     },
     {
       "slug": "concorso-asmel-2026-elenchi-idonei",
@@ -84,7 +93,9 @@
           "testo": "Portale ASMELab — presentazione delle candidature",
           "url": "https://www.asmelab.it"
         }
-      ]
+      ],
+      "titolo_seo": "Concorso ASMEL 2026: come funziona l'elenco idonei",
+      "descrizione_seo": "Elenchi di idonei ASMEL 2026 per 39 profili in oltre mille comuni: come si entra, com'è fatta la prova da casa e che cosa succede dopo."
     },
     {
       "slug": "silenzio-assenso-cosa-cambia-2026",
@@ -113,7 +124,9 @@
           "testo": "Decreto PNRR 2026 convertito in legge n. 50 del 20 aprile 2026 — ANCE Catania",
           "url": "https://www.ancecatania.it/2026/04/24/decreto-legge-pnrr-dl-19-2026-conv-in-legge-n-50-del-20-aprile-2026-disposizioni-di-interesse-in-materia-di-lavori-pubblici-ed-edilizia-privata/"
         }
-      ]
+      ],
+      "titolo_seo": "Silenzio-assenso, art. 20 l. 241/1990: novità 2026",
+      "descrizione_seo": "Quando il silenzio della PA vale come accoglimento: i presupposti dell'art. 20 l. 241/1990, le esclusioni e l'attestazione introdotta dalla legge 50/2026."
     },
     {
       "slug": "concorso-napoli-2026-110-servizi-sociali",
@@ -143,7 +156,9 @@
           "testo": "Portale del Reclutamento inPA",
           "url": "https://www.inpa.gov.it/"
         }
-      ]
+      ],
+      "titolo_seo": "Concorso Comune di Napoli 2026: 110 posti sociali",
+      "descrizione_seo": "Concorso del Comune di Napoli per 110 funzionari dei servizi sociali: i tre profili, il contratto a termine e quando conviene rispondere ai quiz."
     },
     {
       "slug": "concussione-induzione-corruzione",
@@ -176,7 +191,9 @@
           "testo": "Abuso d'ufficio: una partita ancora aperta — Questione Giustizia",
           "url": "https://www.questionegiustizia.it/articolo/abuso-d-ufficio"
         }
-      ]
+      ],
+      "titolo_seo": "Concussione o corruzione? Le differenze spiegate",
+      "descrizione_seo": "Artt. 317, 319 e 319-quater c.p.: il criterio delle Sezioni Unite per distinguere concussione, induzione indebita e corruzione, con le pene."
     },
     {
       "slug": "concorso-brescia-2026-27-posti",
@@ -206,7 +223,9 @@
           "testo": "Portale inPA — bandi e presentazione delle domande",
           "url": "https://www.inpa.gov.it/"
         }
-      ]
+      ],
+      "titolo_seo": "Concorso Comune di Brescia 2026: 27 posti",
+      "descrizione_seo": "Tre bandi del Comune di Brescia per 27 posti: chi può partecipare, il minimo di 21/30 in ogni prova e perché la media fra le prove non conta."
     },
     {
       "slug": "annullamento-ufficio-revoca-sei-mesi",
@@ -239,7 +258,9 @@
           "testo": "Annullamento d'ufficio e silenzio assenso: in vigore le Semplificazioni 2025 — LavoriPubblici",
           "url": "https://www.lavoripubblici.it/news/annullamento-ufficio-silenzio-assenso-permesso-costruire-semplificazioni-2025-37044"
         }
-      ]
+      ],
+      "titolo_seo": "Annullamento d'ufficio e revoca: termine di 6 mesi",
+      "descrizione_seo": "Autotutela spiegata da zero: quando la PA annulla e quando revoca un atto, il termine di sei mesi in vigore dal 18 dicembre 2025 e chi paga."
     },
     {
       "slug": "concorso-laguna-venezia-2026-28-posti",
@@ -273,7 +294,9 @@
           "testo": "D.P.R. 9 maggio 1994, n. 487, artt. 8 e 12 — testo sul sito del Ministero del Lavoro",
           "url": "https://www.lavoro.gov.it/sites/default/files/archivio-doc-pregressi/Documents/Resources/Lavoro/Personale/1994_05_09_487.pdf"
         }
-      ]
+      ],
+      "titolo_seo": "Concorso Autorità Laguna di Venezia: 28 posti",
+      "descrizione_seo": "28 assunzioni a tempo indeterminato all'Autorità per la Laguna di Venezia: concorso per titoli ed esami, con fino a 10 punti per l'esperienza."
     },
     {
       "slug": "danno-erariale-colpa-grave-legge-1-2026",
@@ -307,7 +330,9 @@
           "testo": "Legge 14 gennaio 1994, n. 20 — testo vigente su Normattiva",
           "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1994-01-14;20"
         }
-      ]
+      ],
+      "titolo_seo": "Danno erariale e colpa grave dopo la legge 1/2026",
+      "descrizione_seo": "Dal 22 gennaio 2026 la colpa grave ha una definizione di legge e la condanna un tetto: il 30% del danno o il doppio della retribuzione annua."
     },
     {
       "slug": "concorso-viceispettori-penitenziaria-450-posti",
@@ -341,7 +366,9 @@
           "testo": "Portale del reclutamento inPA",
           "url": "https://www.inpa.gov.it/"
         }
-      ]
+      ],
+      "titolo_seo": "Concorso 450 vice ispettori Polizia Penitenziaria",
+      "descrizione_seo": "Concorso per 450 vice ispettori della Polizia Penitenziaria: niente preselettiva, soglie di 7/10 e 6/10 e 107 posti riservati. Come leggere le quote."
     },
     {
       "slug": "abuso-ufficio-abrogato-cosa-resta",
@@ -387,7 +414,9 @@
           "testo": "Il nuovo abuso d'ufficio dopo il decreto semplificazioni (d.l. n. 76/2020) — Segretari Comunali Vighenzi",
           "url": "https://www.segretaricomunalivighenzi.it/29-09-2020-il-nuovo-abuso-dufficio-art-323-cp/"
         }
-      ]
+      ],
+      "titolo_seo": "Abuso d'ufficio abrogato: che cosa resta oggi",
+      "descrizione_seo": "Dopo l'abrogazione dell'art. 323 c.p.: il peculato, il nuovo art. 314-bis, la sentenza della Consulta del 2025 e la direttiva UE con scadenza nel 2028."
     },
     {
       "slug": "difesa-1100-assistenti-riapertura-stranieri",
@@ -417,7 +446,9 @@
           "testo": "Concorso Difesa, domande riaperte dopo la sentenza: chi può candidarsi entro il 5 dicembre",
           "url": "https://corriereuniv.it/mantenere-concorso-difesa-2026-prove-scritte/"
         }
-      ]
+      ],
+      "titolo_seo": "Concorso Difesa 1.100 assistenti: bando riaperto",
+      "descrizione_seo": "Il bando Difesa per 1.100 assistenti è riaperto fino al 5 dicembre dopo la sentenza del Tribunale di Milano: chi può fare domanda e con quali requisiti."
     },
     {
       "slug": "preavviso-di-rigetto-art-10-bis",
@@ -442,7 +473,9 @@
           "testo": "Le novità in tema di preavviso di rigetto dopo il decreto semplificazioni",
           "url": "https://journals.uniurb.it/index.php/pea/article/download/3762/3279/14856"
         }
-      ]
+      ],
+      "titolo_seo": "Preavviso di rigetto: art. 10-bis l. 241/1990",
+      "descrizione_seo": "Art. 10-bis l. 241/1990: quando la PA deve comunicare i motivi del diniego, i dieci giorni per le osservazioni, gli effetti sui termini e le eccezioni."
     },
     {
       "slug": "concorsi-categorie-protette-legge-68-1999",
@@ -480,7 +513,9 @@
           "testo": "Portale inPA — presentazione delle domande",
           "url": "https://www.inpa.gov.it/"
         }
-      ]
+      ],
+      "titolo_seo": "Concorsi per categorie protette: la legge 68/1999",
+      "descrizione_seo": "Art. 1 e art. 18 della legge 68/1999: le tre condizioni per accedere ai posti riservati nei concorsi e perché il certificato di invalidità non basta."
     },
     {
       "slug": "eccesso-di-potere-figure-sintomatiche",
@@ -513,7 +548,9 @@
           "testo": "Art. 31, comma 4, codice del processo amministrativo — Brocardi",
           "url": "https://brocardi.it/codice-del-processo-amministrativo/libro-primo/titolo-iii/capo-ii/art31.html"
         }
-      ]
+      ],
+      "titolo_seo": "Eccesso di potere: le figure sintomatiche",
+      "descrizione_seo": "Come si riconosce l'eccesso di potere: le sei figure sintomatiche costruite dalla giurisprudenza, il limite del merito e l'art. 21-octies l. 241/1990."
     },
     {
       "slug": "concorso-ivass-2026-10-esperti-giuridici",
@@ -551,7 +588,9 @@
           "testo": "Codice delle assicurazioni private, d.lgs. 7 settembre 2005, n. 209 — Normattiva",
           "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-07;209"
         }
-      ]
+      ],
+      "titolo_seo": "Concorso IVASS 2026: 10 esperti giuridici a Roma",
+      "descrizione_seo": "Concorso IVASS per 10 esperti giuridici: voto di laurea minimo 105/110, preselezione per titoli, materie e soglie della prova scritta."
     },
     {
       "slug": "conferenza-di-servizi-come-funziona-2026",
@@ -588,7 +627,9 @@
           "testo": "Legge 7 agosto 1990, n. 241 — Normattiva",
           "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-08-07;241"
         }
-      ]
+      ],
+      "titolo_seo": "Conferenza di servizi: come funziona dal 2026",
+      "descrizione_seo": "La conferenza di servizi dopo la riforma del 20 febbraio 2026: i nuovi termini di 30 e 60 giorni, il silenzio che vale assenso e le trappole dei quiz."
     },
     {
       "slug": "polizia-1000-vice-ispettori-senza-scritto",
@@ -627,7 +668,9 @@
           "testo": "Portale Concorsi online della Polizia di Stato",
           "url": "https://concorsionline.poliziadistato.it"
         }
-      ]
+      ],
+      "titolo_seo": "Concorso 1.000 vice ispettori di Polizia",
+      "descrizione_seo": "Quattro concorsi per 1.000 allievi vice ispettori della Polizia di Stato senza prova scritta: orale da 60 punti, titoli fino a 20, domande entro il 17/12."
     },
     {
       "slug": "a-quale-giudice-si-ricorre-pa",
@@ -665,7 +708,9 @@
           "testo": "Testo integrale del codice del processo amministrativo (d.lgs. 104/2010) — Università di Palermo",
           "url": "https://www.unipa.it/dipartimenti/di.gi./specializzazioni/professionilegali/.content/documenti/Codice-Processo-Amministrativo-d-lgs-104-del-2010.pdf"
         }
-      ]
+      ],
+      "titolo_seo": "Giudice amministrativo o ordinario: a chi ricorrere",
+      "descrizione_seo": "Interesse legittimo al TAR, diritto soggettivo al giudice civile: il riparto di giurisdizione, la giurisdizione esclusiva e i termini per fare ricorso."
     },
     {
       "slug": "inl-300-ispettori-tecnici-una-regione",
@@ -699,7 +744,9 @@
           "testo": "INL: concorso per 300 ispettori vigilanza tecnica salute e sicurezza — Dottrina Lavoro",
           "url": "https://www.dottrinalavoro.it/notizie-c/inl-concorso-per-300-ispettori-vigilanza-tecnica-salute-e-sicurezza"
         }
-      ]
+      ],
+      "titolo_seo": "Concorso INL, 300 ispettori tecnici per regione",
+      "descrizione_seo": "Concorso INL per 300 ispettori di vigilanza tecnica: otto procedure regionali, una sola domanda e una prova scritta da sei quesiti. Domande entro il 19/12."
     }
   ]
 }

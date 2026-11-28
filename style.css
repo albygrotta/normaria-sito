@@ -422,6 +422,12 @@ section { padding: 64px 0; }
   margin: 32px 0; color: var(--grey); font-size: 17px;
 }
 
+/* «Leggi anche»: articoli collegati */
+.correlati { margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--line, #d8d0c0); }
+.correlati h2 { font-size: 20px; margin: 0 0 10px; }
+.correlati ul { margin: 0; padding-left: 20px; }
+.correlati li { margin: 8px 0; font-family: "IBM Plex Sans", sans-serif; font-size: 16px; line-height: 1.45; }
+
 /* rimandi ai manuali, in fondo all'articolo */
 .rimandi {
   margin-top: 56px; padding: 32px 30px;
