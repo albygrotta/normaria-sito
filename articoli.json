@@ -763,6 +763,115 @@
       ],
       "titolo_seo": "Concorso INL, 300 ispettori tecnici per regione",
       "descrizione_seo": "Concorso INL per 300 ispettori di vigilanza tecnica: otto procedure regionali, una sola domanda e una prova scritta da sei quesiti. Domande entro il 19/12."
+    },
+    {
+      "slug": "concorso-senato-segretari-parlamentari-preliminare",
+      "titolo": "Concorso Senato, 30 segretari parlamentari: la preliminare in cui lasciare in bianco costa punti",
+      "sommario": "Cinquanta quesiti su Costituzione e Regolamento del Senato in cinquanta minuti, con una regola rara: la risposta non data vale meno 0,20. Il conto che dice perché conviene rispondere sempre, i cinque profili e che cosa studiare.",
+      "titolo_seo": "Concorso Senato 30 segretari: la prova preliminare",
+      "descrizione_seo": "Concorso Senato per 30 segretari parlamentari: preliminare da 50 quesiti su Costituzione e Regolamento, penalità sul bianco, profili e materie.",
+      "manuali": [
+        "senato",
+        "amministrativo"
+      ],
+      "fonti": [
+        {
+          "testo": "Concorso 30 Segretari parlamentari 2026: tutte le info sul nuovo bando — Diritto.it",
+          "url": "https://www.diritto.it/concorso-30-segretari-parlamentari-2026-tutte-info/"
+        }
+      ],
+      "occhiello": "Concorsi in corso",
+      "data": "2026-11-28",
+      "aggiornato": "2026-11-28"
+    },
+    {
+      "slug": "concorso-camera-commercio-roma-12-funzionari",
+      "titolo": "Concorso Camera di Commercio di Roma, 12 funzionari: preselezione, test di personalità e penalità sul bianco",
+      "sommario": "Dodici posti a tempo indeterminato, una preselezione che scatta oltre le 75 domande, un test attitudinale che può escludere prima dello scritto e una penalità anche per le risposte lasciate in bianco. Le prove una per una e che cosa studiare.",
+      "titolo_seo": "Concorso Camera di Commercio Roma: 12 funzionari",
+      "descrizione_seo": "Concorso CCIAA Roma per 12 funzionari amministrativi: preselezione oltre 75 domande, test Big Five, scritto e orale a 21/30, materie e punteggi.",
+      "manuali": [
+        "camera-commercio-roma",
+        "amministrativo",
+        "lavoro"
+      ],
+      "fonti": [
+        {
+          "testo": "Pubblicato concorso da 12 posti per funzionari alla Camera di Commercio di Roma — Simone Concorsi",
+          "url": "https://simoneconcorsi.it/concorso-funzionari-camera-commercio-roma/"
+        }
+      ],
+      "occhiello": "Concorsi in corso",
+      "data": "2026-11-28",
+      "aggiornato": "2026-11-28"
+    },
+    {
+      "slug": "concorso-inps-499-assistenti-informatici",
+      "titolo": "Concorso INPS, 499 assistenti informatici: 60 quesiti, 16 materie e la parte che non è informatica",
+      "sommario": "Un'unica prova scritta da 60 quesiti in 120 minuti, superata con 21 su 30. Delle sedici materie del bando cinque sono giuridiche: GDPR, Codice dell'amministrazione digitale, diritto amministrativo, lavoro pubblico, trasparenza. È lì che chi viene dall'informatica perde punti.",
+      "titolo_seo": "Concorso INPS 499 assistenti informatici: la prova",
+      "descrizione_seo": "Concorso INPS per 499 assistenti informatici con diploma: prova scritta da 60 quesiti in 120 minuti, soglia 21/30, le 16 materie e come studiarle.",
+      "manuali": [
+        "inps-499",
+        "amministrativo"
+      ],
+      "fonti": [
+        {
+          "testo": "Prova scritta Concorso Assistenti Informatici INPS — EdiSES blog",
+          "url": "https://blog.edises.it/prova-scritta-concorso-assistenti-informatici-inps-110180"
+        },
+        {
+          "testo": "Concorso INPS 499 Assistenti informatici diplomati 2026 — Ticonsiglio",
+          "url": "https://www.ticonsiglio.com/concorso-inps-499-assistenti-informatici-diplomati-2026/"
+        }
+      ],
+      "occhiello": "Concorsi in corso",
+      "data": "2026-11-28",
+      "aggiornato": "2026-11-28"
+    },
+    {
+      "slug": "concorso-inps-1695-pecs-dopo-prova-scritta",
+      "titolo": "Concorso INPS, 1.695 funzionari PECS: dopo lo scritto, come si forma la graduatoria",
+      "sommario": "La prova scritta si è svolta il 9 novembre. Per superarla servono 21 su 30 in ciascuna delle due sezioni, senza media. Poi i titoli, fino a 10 punti, e una graduatoria separata per ogni struttura: come funziona il passaggio dallo scritto all'assunzione.",
+      "titolo_seo": "Concorso INPS 1.695 PECS: titoli e graduatoria",
+      "descrizione_seo": "Concorso INPS per 1.695 funzionari PECS dopo la prova del 9 novembre: soglia 21/30 per sezione, titoli fino a 10 punti, graduatoria per struttura.",
+      "manuali": [
+        "inps-1695",
+        "lavoro",
+        "previdenza"
+      ],
+      "fonti": [
+        {
+          "testo": "Concorso INPS 2026, pubblicati gli esiti della preselettiva — Diritto.it",
+          "url": "https://www.diritto.it/concorso-inps-2026-esiti-preselettiva/"
+        }
+      ],
+      "occhiello": "Concorsi in corso",
+      "data": "2026-11-28",
+      "aggiornato": "2026-11-28"
+    },
+    {
+      "slug": "concorso-vigili-del-fuoco-400-prove-motorie",
+      "titolo": "Concorso Vigili del Fuoco, 400 posti: le prove motorie, la patente che vale punti e le riserve",
+      "sommario": "Dopo la preselettiva di ottobre restano 4.000 candidati. Tre prove fisiche da superare con 21 su 30, fino a 5 punti per la patente di guida e il 95% dei posti riservato a tre categorie: che cosa succede adesso e come si legge la graduatoria.",
+      "titolo_seo": "Vigili del Fuoco 400: prove motorie e titoli",
+      "descrizione_seo": "Concorso Vigili del Fuoco per 400 posti: le tre prove motorio-attitudinali, i minimi da superare, fino a 5 punti per la patente e le riserve.",
+      "manuali": [
+        "vigili-del-fuoco"
+      ],
+      "fonti": [
+        {
+          "testo": "Concorso Vigili del Fuoco 2026: 400 posti — Concorsando",
+          "url": "https://www.concorsando.it/blog/concorso-vigili-del-fuoco-400-posti-2026/"
+        },
+        {
+          "testo": "Bando di concorso 400 vigili del fuoco — vigilfuoco.it",
+          "url": "https://www.vigilfuoco.it/servizi-ai-cittadini/concorsi-pubblici/bando-di-concorso-pubblico-titoli-ed-esami-400-posti-nella-qualifica-di-vigile-del-fuoco-del-corpo"
+        }
+      ],
+      "occhiello": "Concorsi in corso",
+      "data": "2026-11-28",
+      "aggiornato": "2026-11-28"
     }
   ]
 }
