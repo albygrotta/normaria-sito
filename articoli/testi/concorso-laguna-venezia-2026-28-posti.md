@@ -1,6 +1,6 @@
-L'Autorità per la Laguna di Venezia assume **28 persone a tempo indeterminato**. Le domande si chiudono il **16 ottobre 2026 alle 18:00** e passano solo dal portale inPA.
+L'Autorità per la Laguna di Venezia assume **28 persone a tempo indeterminato**. Le domande si sono chiuse il **16 ottobre 2026 alle 18:00**.
 
-Quell'orario va letto bene: le 18, non le 23:59. È un dettaglio che in questo bando cambia la vita a chi conta di chiudere la domanda la sera dell'ultimo giorno.
+> **A che punto è.** Le candidature sono chiuse. Il calendario delle prove, gli elenchi degli ammessi e ogni altra comunicazione escono sul portale inPA e sul sito dell'Autorità: sono gli unici due posti da controllare. Qui sotto trovi com'è fatta la selezione e perché i titoli contano già prima dello scritto.
 
 C'è poi una seconda particolarità, più importante. Questo non è un concorso per soli esami: è un concorso **per titoli ed esami**. Gli anni di lavoro già fatti valgono punti veri, fino a 10. E il momento in cui la commissione li conta è stabilito da una regola che quasi nessun candidato conosce.
 
@@ -76,13 +76,12 @@ Un esempio chiarisce il confine. La commissione che assegna i punti dei titoli i
 
 > È il motivo per cui, nei bandi, l'ordine delle operazioni è scritto con tanta precisione. Nel concorso pubblico la sequenza è una garanzia: chi partecipa può verificare che nessuno abbia guardato le carte nell'ordine sbagliato.
 
-## Prima di inviare la domanda
+## Dopo la scadenza: che cosa tenere a mente
 
-La scadenza è il **16 ottobre 2026 alle 18:00**, su inPA. Tre controlli che costano cinque minuti:
+Le domande si sono chiuse il **16 ottobre 2026 alle 18:00**. Due cose da sapere per chi ha partecipato:
 
-1. **Il codice.** Verifica di essere sul bando del profilo giusto: i cinque codici sono procedure distinte, con materie e graduatorie separate.
-2. **I titoli dichiarati.** Rileggi la sezione dell'esperienza professionale e conta gli anni. Quello che non scrivi non viene valutato, e dopo la scadenza non si integra.
-3. **L'orario.** Chiudi la domanda qualche giorno prima. I portali pubblici si affollano nelle ultime ore, e qui le ultime ore finiscono alle 18.
+1. **Il codice.** I cinque codici sono procedure distinte, con materie e graduatorie separate: si studia il programma del proprio codice, non quello degli altri.
+2. **I titoli dichiarati.** Valgono solo quelli scritti nella domanda. Quello che non è stato dichiarato non viene valutato e ormai non si può più integrare.
 
 Il testo che fa fede è il bando, pubblicato su inPA e sul sito dell'Autorità per la Laguna di Venezia. Quando un numero letto altrove non coincide, vince il bando.
 

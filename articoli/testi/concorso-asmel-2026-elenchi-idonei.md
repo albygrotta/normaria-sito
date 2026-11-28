@@ -1,4 +1,6 @@
-Dal **15 settembre 2026** si aprono le domande per quello che, sulla carta, è il bando più grande dell'anno: oltre mille comuni italiani che pescheranno personale dalla stessa lista, per tre anni, in trentanove profili diversi. Si chiama Maxi Avviso ASMEL, e la prima cosa da capire è che **non è un concorso**. Non nel senso in cui la parola viene usata di solito.
+> **A che punto è.** Le candidature si sono chiuse il 30 settembre 2026 alle 12:00. Data e modalità della prova, diverse per profilo, vengono comunicate agli ammessi solo via PEC: conviene controllare la casella indicata nella domanda. Chi supera la prova entra con riserva nell'elenco del proprio profilo.
+
+Dal **15 settembre 2026** si sono aperte le domande per quello che, sulla carta, è il bando più grande dell'anno: oltre mille comuni italiani che pescheranno personale dalla stessa lista, per tre anni, in trentanove profili diversi. Si chiama Maxi Avviso ASMEL, e la prima cosa da capire è che **non è un concorso**. Non nel senso in cui la parola viene usata di solito.
 
 Questa differenza non è un cavillo: cambia chi conviene candidarsi, cosa succede dopo la prova e che aspettative è ragionevole avere. Vediamola con parole normali.
 
@@ -75,12 +77,12 @@ C'è anche il rovescio positivo: l'elenco viene aggiornato almeno una volta all'
 - **Serve**: un indirizzo PEC personale, perché tutte le comunicazioni sulla prova passano da lì.
 - **Costo**: 15 euro per ciascun profilo scelto, pagabili con PagoPA.
 
-Due settimane esatte, con chiusura a mezzogiorno e non a mezzanotte: è un errore che ogni anno costa la partecipazione a qualcuno. E la PEC va attivata prima, non il giorno della scadenza.
+Le candidature sono chiuse. Adesso la cosa da fare è controllare la PEC: data e modalità della prova arrivano solo lì.
 
-## Conviene?
+## Conviene, e come prepararsi
 
-Quindici euro e una prova da casa, contro tre anni di visibilità presso più di mille amministrazioni: il rapporto è ragionevole quasi per chiunque abbia i requisiti. Il vero costo non è l'iscrizione, è **preparare quei 25 quesiti comuni** in due settimane, o averli già preparati.
+Quindici euro e una prova da casa, contro tre anni di visibilità presso più di mille amministrazioni: il rapporto è ragionevole quasi per chiunque abbia i requisiti. Il vero costo non è l'iscrizione, è **preparare quei 25 quesiti comuni** prima che arrivi la convocazione.
 
 Ed è qui che la scelta di come studiare fa la differenza. Diritto amministrativo, ordinamento degli enti locali, pubblico impiego, trasparenza: sono materie che non si imparano leggendo commenti, si imparano sapendo cosa dicono gli articoli — perché il quesito, in sessanta secondi, chiede esattamente quello.
 
-Se stai mettendo insieme la parte comune, il [Manuale Normativo di Diritto Amministrativo](https://www.amazon.it/dp/B0H7NZXCMD) tratta le 320 norme del nucleo fondamentale sempre nella stessa forma: il testo della norma, perché esiste, i collegamenti con le norme vicine, i termini chiave. È il modo più rapido per arrivare al 15 settembre sapendo cosa dicono gli articoli invece di ricordarne vagamente il senso.
+Se stai mettendo insieme la parte comune, il [Manuale Normativo di Diritto Amministrativo](https://www.amazon.it/dp/B0H7NZXCMD) tratta le 384 norme del nucleo fondamentale sempre nella stessa forma: il testo della norma, perché esiste, i collegamenti con le norme vicine, i termini chiave. È il modo più rapido per arrivare alla prova sapendo che cosa dicono gli articoli invece di ricordarne vagamente il senso.

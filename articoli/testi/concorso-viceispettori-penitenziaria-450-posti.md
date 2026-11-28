@@ -1,4 +1,6 @@
-Il Ministero della Giustizia assume **450 allievi vice ispettori** della Polizia penitenziaria. Le domande si chiudono il **29 ottobre 2026 alle 23:59** e passano solo dalla procedura telematica, con SPID. Non c'è altra strada.
+Il Ministero della Giustizia assume **450 allievi vice ispettori** della Polizia penitenziaria. Le domande si sono chiuse il **29 ottobre 2026**.
+
+> **A che punto è.** Le candidature sono chiuse. Il diario della prova scritta e ogni avviso escono nella pagina del concorso sul sito del Ministero della Giustizia (giustizia.it). Chi supera lo scritto, tranne chi è già in servizio nel Corpo, viene poi convocato per l'efficienza fisica.
 
 È un bando che conviene leggere con attenzione, perché il numero del titolo e il numero che riguarda te non coincidono. Chi legge «450 posti» e si immagina 450 poltrone libere per chiunque superi le prove sta leggendo male il bando. Vediamo perché, e che cosa cambia nella preparazione.
 
@@ -76,15 +78,13 @@ La prima: il diritto penale è la materia su cui si gioca l'ammissione, perché 
 
 La seconda: le quattro materie dell'orale non si possono rimandare a dopo lo scritto. Fra scritto e orale passano in genere poche settimane, occupate anche dalle prove fisiche e dalle visite. Il diritto amministrativo e il diritto costituzionale, da zero, non entrano in quello spazio.
 
-## Prima di chiudere la domanda
+## Dopo la scadenza: che cosa controllare
 
-Tre controlli, nell'ordine in cui conviene farli.
+Le domande si sono chiuse il **29 ottobre 2026**. Per chi ha partecipato restano tre verifiche utili.
 
-- **La classe di laurea.** Chiedi alla segreteria del tuo ateneo in quale classe sta il tuo corso e se quella classe dà accesso a una delle magistrali indicate. È la verifica che salva o affonda la candidatura.
-- **La data di nascita contro la scadenza.** Il limite dei 32 anni si calcola alla data di scadenza del bando, non alla data della prova.
-- **La ricevuta.** Dopo l'invio, la ricevuta della domanda va salvata e stampata: serve il giorno della prova scritta, e senza quella non si entra.
-
-Se invii più domande vale l'ultima. E vale la regola di sempre sui portali pubblici: le ultime ore della scadenza sono le più trafficate, e non c'è motivo di giocarsi un concorso su un caricamento lento.
+- **La classe di laurea.** Il 1° ottobre il Ministero ha pubblicato un avviso per chiarire quali titoli di studio danno accesso al concorso. Conviene rileggerlo e, in caso di dubbio, chiedere alla segreteria dell'ateneo in quale classe sta il proprio corso.
+- **La data di nascita.** Il limite dei 32 anni si calcola alla data di scadenza del bando, cioè al 29 ottobre, non alla data della prova.
+- **La ricevuta.** La ricevuta della domanda va salvata e stampata: serve il giorno della prova scritta, e senza quella non si entra. Se sono state inviate più domande, vale l'ultima.
 
 Il testo che fa fede è il bando pubblicato dal Ministero della Giustizia, raggiungibile anche dal portale inPA. Le notizie di stampa servono a orientarsi: quando un numero letto altrove non coincide, vince il bando.
 

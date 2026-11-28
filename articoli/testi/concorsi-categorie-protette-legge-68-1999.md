@@ -1,4 +1,4 @@
-In questo momento due concorsi pubblici portano la stessa etichetta: «riservato alle categorie protette». Uno è dell'Agenzia delle Entrate e mette a concorso 622 posti di assistente gestionale. L'altro è dell'Azienda ospedaliera universitaria Luigi Vanvitelli di Napoli e ne mette 15 di collaboratore amministrativo.
+Nel 2026 due concorsi pubblici hanno portato la stessa etichetta: «riservato alle categorie protette». Uno è dell'Agenzia delle Entrate e mette a concorso 622 posti di assistente gestionale. L'altro è dell'Azienda ospedaliera universitaria Luigi Vanvitelli di Napoli e ne mette 15 di collaboratore amministrativo.
 
 L'etichetta coincide, la platea no. Chi è orfano di un lavoratore caduto sul lavoro rientra nel secondo bando e resta fuori dal primo. Chi ha un'invalidità civile riconosciuta al 45 per cento resta fuori da entrambi, pur avendo in mano un certificato di invalidità.
 
@@ -47,13 +47,15 @@ La distinzione conta perché i bandi scelgono. Alcuni aprono a tutte e due le ca
 
 Lo stesso candidato, quindi, può essere ammesso a un concorso e respinto dall'altro nello stesso mese, senza che nulla sia cambiato nella sua posizione.
 
-## I due bandi aperti adesso
+## Due bandi del 2026 a confronto
+
+Entrambi i termini sono ormai chiusi, ma i due bandi restano un buon esempio di come la stessa etichetta copra platee diverse.
 
 **Agenzia delle Entrate, 622 assistenti gestionali.** Posti a tempo indeterminato nell'Area Assistenti, distribuiti fra le strutture provinciali: 111 a Milano, 91 a Roma, 45 a Torino e 45 a Venezia; la Lombardia da sola ne conta 181. Il titolo richiesto è il diploma di scuola secondaria di secondo grado. Ogni candidato indica una sola provincia, e la scelta non si cambia.
 
 La prova è una sola prova scritta: 50 quesiti a risposta multipla con tre alternative in 60 minuti, 0,60 punti per ogni risposta esatta, 0 per quelle non date e una penalizzazione di 0,07 punti per ogni errore. Il massimo è 30 punti e la soglia di superamento è 18. Le materie sono distribuite così: 20 quesiti su fini istituzionali, compiti e ordinamento dell'Agenzia, 10 di diritto amministrativo, 10 di normativa sul pubblico impiego, 5 di applicazioni informatiche e 5 di lingua inglese.
 
-Una precisazione sul termine. Il bando originario si è chiuso il 17 giugno 2026 per i cittadini italiani. La finestra ancora aperta, fino alle 23:59 del 18 novembre 2026, nasce dalla sentenza del Tribunale di Milano n. 4273 del 22 settembre 2026 e vale soltanto per i cittadini di altri Stati dell'Unione e per i cittadini di Paesi terzi che rientrano nell'art. 38 del d.lgs. 165/2001. Chi entra adesso deve possedere i requisiti già alla data del 17 giugno 2026. È lo stesso meccanismo visto nel concorso del Ministero della difesa, di cui ci siamo occupati nell'articolo precedente.
+Una precisazione sul termine. Il bando originario si è chiuso il 17 giugno 2026 per i cittadini italiani. La finestra supplementare, chiusa alle 23:59 del 18 novembre 2026, nasce dalla sentenza del Tribunale di Milano n. 4273 del 22 settembre 2026 e vale soltanto per i cittadini di altri Stati dell'Unione e per i cittadini di Paesi terzi che rientrano nell'art. 38 del d.lgs. 165/2001. Chi è entrato in quella finestra doveva possedere i requisiti già alla data del 17 giugno 2026. È lo stesso meccanismo visto nel concorso del Ministero della difesa, di cui ci siamo occupati nell'articolo precedente.
 
 **AOU Luigi Vanvitelli di Napoli, 15 collaboratori amministrativi.** Posti a tempo indeterminato nell'Area dei Professionisti della Salute e dei Funzionari. Qui serve la laurea: giurisprudenza, economia, scienze della pubblica amministrazione, finanza e le classi equipollenti. Non c'è limite di età. Le domande si presentano solo sul portale telematico dell'azienda, entro la mezzanotte del 22 novembre 2026, e la candidatura si perfeziona soltanto con il caricamento della domanda firmata: chi si ferma al passaggio precedente non risulta iscritto.
 

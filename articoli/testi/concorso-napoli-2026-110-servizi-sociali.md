@@ -1,6 +1,14 @@
-Il Comune di Napoli cerca **110 funzionari per i servizi sociali**. Le domande si presentano fino al **12 ottobre 2026, alle 23:59**, e passano solo dal portale inPA. Non c'è altra strada: niente raccomandata, niente PEC all'ufficio, niente consegna a mano.
+Il Comune di Napoli cerca **110 funzionari per i servizi sociali**. Le domande si sono chiuse il **10 novembre 2026**: la prima scadenza era il 12 ottobre, ma il bando è stato corretto e riaperto per quindici giorni. Il motivo della riapertura riguarda proprio la prova, perché il testo originario non diceva quanti punti servono per superarla. Ora lo dice: **42 su 60**.
 
 Vediamo chi può partecipare, cosa si vince davvero, e dove si decide la prova. Perché la prova, in questo caso, si decide in un posto insolito: non solo sulle risposte che dai, ma su quelle che scegli di non dare.
+
+## Perché il bando è stato riaperto
+
+Un bando di concorso deve indicare il punteggio minimo per superare ogni prova: lo impone il regolamento sui concorsi pubblici, il d.P.R. 487/1994. Nella versione di settembre l'articolo sulla prova scritta non lo indicava. Con una disposizione del 26 ottobre 2026 il Comune ha riscritto quell'articolo, ha fissato la soglia a 42/60 e ha riaperto le domande dal 20 ottobre al 10 novembre.
+
+Chi aveva già presentato domanda entro il 12 ottobre non ha dovuto rifarla: la candidatura resta valida. Chi l'ha modificata o sostituita durante la riapertura conta per l'ultima versione inviata.
+
+La data e la sede della prova saranno pubblicate su inPA almeno quindici giorni prima. È lì che vanno controllate, non sui gruppi social.
 
 ## I 110 posti, uno per uno
 
@@ -32,7 +40,7 @@ I sessanta quesiti sono divisi così:
 
 I *quesiti situazionali* meritano una spiegazione, perché sono la parte nuova per chi non fa concorsi da qualche anno. Non chiedono una nozione: descrivono una situazione di lavoro e chiedono come ti comporteresti. Non hanno una risposta giusta e tre sbagliate, ma risposte più o meno appropriate, e il punteggio è graduato: 1 punto, 0,5 punti, oppure zero.
 
-Il punteggio massimo è 60.
+Il punteggio massimo è 60 e la prova si supera con **42 punti**, cioè il 70%. Si svolge in presenza, al computer.
 
 ## Dove si vince davvero: la penalità
 
@@ -54,6 +62,8 @@ Ora, quanto vale la tua probabilità? Dipende da quante alternative ha ogni ques
 - se sono **cinque**, ne hai 20: sei sotto, e rispondere in media ti costa;
 - se riesci a **escludere una alternativa** perché palesemente assurda, la probabilità sale di colpo e rispondere diventa nettamente conveniente.
 
+Con una soglia a 42 il margine è stretto. Se porti a casa tutti i 5 punti dei situazionali, sulle altre 55 domande te ne servono 37: per esempio 40 risposte esatte con 10 sbagliate (40 − 3 = 37), oppure 38 esatte con 3 sbagliate. Ogni errore costa quasi un terzo di risposta giusta, e su una soglia così alta pesa.
+
 La lezione pratica è una sola, e vale per qualunque concorso con penalità: **la risposta al buio è quasi sempre un pareggio**, mentre la risposta su cui hai eliminato anche un solo distrattore è quasi sempre un guadagno. Non allenarti a indovinare. Allenati a scartare.
 
 > Attenzione a un errore di calcolo diffuso: molti ragionano «tanto sbagliarne una toglie meno di quanto ne dà una giusta, quindi rispondo sempre». Ma le risposte giuste non sono tante quante le sbagliate. Se su dieci domande ignote ne indovini due e ne sbagli otto, incassi 2 punti e ne perdi 2,40: sei sotto. È il rapporto fra quante ne prendi e quante ne perdi a decidere, non il confronto fra +1 e −0,30.
@@ -70,8 +80,6 @@ Il modo che funziona è ridurre ogni norma alla stessa griglia — che cosa dice
 
 ## Le date che contano
 
-La domanda si presenta **solo su inPA**, e serve un'identità digitale (SPID, CIE o CNS) per entrarci. La scadenza è il **12 ottobre 2026 alle 23:59**: è un orario, non una data generica, e le piattaforme pubbliche si affollano nelle ultime ore. Chi si riduce all'ultima sera corre un rischio che non ha bisogno di correre.
-
-Prima di chiudere la domanda, controlla tre cose: che la PEC indicata sia la tua e sia attiva, che l'iscrizione all'albo risulti in regola se il tuo profilo la richiede, e che il contributo di 10 euro risulti pagato per il profilo giusto.
+Le domande sono chiuse dal 10 novembre 2026. Il prossimo passo è l'avviso con data e sede della prova, che esce su inPA con almeno quindici giorni di anticipo. Conviene controllare anche la casella PEC indicata nella domanda.
 
 Per la parte normativa della preparazione, il Manuale Normativo di Diritto della Previdenza e Legislazione Sociale e quello di Diritto Amministrativo lavorano proprio così: ogni norma su una scheda sempre uguale, pensata per essere ripassata in pochi minuti e ricordata all'esame.

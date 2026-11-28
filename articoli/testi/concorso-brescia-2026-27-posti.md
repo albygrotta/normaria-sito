@@ -1,4 +1,6 @@
-Il Comune di Brescia assume **27 persone a tempo indeterminato**. Le domande si chiudono il **12 ottobre 2026 alle 23:59** e passano solo dal portale inPA. Non c'è altra strada: niente raccomandata, niente PEC all'ufficio personale, niente consegna a mano.
+Il Comune di Brescia assume **27 persone a tempo indeterminato**. Le domande si sono chiuse il **12 ottobre 2026**.
+
+> **A che punto è.** Le candidature sono chiuse. Date delle prove ed esiti escono sul sito del Comune di Brescia e su inPA. Nel concorso per funzionario amministrativo passano all'orale solo i primi 200 che superano lo scritto, più gli eventuali pari merito all'ultimo posto utile.
 
 Non è un concorso solo: sono tre bandi distinti, con tre titoli di studio diversi e tre prove diverse. Vediamo chi può partecipare, cosa si vince e dove si perde. Perché qui si perde in un punto preciso, e quasi sempre per un errore di ragionamento: credere che un voto alto in una prova compensi un voto basso nell'altra.
 
@@ -67,14 +69,12 @@ In pratica significa tre cose.
 
 L'ultimo punto è anche il collegamento fra le due prove. Chi sa spiegare una norma con parole proprie — che cosa dice, perché esiste, con quali altre norme si lega, quali parole vanno sapute con precisione — risponde meglio ai quesiti e regge meglio il colloquio. Se la spiegazione fila, la norma è tua. Se ti impianti a metà, hai trovato esattamente il punto da rileggere.
 
-## Le date e i controlli prima di chiudere la domanda
+## Dopo la scadenza: che cosa controllare
 
-La scadenza è il **12 ottobre 2026 alle 23:59**. È un orario, non una data generica, e i portali pubblici si affollano nelle ultime ore. Chi si riduce all'ultima sera corre un rischio che non ha motivo di correre.
+Le domande si sono chiuse il **12 ottobre 2026**. Chi ha partecipato può fare adesso tre verifiche, prima che arrivi la convocazione:
 
-Prima di inviare, controlla tre cose:
-
-- che il **bando** su cui stai candidandoti sia quello del profilo giusto, perché i tre bandi sono separati e hanno codici diversi;
-- che il **titolo di studio** indicato rientri fra quelli ammessi da quel bando, classe di laurea compresa;
+- che la ricevuta della domanda sia salvata e corrisponda al **bando del profilo giusto**, perché i tre bandi sono separati e hanno codici diversi;
+- che il **titolo di studio** dichiarato rientri fra quelli ammessi da quel bando, classe di laurea compresa;
 - che il **contributo di 10 euro** risulti pagato per quella domanda, non per un'altra.
 
 Il bando integrale sta sul portale inPA e sul sito del Comune di Brescia. Le notizie di stampa sono utili per orientarsi, ma l'unico testo che fa fede è il bando: quando un numero letto altrove non coincide, vince il bando.
