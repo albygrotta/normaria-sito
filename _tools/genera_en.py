@@ -261,7 +261,7 @@ def rimandi(a, per_id):
     </aside>"""
 
 
-def pagina_articolo(a, per_id):
+def pagina_articolo(a, per_id, tutti=()):
     testo = (EN / "articles" / "testi" / f"{a['slug']}.md").read_text(encoding="utf-8")
     fonti = ""
     if a.get("fonti"):
@@ -284,11 +284,14 @@ def pagina_articolo(a, per_id):
 
 {ga.corpo(testo)}
 {fonti}
+{ga.correlati(a, tutti).replace('Leggi anche', 'Read next')}
 {rimandi(a, per_id)}
   </main>"""
 
     return comune_en.pagina(
-        titolo=f"{a['titolo']} — Normaria Edizioni", descrizione=a["sommario"],
+        titolo=(f"{a['titolo_seo']} | Normaria" if a.get("titolo_seo")
+                else f"{a['titolo']} — Normaria Edizioni"),
+        descrizione=a.get("descrizione_seo") or a["sommario"],
         canonico=f"{SITO}/en/articles/{a['slug']}.html", attiva="articles",
         su="../", tipo="article", extra=dati_articolo(a), corpo=corpo)
 
@@ -348,7 +351,7 @@ def main():
         if not sorgente.exists():
             sys.exit(f"ERRORE: manca il testo {sorgente}")
         (EN / "articles" / f"{a['slug']}.html").write_text(
-            pagina_articolo(a, per_id), encoding="utf-8")
+            pagina_articolo(a, per_id, articoli), encoding="utf-8")
 
     (EN / "index.html").write_text(pagina_home(catalogo, articoli), encoding="utf-8")
     (EN / "articles.html").write_text(pagina_indice(articoli), encoding="utf-8")

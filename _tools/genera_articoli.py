@@ -147,6 +147,27 @@ def rimandi(a, per_id):
     </aside>"""
 
 
+def correlati(a, tutti):
+    """«Leggi anche»: tre articoli vicini per materia, così nessuna pagina resta collegata solo dall'indice."""
+    mie = set(a.get("manuali", []))
+    altri = [b for b in tutti if b["slug"] != a["slug"]]
+    altri.sort(key=lambda b: (-len(mie & set(b.get("manuali", []))),
+                              b["occhiello"] != a["occhiello"],
+                              -int(b["data"].replace("-", ""))))
+    scelti = altri[:3]
+    if not scelti:
+        return ""
+    voci = "\n".join(f'        <li><a href="{b["slug"]}.html">{html.escape(b["titolo"])}</a></li>'
+                      for b in scelti)
+    return f"""
+    <aside class="correlati">
+      <h2>Leggi anche</h2>
+      <ul>
+{voci}
+      </ul>
+    </aside>"""
+
+
 def invito():
     """L'invito a ricevere l'estratto, in fondo a ogni articolo."""
     return f"""
@@ -176,7 +197,7 @@ def dati_articolo(a, descrizione):
     return '  <script type="application/ld+json">\n' + corpo_json + "\n  </script>\n"
 
 
-def pagina_articolo(a, per_id):
+def pagina_articolo(a, per_id, tutti=()):
     testo = (RADICE / "articoli" / "testi" / f"{a['slug']}.md").read_text(encoding="utf-8")
     canonico = f"{SITO}/articoli/{a['slug']}.html"
     fonti = ""
@@ -195,19 +216,22 @@ def pagina_articolo(a, per_id):
     corpo_pagina = f"""  <main class="wrap doc articolo" id="contenuto">
     <p class="briciole"><a href="../articoli.html">Articoli</a> · {html.escape(a['occhiello'])}</p>
     <h1>{html.escape(a['titolo'])}</h1>
-    <p class="updated">{data_estesa(a['data'])} · {minuti_lettura(testo)} minuti di lettura</p>
+    <p class="updated">{data_estesa(a['data'])}{(' · aggiornato il ' + data_estesa(a['aggiornato'])) if a.get('aggiornato') and a['aggiornato'] != a['data'] else ''} · {minuti_lettura(testo)} minuti di lettura</p>
     <p class="sommario">{html.escape(a['sommario'])}</p>
 
 {corpo(testo)}
 {fonti}
+{correlati(a, tutti)}
 {rimandi(a, per_id)}
 {invito()}
   </main>"""
 
     return comune.pagina(
-        titolo=f"{a['titolo']} — Normaria Edizioni", descrizione=a["sommario"],
+        titolo=(f"{a['titolo_seo']} | Normaria" if a.get("titolo_seo")
+                else f"{a['titolo']} — Normaria Edizioni"),
+        descrizione=a.get("descrizione_seo") or a["sommario"],
         canonico=canonico, attiva="articoli", su="../", tipo="article",
-        extra=dati_articolo(a, a["sommario"]), corpo=corpo_pagina)
+        extra=dati_articolo(a, a.get("descrizione_seo") or a["sommario"]), corpo=corpo_pagina)
 
 
 def pagina_indice(articoli):
@@ -299,7 +323,7 @@ def main():
         if not sorgente.exists():
             sys.exit(f"ERRORE: manca il testo {sorgente}")
         (RADICE / "articoli" / f"{a['slug']}.html").write_text(
-            pagina_articolo(a, per_id), encoding="utf-8")
+            pagina_articolo(a, per_id, articoli), encoding="utf-8")
 
     (RADICE / "articoli.html").write_text(pagina_indice(articoli), encoding="utf-8")
     (RADICE / "sitemap.xml").write_text(mappa_sito(articoli), encoding="utf-8")
