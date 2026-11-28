@@ -67,12 +67,16 @@
       "occhiello": "Concorsi in corso",
       "sommario": "Domande dal 15 al 30 settembre, 39 profili in oltre mille comuni, una prova da casa di 60 quesiti in 60 minuti. Cosa vuol dire davvero entrare in un elenco di idonei, e cosa succede dopo.",
       "data": "2026-09-05",
-      "aggiornato": "2026-09-05",
+      "aggiornato": "2026-11-28",
       "manuali": [
         "amministrativo",
         "lavoro"
       ],
       "fonti": [
+        {
+          "testo": "Concorso ASMEL 2026 — LeggiOggi",
+          "url": "https://www.leggioggi.it/concorso-asmel-2026/"
+        },
         {
           "testo": "Maxi avviso ASMEL 2026 per la formazione di 39 elenchi di idonei — portale inPA",
           "url": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=de84971ad8794b8ab62112c77c0f06ea"
@@ -130,16 +134,20 @@
     },
     {
       "slug": "concorso-napoli-2026-110-servizi-sociali",
-      "titolo": "Concorso Comune di Napoli, 110 posti: chi può partecipare e dove si vince la prova",
+      "titolo": "Concorso Comune di Napoli, 110 posti: bando riaperto e soglia a 42/60, come si vince la prova",
       "occhiello": "Concorsi in corso",
-      "sommario": "Centodieci funzionari per i servizi sociali, domande entro il 12 ottobre 2026 su inPA. I tre profili, il contratto a termine da dire subito, e il conto esatto che stabilisce quando conviene rispondere a caso e quando no.",
+      "sommario": "Il bando per 110 funzionari dei servizi sociali è stato corretto e riaperto fino al 10 novembre: ora fissa la soglia a 42 su 60. I tre profili, il contratto a termine, la prova da 60 quesiti e il conto che dice quando conviene rispondere a caso.",
       "data": "2026-09-17",
-      "aggiornato": "2026-09-17",
+      "aggiornato": "2026-11-28",
       "manuali": [
         "previdenza",
         "amministrativo"
       ],
       "fonti": [
+        {
+          "testo": "Riaperto il concorso da 110 posti per funzionari al Comune di Napoli — Simone Concorsi",
+          "url": "https://simoneconcorsi.it/riaperto-il-concorso-da-110-posti-per-funzionari-al-comune-di-napoli/"
+        },
         {
           "testo": "Concorso Comune di Napoli per 110 funzionari servizi sociali 2026 — Ticonsiglio",
           "url": "https://www.ticonsiglio.com/concorso-comune-napoli-funzionari-servizi-sociali-2026/"
@@ -157,8 +165,8 @@
           "url": "https://www.inpa.gov.it/"
         }
       ],
-      "titolo_seo": "Concorso Comune di Napoli 2026: 110 posti sociali",
-      "descrizione_seo": "Concorso del Comune di Napoli per 110 funzionari dei servizi sociali: i tre profili, il contratto a termine e quando conviene rispondere ai quiz."
+      "titolo_seo": "Concorso Napoli 110 posti: soglia 42/60 e prova",
+      "descrizione_seo": "Concorso Comune di Napoli per 110 funzionari dei servizi sociali: bando riaperto, soglia a 42/60, prova da 60 quesiti in 60 minuti e penalità."
     },
     {
       "slug": "concussione-induzione-corruzione",
@@ -201,7 +209,7 @@
       "occhiello": "Concorsi in corso",
       "sommario": "Tre bandi distinti, domande entro il 12 ottobre 2026 e un punteggio minimo di 21/30 in ciascuna prova. Chi può partecipare, cosa si vince e perché la media fra le prove non conta nulla.",
       "data": "2026-09-21",
-      "aggiornato": "2026-09-21",
+      "aggiornato": "2026-11-28",
       "manuali": [
         "amministrativo",
         "lavoro"
@@ -268,12 +276,16 @@
       "occhiello": "Concorsi in corso",
       "sommario": "Ventotto assunzioni a tempo indeterminato a Venezia, domande su inPA entro il 16 ottobre 2026 alle 18:00. È un concorso per titoli ed esami: gli anni di lavoro valgono fino a 10 punti, e la commissione li conta prima di correggere il tuo scritto.",
       "data": "2026-09-29",
-      "aggiornato": "2026-09-29",
+      "aggiornato": "2026-11-28",
       "manuali": [
         "amministrativo",
         "lavoro"
       ],
       "fonti": [
+        {
+          "testo": "Concorso Autorità per la Laguna di Venezia, 28 posti — EdiSES blog",
+          "url": "https://blog.edises.it/concorso-28-posti-vari-profili-autorita-laguna-venezia-110873"
+        },
         {
           "testo": "Avvisi e bandi di concorso — Autorità per la Laguna di Venezia (bando 28 posti, pubblicato il 14 settembre 2026)",
           "url": "https://www.autoritalaguna.it/amministrazione-trasparente/avvisi-e-bandi-di-concorso/"
@@ -340,12 +352,16 @@
       "occhiello": "Concorsi in corso",
       "sommario": "Domande entro il 29 ottobre 2026, nessuna preselettiva e due soglie diverse, 7/10 e 6/10. Ma dei 450 posti del titolo 107 sono riservati: ecco come si leggono le quote e che cosa cambia per la preparazione.",
       "data": "2026-10-13",
-      "aggiornato": "2026-10-13",
+      "aggiornato": "2026-11-28",
       "manuali": [
         "penale",
         "amministrativo"
       ],
       "fonti": [
+        {
+          "testo": "Allievi vice ispettori Polizia penitenziaria, 450 posti — scheda di sintesi, Ministero della Giustizia",
+          "url": "https://www.giustizia.it/giustizia/en/mg_1_6_1.page?contentId=SCE1521801"
+        },
         {
           "testo": "Polizia penitenziaria, concorso per 450 viceispettori: domande entro il 29 ottobre — Corriere dell'Universita'",
           "url": "https://corriereuniv.it/concorso-polizia-penitenziaria-2026-450-posti/"
@@ -481,9 +497,9 @@
       "slug": "concorsi-categorie-protette-legge-68-1999",
       "titolo": "Concorsi per le categorie protette: perché il certificato di invalidità da solo non basta",
       "occhiello": "Concorsi in corso",
-      "sommario": "Due bandi aperti adesso usano la stessa etichetta e ammettono persone diverse: 622 posti all'Agenzia delle Entrate entro il 18 novembre, 15 all'ospedale Vanvitelli entro il 22. Le tre condizioni che decidono l'ammissione, e la differenza fra l'art. 1 e l'art. 18 della legge 68/1999.",
+      "sommario": "Due bandi del 2026 usano la stessa etichetta e ammettono persone diverse: i 622 posti dell'Agenzia delle Entrate e i 15 dell'ospedale Vanvitelli. Le tre condizioni che decidono l'ammissione, e la differenza fra l'art. 1 e l'art. 18 della legge 68/1999.",
       "data": "2026-11-10",
-      "aggiornato": "2026-11-10",
+      "aggiornato": "2026-11-28",
       "manuali": [
         "lavoro",
         "amministrativo"
