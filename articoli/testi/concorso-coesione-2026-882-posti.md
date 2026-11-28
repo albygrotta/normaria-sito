@@ -1,6 +1,30 @@
-Il 23 settembre alle 23:59 si chiude una delle porte più larghe aperte quest'anno sulla pubblica amministrazione italiana: **882 posti a tempo indeterminato** per specialisti tecnici, tutti nel Mezzogiorno. Non serve esperienza, non serve la residenza sul posto, e in buona parte dei casi basta la laurea triennale.
+Le domande si sono chiuse il 23 settembre e adesso c'è una data: la prova scritta del concorso RIPAM Coesione per **882 posti a tempo indeterminato** si svolge **venerdì 4 dicembre 2026**, in un solo giorno e con la stessa prova per tutte le regioni. Si gioca tutto in un'ora: non c'è preselezione prima e non c'è orale dopo.
 
-Vediamo con calma di cosa si tratta, chi può fare domanda e — soprattutto — com'è fatta la prova. Perché è una prova con regole di punteggio molto precise, e conoscerle prima cambia il modo in cui conviene studiare.
+Qui trovi dove e a che ora si presenta ciascun candidato, che cosa portare e com'è fatta la prova. Le regole del punteggio sono molto precise, e conoscerle prima cambia il modo di studiare negli ultimi giorni.
+
+## La prova del 4 dicembre: sedi e orari
+
+L'avviso di convocazione è uscito sul portale inPA il 16 novembre. In ogni sede ci sono due turni, alle **9:30** e alle **14:30**, e il turno dipende dall'iniziale del cognome. Non si possono cambiare sede, giorno od orario, e chi non si presenta al proprio turno è escluso, qualunque sia il motivo.
+
+La sede non dipende dalla regione per cui si concorre, ma dalla **residenza indicata nella domanda**:
+
+- **Roma**, Nuova Fiera di Roma: residenti nelle altre regioni e all'estero
+- **Napoli**, Mostra d'Oltremare: residenti in Campania e Basilicata
+- **Foggia**, Fiera di Foggia: residenti in Puglia e Molise
+- **Catanzaro**, Fiera di Catanzaro: residenti in Calabria
+- **Cagliari**, Fiera di Cagliari: residenti in Sardegna
+- **Misterbianco (Catania)**, Sicilia Fiera: residenti nelle province di Agrigento, Caltanissetta, Catania, Enna, Messina, Ragusa e Siracusa
+- **Palermo**, ZAC ai Cantieri della Zisa: residenti nelle province di Palermo e Trapani
+
+Chi è stato assegnato a Palermo deve fare attenzione: la prima convocazione indicava un albergo a Isola delle Femmine, e una rettifica dello stesso 16 novembre ha spostato la sede ai Cantieri della Zisa. La divisione dei cognomi fra mattina e pomeriggio cambia da sede a sede ed è nell'avviso pubblicato su inPA.
+
+### Che cosa portare
+
+- un documento di riconoscimento valido e il codice fiscale;
+- la ricevuta della domanda;
+- la lettera di partecipazione con il codice QR, che arriva per email da noreply@concorsismart.it. Conviene cercarla anche nella posta indesiderata. Se non arriva, si presenta la ricevuta di iscrizione scaricata da inPA e la convocazione vale lo stesso.
+
+Le valigie non entrano, è ammessa solo una borsa piccola con l'acqua e lo stretto necessario. Telefono, smartwatch e auricolari vanno spenti e chiusi in una busta schermata che l'organizzazione consegna all'ingresso. La prova si fa su un tablet.
 
 ## Che concorso è
 
@@ -29,15 +53,7 @@ Due precisazioni che valgono più di tutto il resto:
 - **Basta la laurea triennale.** Non serve la magistrale, anche se ovviamente è ammessa. È la condizione che apre il concorso a molte più persone di quante credano di poter partecipare.
 - **Non serve esperienza professionale, e non serve risiedere al Sud.** Puoi vivere a Milano e concorrere per i posti in Sicilia.
 
-## Come si presenta la domanda
-
-Solo online, sul portale **inPA**, entrando con SPID, CIE, CNS o credenziali europee eIDAS. C'è una tassa di concorso di **10 euro**, che non viene restituita in nessun caso.
-
-Il termine è il **23 settembre 2026 alle 23:59** ed è perentorio: significa che dopo quell'ora il sistema non accetta più nulla, senza eccezioni e senza proroghe informali. Chi ha lo SPID scaduto o non ha mai usato inPA farebbe bene a sistemare quelle due cose subito, non il 23 sera.
-
 ## Com'è fatta la prova
-
-Qui c'è la notizia migliore del bando: **una sola prova scritta**. Nessuna preselezione da superare prima, nessun orale dopo. Si gioca tutto in un'ora.
 
 La prova è di **40 quesiti a risposta multipla in 60 minuti**: un minuto e mezzo a domanda, tempo compreso per leggerla. Sono divisi così:
 
@@ -46,6 +62,8 @@ La prova è di **40 quesiti a risposta multipla in 60 minuti**: un minuto e mezz
 - **7 quesiti situazionali**
 
 I quesiti situazionali sono la parte che spiazza chi non li ha mai visti. Non ti chiedono una nozione: ti descrivono una scena di vita d'ufficio — un collega che non consegna, una scadenza a rischio, un cittadino che protesta — e ti chiedono come ti comporteresti. Non c'è una risposta giusta e tre sbagliate: ci sono risposte più efficaci e risposte meno efficaci, e vengono pesate di conseguenza.
+
+Le risposte si possono cambiare fino allo scadere dei sessanta minuti. Se il tablet si blocca, il tempo perso viene restituito.
 
 ## Il punteggio, con i numeri in mano
 
@@ -81,10 +99,12 @@ Le materie del bando, raggruppate per come si tengono insieme:
 - **Beni e diritti** — beni culturali, estimo, catasto e topografia, occupazione ed espropriazione.
 - **Trasversali** — inglese a livello B1 e competenze informatiche e digitali.
 
-> La data della prova non è ancora stata annunciata. Si saprà dopo la chiusura delle domande, sul portale inPA: è lì che vanno controllati gli aggiornamenti, non sui gruppi social.
-
 ## Da dove cominciare
 
 Guardando quell'elenco si capisce una cosa che a molti candidati tecnici sfugge: **metà delle materie non sono materie tecniche, sono norme.** I regolamenti sui fondi europei sono diritto dell'Unione. L'espropriazione, l'edilizia, i lavori pubblici, il procedimento con cui un ente approva un progetto sono diritto amministrativo. Un ingegnere sa progettare una strada; la domanda d'esame gli chiede invece entro quale termine l'amministrazione deve concludere il procedimento, o cosa comporta un vincolo preordinato all'esproprio.
 
 È esattamente il punto in cui chi viene da una formazione tecnica perde punti evitabili — e in un esame dove serve il 70%, i punti evitabili sono quelli che decidono la graduatoria.
+
+## Dopo la prova
+
+Le prove vengono corrette in forma anonima, con strumenti informatici. Per ogni regione si forma una graduatoria, costruita solo sul punteggio dello scritto. Esiti e graduatorie escono sul portale inPA e sul sito del Dipartimento per le politiche di coesione; nell'area riservata di Formez ciascuno potrà poi rivedere il proprio elaborato. Il bando non fissa una data per la pubblicazione: l'unico posto da controllare resta inPA, non i gruppi sui social.
